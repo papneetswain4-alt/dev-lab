@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-23T09:47:48.158Z",
+  "updatedAt": "2026-09-23T09:49:32.831Z",
   "problems": [
     {
       "frontendId": "2",
@@ -43,6 +43,26 @@
           "path": "problems/1621-number-of-sets-of-k-non-overlapping-line-segments/1621-number-of-sets-of-k-non-overlapping-line-segments.java",
           "sha": "16f52eabeea876c089a84416073abad63cbf0b0e",
           "lastSyncedAt": "2026-09-23T09:45:41.998Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2965",
+      "title": "Find Missing and Repeated Values",
+      "slug": "find-missing-and-repeated-values",
+      "problemName": "2965-find-missing-and-repeated-values",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/find-missing-and-repeated-values/",
+      "folderPath": "problems/2965-find-missing-and-repeated-values/",
+      "readmePath": "problems/2965-find-missing-and-repeated-values/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2965-find-missing-and-repeated-values.java",
+          "path": "problems/2965-find-missing-and-repeated-values/2965-find-missing-and-repeated-values.java",
+          "sha": "3c80907d2e8caef7e12534dc32c87f16d1f7c1c6",
+          "lastSyncedAt": "2026-09-23T09:49:32.831Z"
         }
       ]
     }
