@@ -4,7 +4,7 @@
     "slug": "linked-list",
     "name": "Linked List"
   },
-  "updatedAt": "2026-09-23T09:50:08.643Z",
+  "updatedAt": "2026-09-23T09:50:18.399Z",
   "problems": [
     {
       "frontendId": "2",
@@ -183,6 +183,26 @@
           "path": "problems/0237-delete-node-in-a-linked-list/0237-delete-node-in-a-linked-list.java",
           "sha": "a6173ec0abb103f09aa71d1ec235d4b282624e8f",
           "lastSyncedAt": "2026-09-23T09:47:40.537Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "876",
+      "title": "Middle of the Linked List",
+      "slug": "middle-of-the-linked-list",
+      "problemName": "0876-middle-of-the-linked-list",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/middle-of-the-linked-list/",
+      "folderPath": "problems/0876-middle-of-the-linked-list/",
+      "readmePath": "problems/0876-middle-of-the-linked-list/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0876-middle-of-the-linked-list.java",
+          "path": "problems/0876-middle-of-the-linked-list/0876-middle-of-the-linked-list.java",
+          "sha": "b89b8885363c08aa1d69f26bda598a2d49a7d012",
+          "lastSyncedAt": "2026-09-23T09:50:18.399Z"
         }
       ]
     }
