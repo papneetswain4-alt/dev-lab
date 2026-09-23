@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-23T09:48:27.691Z",
+  "updatedAt": "2026-09-23T09:48:46.416Z",
   "problems": [
     {
       "frontendId": "1",
@@ -83,6 +83,26 @@
           "path": "problems/0645-set-mismatch/0645-set-mismatch.java",
           "sha": "ea996f1b96543ff105e1c5ad643f47224539aae3",
           "lastSyncedAt": "2026-09-23T09:48:27.691Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1018",
+      "title": "Binary Prefix Divisible By 5",
+      "slug": "binary-prefix-divisible-by-5",
+      "problemName": "1018-binary-prefix-divisible-by-5",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/binary-prefix-divisible-by-5/",
+      "folderPath": "problems/1018-binary-prefix-divisible-by-5/",
+      "readmePath": "problems/1018-binary-prefix-divisible-by-5/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1018-binary-prefix-divisible-by-5.java",
+          "path": "problems/1018-binary-prefix-divisible-by-5/1018-binary-prefix-divisible-by-5.java",
+          "sha": "e246f59feaf1e137329a78606421fb4056c19a11",
+          "lastSyncedAt": "2026-09-23T09:48:46.416Z"
         }
       ]
     },
