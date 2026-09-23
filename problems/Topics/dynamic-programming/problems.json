@@ -4,8 +4,28 @@
     "slug": "dynamic-programming",
     "name": "Dynamic Programming"
   },
-  "updatedAt": "2026-09-23T09:45:41.998Z",
+  "updatedAt": "2026-09-23T09:50:36.525Z",
   "problems": [
+    {
+      "frontendId": "53",
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "problemName": "0053-maximum-subarray",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/",
+      "folderPath": "problems/0053-maximum-subarray/",
+      "readmePath": "problems/0053-maximum-subarray/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0053-maximum-subarray.java",
+          "path": "problems/0053-maximum-subarray/0053-maximum-subarray.java",
+          "sha": "0f3b1d420c4deee76ebb003870f1ec527568a090",
+          "lastSyncedAt": "2026-09-23T09:50:36.525Z"
+        }
+      ]
+    },
     {
       "frontendId": "1621",
       "title": "Number of Sets of K Non-Overlapping Line Segments",
