@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "quicksort",
+    "name": "Quicksort"
+  },
+  "updatedAt": "2026-09-23T09:49:53.242Z",
+  "problems": [
+    {
+      "frontendId": "56",
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "problemName": "0056-merge-intervals",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/merge-intervals/",
+      "folderPath": "problems/0056-merge-intervals/",
+      "readmePath": "problems/0056-merge-intervals/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0056-merge-intervals.java",
+          "path": "problems/0056-merge-intervals/0056-merge-intervals.java",
+          "sha": "2b7e5be5fd156c78adfbd27c884937fa175c3c4b",
+          "lastSyncedAt": "2026-09-23T09:49:53.242Z"
+        }
+      ]
+    }
+  ]
+}
