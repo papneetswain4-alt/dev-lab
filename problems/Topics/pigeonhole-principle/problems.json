@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "pigeonhole-principle",
+    "name": "Pigeonhole Principle"
+  },
+  "updatedAt": "2026-09-23T09:51:49.359Z",
+  "problems": [
+    {
+      "frontendId": "287",
+      "title": "Find the Duplicate Number",
+      "slug": "find-the-duplicate-number",
+      "problemName": "0287-find-the-duplicate-number",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
+      "folderPath": "problems/0287-find-the-duplicate-number/",
+      "readmePath": "problems/0287-find-the-duplicate-number/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0287-find-the-duplicate-number.java",
+          "path": "problems/0287-find-the-duplicate-number/0287-find-the-duplicate-number.java",
+          "sha": "2417d85ec0873ea5164121086f6557e0bc745a38",
+          "lastSyncedAt": "2026-09-23T09:51:49.359Z"
+        }
+      ]
+    }
+  ]
+}
