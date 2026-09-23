@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-09-23T09:45:22.142Z",
+  "updatedAt": "2026-09-23T09:51:37.322Z",
   "problems": [
     {
       "frontendId": "4",
@@ -23,6 +23,26 @@
           "path": "problems/0004-median-of-two-sorted-arrays/0004-median-of-two-sorted-arrays.java",
           "sha": "391f63cd01fbc1b8f0be1d93ff4103b9f33ea0c7",
           "lastSyncedAt": "2026-09-23T09:45:22.142Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "74",
+      "title": "Search a 2D Matrix",
+      "slug": "search-a-2d-matrix",
+      "problemName": "0074-search-a-2d-matrix",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/",
+      "folderPath": "problems/0074-search-a-2d-matrix/",
+      "readmePath": "problems/0074-search-a-2d-matrix/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0074-search-a-2d-matrix.java",
+          "path": "problems/0074-search-a-2d-matrix/0074-search-a-2d-matrix.java",
+          "sha": "3e2a6c414488acd111bf611943c7723b58967bb2",
+          "lastSyncedAt": "2026-09-23T09:51:37.322Z"
         }
       ]
     }
