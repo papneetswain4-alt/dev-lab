@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-23T09:48:46.416Z",
+  "updatedAt": "2026-09-23T09:48:54.424Z",
   "problems": [
     {
       "frontendId": "1",
@@ -103,6 +103,26 @@
           "path": "problems/1018-binary-prefix-divisible-by-5/1018-binary-prefix-divisible-by-5.java",
           "sha": "e246f59feaf1e137329a78606421fb4056c19a11",
           "lastSyncedAt": "2026-09-23T09:48:46.416Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1365",
+      "title": "How Many Numbers Are Smaller Than the Current Number",
+      "slug": "how-many-numbers-are-smaller-than-the-current-number",
+      "problemName": "1365-how-many-numbers-are-smaller-than-the-current-number",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/",
+      "folderPath": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/",
+      "readmePath": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1365-how-many-numbers-are-smaller-than-the-current-number.java",
+          "path": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/1365-how-many-numbers-are-smaller-than-the-current-number.java",
+          "sha": "e0f52ce2b081599c88d82bfa6527f34a1796b188",
+          "lastSyncedAt": "2026-09-23T09:48:54.424Z"
         }
       ]
     },
