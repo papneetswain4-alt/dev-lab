@@ -4,7 +4,7 @@
     "slug": "floyds-cycle-finding-algorithm",
     "name": "Floyd's Cycle Finding Algorithm"
   },
-  "updatedAt": "2026-09-23T09:47:07.320Z",
+  "updatedAt": "2026-09-23T09:51:49.359Z",
   "problems": [
     {
       "frontendId": "141",
@@ -23,6 +23,26 @@
           "path": "problems/0141-linked-list-cycle/0141-linked-list-cycle.java",
           "sha": "377589736bdb1eb4d1aa0e29716aeceb2606a61e",
           "lastSyncedAt": "2026-09-23T09:47:07.320Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "287",
+      "title": "Find the Duplicate Number",
+      "slug": "find-the-duplicate-number",
+      "problemName": "0287-find-the-duplicate-number",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
+      "folderPath": "problems/0287-find-the-duplicate-number/",
+      "readmePath": "problems/0287-find-the-duplicate-number/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0287-find-the-duplicate-number.java",
+          "path": "problems/0287-find-the-duplicate-number/0287-find-the-duplicate-number.java",
+          "sha": "2417d85ec0873ea5164121086f6557e0bc745a38",
+          "lastSyncedAt": "2026-09-23T09:51:49.359Z"
         }
       ]
     }
