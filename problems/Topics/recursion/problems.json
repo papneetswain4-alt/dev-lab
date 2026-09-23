@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "recursion",
+    "name": "Recursion"
+  },
+  "updatedAt": "2026-09-23T09:46:39.473Z",
+  "problems": [
+    {
+      "frontendId": "234",
+      "title": "Palindrome Linked List",
+      "slug": "palindrome-linked-list",
+      "problemName": "0234-palindrome-linked-list",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/palindrome-linked-list/",
+      "folderPath": "problems/0234-palindrome-linked-list/",
+      "readmePath": "problems/0234-palindrome-linked-list/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0234-palindrome-linked-list.java",
+          "path": "problems/0234-palindrome-linked-list/0234-palindrome-linked-list.java",
+          "sha": "10b4b7e2efe68dfd0ad08713143364be83eab8ea",
+          "lastSyncedAt": "2026-09-23T09:46:39.473Z"
+        }
+      ]
+    }
+  ]
+}
