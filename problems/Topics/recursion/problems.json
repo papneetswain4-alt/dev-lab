@@ -4,7 +4,7 @@
     "slug": "recursion",
     "name": "Recursion"
   },
-  "updatedAt": "2026-09-23T09:50:08.643Z",
+  "updatedAt": "2026-09-23T09:50:26.046Z",
   "problems": [
     {
       "frontendId": "2",
@@ -63,6 +63,26 @@
           "path": "problems/0025-reverse-nodes-in-k-group/0025-reverse-nodes-in-k-group.java",
           "sha": "79d2059d3b0158ff4f8fa4e5ba848783d67f5c2c",
           "lastSyncedAt": "2026-09-23T09:46:57.153Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "206",
+      "title": "Reverse Linked List",
+      "slug": "reverse-linked-list",
+      "problemName": "0206-reverse-linked-list",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/",
+      "folderPath": "problems/0206-reverse-linked-list/",
+      "readmePath": "problems/0206-reverse-linked-list/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0206-reverse-linked-list.java",
+          "path": "problems/0206-reverse-linked-list/0206-reverse-linked-list.java",
+          "sha": "14b05252e4bcffaad182f4d8f5dda8056716820c",
+          "lastSyncedAt": "2026-09-23T09:50:26.046Z"
         }
       ]
     },
