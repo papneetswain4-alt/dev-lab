@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-09-23T15:21:50.903Z",
+  "updatedAt": "2026-09-23T15:22:11.410Z",
   "problems": [
     {
       "frontendId": "1",
@@ -163,6 +163,26 @@
           "path": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/1365-how-many-numbers-are-smaller-than-the-current-number.java",
           "sha": "e0f52ce2b081599c88d82bfa6527f34a1796b188",
           "lastSyncedAt": "2026-09-23T09:48:54.424Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1477",
+      "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
+      "slug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "problemName": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+      "folderPath": "problems/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+      "readmePath": "problems/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum.java",
+          "path": "problems/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum.java",
+          "sha": "8502fefe41ded6fb879f511c127dc1c043cf766e",
+          "lastSyncedAt": "2026-09-23T15:22:11.410Z"
         }
       ]
     },
