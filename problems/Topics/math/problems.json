@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-23T09:52:21.199Z",
+  "updatedAt": "2026-09-23T15:22:36.302Z",
   "problems": [
     {
       "frontendId": "2",
@@ -102,7 +102,7 @@
           "filename": "1621-number-of-sets-of-k-non-overlapping-line-segments.java",
           "path": "problems/1621-number-of-sets-of-k-non-overlapping-line-segments/1621-number-of-sets-of-k-non-overlapping-line-segments.java",
           "sha": "16f52eabeea876c089a84416073abad63cbf0b0e",
-          "lastSyncedAt": "2026-09-23T09:45:41.998Z"
+          "lastSyncedAt": "2026-09-23T15:22:36.302Z"
         }
       ]
     },
