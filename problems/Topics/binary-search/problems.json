@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-09-23T14:14:11.109Z",
+  "updatedAt": "2026-09-23T15:21:50.903Z",
   "problems": [
     {
       "frontendId": "4",
@@ -82,7 +82,7 @@
           "filename": "1658-minimum-operations-to-reduce-x-to-zero.java",
           "path": "problems/1658-minimum-operations-to-reduce-x-to-zero/1658-minimum-operations-to-reduce-x-to-zero.java",
           "sha": "831dc9ca793ec53e101122e8e1f45cb1b694d2f5",
-          "lastSyncedAt": "2026-09-23T14:14:11.109Z"
+          "lastSyncedAt": "2026-09-23T15:21:50.903Z"
         }
       ]
     }
