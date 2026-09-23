@@ -4,7 +4,7 @@
     "slug": "counting",
     "name": "Counting"
   },
-  "updatedAt": "2026-09-23T09:51:04.992Z",
+  "updatedAt": "2026-09-23T15:25:38.178Z",
   "problems": [
     {
       "frontendId": "169",
@@ -22,7 +22,7 @@
           "filename": "0169-majority-element.java",
           "path": "problems/0169-majority-element/0169-majority-element.java",
           "sha": "95018988571176e67416ef239845fd5bd361d1db",
-          "lastSyncedAt": "2026-09-23T09:51:04.992Z"
+          "lastSyncedAt": "2026-09-23T15:25:38.178Z"
         }
       ]
     }
