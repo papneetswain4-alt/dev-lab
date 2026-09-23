@@ -4,7 +4,7 @@
     "slug": "recursion",
     "name": "Recursion"
   },
-  "updatedAt": "2026-09-23T15:23:01.539Z",
+  "updatedAt": "2026-09-23T15:23:10.143Z",
   "problems": [
     {
       "frontendId": "2",
@@ -62,7 +62,7 @@
           "filename": "0025-reverse-nodes-in-k-group.java",
           "path": "problems/0025-reverse-nodes-in-k-group/0025-reverse-nodes-in-k-group.java",
           "sha": "79d2059d3b0158ff4f8fa4e5ba848783d67f5c2c",
-          "lastSyncedAt": "2026-09-23T09:46:57.153Z"
+          "lastSyncedAt": "2026-09-23T15:23:10.143Z"
         }
       ]
     },
