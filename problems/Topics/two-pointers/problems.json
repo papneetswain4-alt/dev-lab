@@ -4,7 +4,7 @@
     "slug": "two-pointers",
     "name": "Two Pointers"
   },
-  "updatedAt": "2026-09-23T09:47:59.590Z",
+  "updatedAt": "2026-09-23T09:50:18.399Z",
   "problems": [
     {
       "frontendId": "19",
@@ -103,6 +103,26 @@
           "path": "problems/0234-palindrome-linked-list/0234-palindrome-linked-list.java",
           "sha": "10b4b7e2efe68dfd0ad08713143364be83eab8ea",
           "lastSyncedAt": "2026-09-23T09:46:39.473Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "876",
+      "title": "Middle of the Linked List",
+      "slug": "middle-of-the-linked-list",
+      "problemName": "0876-middle-of-the-linked-list",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/middle-of-the-linked-list/",
+      "folderPath": "problems/0876-middle-of-the-linked-list/",
+      "readmePath": "problems/0876-middle-of-the-linked-list/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0876-middle-of-the-linked-list.java",
+          "path": "problems/0876-middle-of-the-linked-list/0876-middle-of-the-linked-list.java",
+          "sha": "b89b8885363c08aa1d69f26bda598a2d49a7d012",
+          "lastSyncedAt": "2026-09-23T09:50:18.399Z"
         }
       ]
     }
