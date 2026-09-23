@@ -1,0 +1,759 @@
+[
+  {
+    "id": 1,
+    "frontendId": "1",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "problemName": "0001-two-sum",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/two-sum/",
+    "folderPath": "problems/0001-two-sum/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 2,
+    "frontendId": "2",
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "problemName": "0002-add-two-numbers",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Math",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/add-two-numbers/",
+    "folderPath": "problems/0002-add-two-numbers/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 4,
+    "frontendId": "4",
+    "title": "Median of Two Sorted Arrays",
+    "slug": "median-of-two-sorted-arrays",
+    "problemName": "0004-median-of-two-sorted-arrays",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Divide and Conquer"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "folderPath": "problems/0004-median-of-two-sorted-arrays/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 19,
+    "frontendId": "19",
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list",
+    "problemName": "0019-remove-nth-node-from-end-of-list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "folderPath": "problems/0019-remove-nth-node-from-end-of-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 21,
+    "frontendId": "21",
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "problemName": "0021-merge-two-sorted-lists",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "folderPath": "problems/0021-merge-two-sorted-lists/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 25,
+    "frontendId": "25",
+    "title": "Reverse Nodes in k-Group",
+    "slug": "reverse-nodes-in-k-group",
+    "problemName": "0025-reverse-nodes-in-k-group",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "folderPath": "problems/0025-reverse-nodes-in-k-group/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 31,
+    "frontendId": "31",
+    "title": "Next Permutation",
+    "slug": "next-permutation",
+    "problemName": "0031-next-permutation",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/next-permutation/",
+    "folderPath": "problems/0031-next-permutation/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 48,
+    "frontendId": "48",
+    "title": "Rotate Image",
+    "slug": "rotate-image",
+    "problemName": "0048-rotate-image",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math",
+      "Matrix"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-image/",
+    "folderPath": "problems/0048-rotate-image/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 50,
+    "frontendId": "50",
+    "title": "Pow(x, n)",
+    "slug": "powx-n",
+    "problemName": "0050-powx-n",
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/powx-n/",
+    "folderPath": "problems/0050-powx-n/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 53,
+    "frontendId": "53",
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray",
+    "problemName": "0053-maximum-subarray",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Divide and Conquer",
+      "Dynamic Programming"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/",
+    "folderPath": "problems/0053-maximum-subarray/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 56,
+    "frontendId": "56",
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "problemName": "0056-merge-intervals",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Quicksort",
+      "Sorting"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/merge-intervals/",
+    "folderPath": "problems/0056-merge-intervals/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 61,
+    "frontendId": "61",
+    "title": "Rotate List",
+    "slug": "rotate-list",
+    "problemName": "0061-rotate-list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-list/",
+    "folderPath": "problems/0061-rotate-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 62,
+    "frontendId": "62",
+    "title": "Unique Paths",
+    "slug": "unique-paths",
+    "problemName": "0062-unique-paths",
+    "difficulty": "Medium",
+    "topics": [
+      "Combinatorics",
+      "Dynamic Programming",
+      "Math"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/unique-paths/",
+    "folderPath": "problems/0062-unique-paths/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 73,
+    "frontendId": "73",
+    "title": "Set Matrix Zeroes",
+    "slug": "set-matrix-zeroes",
+    "problemName": "0073-set-matrix-zeroes",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Matrix"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/set-matrix-zeroes/",
+    "folderPath": "problems/0073-set-matrix-zeroes/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 74,
+    "frontendId": "74",
+    "title": "Search a 2D Matrix",
+    "slug": "search-a-2d-matrix",
+    "problemName": "0074-search-a-2d-matrix",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Matrix"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "folderPath": "problems/0074-search-a-2d-matrix/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 75,
+    "frontendId": "75",
+    "title": "Sort Colors",
+    "slug": "sort-colors",
+    "problemName": "0075-sort-colors",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Bubble Sort",
+      "Quicksort",
+      "Sorting",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/sort-colors/",
+    "folderPath": "problems/0075-sort-colors/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 88,
+    "frontendId": "88",
+    "title": "Merge Sorted Array",
+    "slug": "merge-sorted-array",
+    "problemName": "0088-merge-sorted-array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Sorting",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/merge-sorted-array/",
+    "folderPath": "problems/0088-merge-sorted-array/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 118,
+    "frontendId": "118",
+    "title": "Pascal's Triangle",
+    "slug": "pascals-triangle",
+    "problemName": "0118-pascals-triangle",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/pascals-triangle/",
+    "folderPath": "problems/0118-pascals-triangle/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 121,
+    "frontendId": "121",
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "problemName": "0121-best-time-to-buy-and-sell-stock",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "folderPath": "problems/0121-best-time-to-buy-and-sell-stock/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 141,
+    "frontendId": "141",
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "problemName": "0141-linked-list-cycle",
+    "difficulty": "Easy",
+    "topics": [
+      "Floyd's Cycle Finding Algorithm",
+      "Hash Table",
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/",
+    "folderPath": "problems/0141-linked-list-cycle/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 160,
+    "frontendId": "160",
+    "title": "Intersection of Two Linked Lists",
+    "slug": "intersection-of-two-linked-lists",
+    "problemName": "0160-intersection-of-two-linked-lists",
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table",
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+    "folderPath": "problems/0160-intersection-of-two-linked-lists/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 169,
+    "frontendId": "169",
+    "title": "Majority Element",
+    "slug": "majority-element",
+    "problemName": "0169-majority-element",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Boyer–Moore Majority Vote Algorithm",
+      "Counting",
+      "Divide and Conquer",
+      "Hash Table",
+      "Sorting"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/majority-element/",
+    "folderPath": "problems/0169-majority-element/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 206,
+    "frontendId": "206",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "problemName": "0206-reverse-linked-list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/",
+    "folderPath": "problems/0206-reverse-linked-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 234,
+    "frontendId": "234",
+    "title": "Palindrome Linked List",
+    "slug": "palindrome-linked-list",
+    "problemName": "0234-palindrome-linked-list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Recursion",
+      "Stack",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/palindrome-linked-list/",
+    "folderPath": "problems/0234-palindrome-linked-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 237,
+    "frontendId": "237",
+    "title": "Delete Node in a Linked List",
+    "slug": "delete-node-in-a-linked-list",
+    "problemName": "0237-delete-node-in-a-linked-list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+    "folderPath": "problems/0237-delete-node-in-a-linked-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 287,
+    "frontendId": "287",
+    "title": "Find the Duplicate Number",
+    "slug": "find-the-duplicate-number",
+    "problemName": "0287-find-the-duplicate-number",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Bit Manipulation",
+      "Floyd's Cycle Finding Algorithm",
+      "Pigeonhole Principle",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "folderPath": "problems/0287-find-the-duplicate-number/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 448,
+    "frontendId": "448",
+    "title": "Find All Numbers Disappeared in an Array",
+    "slug": "find-all-numbers-disappeared-in-an-array",
+    "problemName": "0448-find-all-numbers-disappeared-in-an-array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/",
+    "folderPath": "problems/0448-find-all-numbers-disappeared-in-an-array/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 485,
+    "frontendId": "485",
+    "title": "Max Consecutive Ones",
+    "slug": "max-consecutive-ones",
+    "problemName": "0485-max-consecutive-ones",
+    "difficulty": "Easy",
+    "topics": [
+      "Array"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones/",
+    "folderPath": "problems/0485-max-consecutive-ones/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 645,
+    "frontendId": "645",
+    "title": "Set Mismatch",
+    "slug": "set-mismatch",
+    "problemName": "0645-set-mismatch",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Bit Manipulation",
+      "Hash Table",
+      "Sorting"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/set-mismatch/",
+    "folderPath": "problems/0645-set-mismatch/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 876,
+    "frontendId": "876",
+    "title": "Middle of the Linked List",
+    "slug": "middle-of-the-linked-list",
+    "problemName": "0876-middle-of-the-linked-list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/middle-of-the-linked-list/",
+    "folderPath": "problems/0876-middle-of-the-linked-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1018,
+    "frontendId": "1018",
+    "title": "Binary Prefix Divisible By 5",
+    "slug": "binary-prefix-divisible-by-5",
+    "problemName": "1018-binary-prefix-divisible-by-5",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Bit Manipulation"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/binary-prefix-divisible-by-5/",
+    "folderPath": "problems/1018-binary-prefix-divisible-by-5/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1365,
+    "frontendId": "1365",
+    "title": "How Many Numbers Are Smaller Than the Current Number",
+    "slug": "how-many-numbers-are-smaller-than-the-current-number",
+    "problemName": "1365-how-many-numbers-are-smaller-than-the-current-number",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Counting Sort",
+      "Hash Table",
+      "Sorting"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/",
+    "folderPath": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1441,
+    "frontendId": "1441",
+    "title": "Build an Array With Stack Operations",
+    "slug": "build-an-array-with-stack-operations",
+    "problemName": "1441-build-an-array-with-stack-operations",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Simulation",
+      "Stack"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/build-an-array-with-stack-operations/",
+    "folderPath": "problems/1441-build-an-array-with-stack-operations/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1470,
+    "frontendId": "1470",
+    "title": "Shuffle the Array",
+    "slug": "shuffle-the-array",
+    "problemName": "1470-shuffle-the-array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/shuffle-the-array/",
+    "folderPath": "problems/1470-shuffle-the-array/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1477,
+    "frontendId": "1477",
+    "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
+    "slug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
+    "problemName": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Dynamic Programming",
+      "Hash Table",
+      "Sliding Window"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+    "folderPath": "problems/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1621,
+    "frontendId": "1621",
+    "title": "Number of Sets of K Non-Overlapping Line Segments",
+    "slug": "number-of-sets-of-k-non-overlapping-line-segments",
+    "problemName": "1621-number-of-sets-of-k-non-overlapping-line-segments",
+    "difficulty": "Medium",
+    "topics": [
+      "Combinatorics",
+      "Dynamic Programming",
+      "Math",
+      "Prefix Sum"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/",
+    "folderPath": "problems/1621-number-of-sets-of-k-non-overlapping-line-segments/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1658,
+    "frontendId": "1658",
+    "title": "Minimum Operations to Reduce X to Zero",
+    "slug": "minimum-operations-to-reduce-x-to-zero",
+    "problemName": "1658-minimum-operations-to-reduce-x-to-zero",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Hash Table",
+      "Prefix Sum",
+      "Sliding Window"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/",
+    "folderPath": "problems/1658-minimum-operations-to-reduce-x-to-zero/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1929,
+    "frontendId": "1929",
+    "title": "Concatenation of Array",
+    "slug": "concatenation-of-array",
+    "problemName": "1929-concatenation-of-array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Simulation"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/concatenation-of-array/",
+    "folderPath": "problems/1929-concatenation-of-array/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 2965,
+    "frontendId": "2965",
+    "title": "Find Missing and Repeated Values",
+    "slug": "find-missing-and-repeated-values",
+    "problemName": "2965-find-missing-and-repeated-values",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Matrix"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/find-missing-and-repeated-values/",
+    "folderPath": "problems/2965-find-missing-and-repeated-values/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 3498,
+    "frontendId": "3498",
+    "title": "Reverse Degree of a String",
+    "slug": "reverse-degree-of-a-string",
+    "problemName": "3498-reverse-degree-of-a-string",
+    "difficulty": "Easy",
+    "topics": [
+      "Simulation",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+    "folderPath": "problems/3498-reverse-degree-of-a-string/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  }
+]

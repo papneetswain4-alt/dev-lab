@@ -1,0 +1,120 @@
+{
+  "total": 40,
+  "easy": 20,
+  "medium": 18,
+  "hard": 2,
+  "currentStreak": 1,
+  "bestStreak": 3,
+  "activeDays": 25,
+  "activity": [
+    {
+      "date": "2025-11-14",
+      "count": 1
+    },
+    {
+      "date": "2025-11-16",
+      "count": 3
+    },
+    {
+      "date": "2025-11-17",
+      "count": 4
+    },
+    {
+      "date": "2025-11-24",
+      "count": 1
+    },
+    {
+      "date": "2026-02-13",
+      "count": 1
+    },
+    {
+      "date": "2026-02-16",
+      "count": 1
+    },
+    {
+      "date": "2026-04-15",
+      "count": 4
+    },
+    {
+      "date": "2026-04-16",
+      "count": 3
+    },
+    {
+      "date": "2026-04-17",
+      "count": 1
+    },
+    {
+      "date": "2026-07-04",
+      "count": 1
+    },
+    {
+      "date": "2026-09-16",
+      "count": 1
+    },
+    {
+      "date": "2026-09-17",
+      "count": 1
+    },
+    {
+      "date": "2026-09-18",
+      "count": 1
+    },
+    {
+      "date": "2026-09-23",
+      "count": 2
+    }
+  ],
+  "topTags": [
+    {
+      "tag": "Array",
+      "count": 25,
+      "coverage": "63%"
+    },
+    {
+      "tag": "Hash Table",
+      "count": 11,
+      "coverage": "28%"
+    },
+    {
+      "tag": "Linked List",
+      "count": 11,
+      "coverage": "28%"
+    },
+    {
+      "tag": "Two Pointers",
+      "count": 10,
+      "coverage": "25%"
+    },
+    {
+      "tag": "Dynamic Programming",
+      "count": 6,
+      "coverage": "15%"
+    },
+    {
+      "tag": "Math",
+      "count": 6,
+      "coverage": "15%"
+    },
+    {
+      "tag": "Recursion",
+      "count": 6,
+      "coverage": "15%"
+    },
+    {
+      "tag": "Sorting",
+      "count": 6,
+      "coverage": "15%"
+    },
+    {
+      "tag": "Binary Search",
+      "count": 5,
+      "coverage": "13%"
+    },
+    {
+      "tag": "Matrix",
+      "count": 4,
+      "coverage": "10%"
+    }
+  ],
+  "updatedAt": "2026-09-23T20:29:53.474Z"
+}

@@ -1,0 +1,1538 @@
+{
+  "two-sum": {
+    "id": 1,
+    "frontendId": "1",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "problemName": "0001-two-sum",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/two-sum/",
+    "folderPath": "problems/0001-two-sum/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0001-two-sum/README.md",
+    "descriptionHtml": "<p>You are given an array of integers <code>nums</code>&nbsp;and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>\r\n\r\n<p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>\r\n\r\n<p>You can return the answer in any order.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [2,7,11,15], target = 9\r\n<strong>Output:</strong> [0,1]\r\n<strong>Explanation:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [3,2,4], target = 6\r\n<strong>Output:</strong> [1,2]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [3,3], target = 6\r\n<strong>Output:</strong> [0,1]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\r\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\r\n\t<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>\r\n\t<li><strong>Only one valid answer exists.</strong></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code><font face=\"monospace\">&nbsp;</font>time complexity?",
+    "examples": [
+      "<strong>Input:</strong> nums = [2,7,11,15], target = 9\r\n<strong>Output:</strong> [0,1]\r\n<strong>Explanation:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].",
+      "<strong>Input:</strong> nums = [3,2,4], target = 6\r\n<strong>Output:</strong> [1,2]",
+      "<strong>Input:</strong> nums = [3,3], target = 6\r\n<strong>Output:</strong> [0,1]"
+    ],
+    "constraints": [
+      "<code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code>",
+      "<code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code>",
+      "<code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code>",
+      "<strong>Only one valid answer exists.</strong>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0001-two-sum.java",
+        "path": "problems/0001-two-sum/0001-two-sum.java",
+        "code": "class Solution {\r\n    public int[] twoSum(int[] nums, int target) {\r\n        int result[] = new int[2];\r\n        for(int i=0;i<nums.length;i++){\r\n            for(int j=i+1;j<nums.length;j++) {\r\n               if(nums[i]+nums[j]==target){\r\n                   result [0]=i;\r\n                   result [1]=j;\r\n                   break;\r\n               } \r\n            }\r\n        }\r\n        return result;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "add-two-numbers": {
+    "id": 2,
+    "frontendId": "2",
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "problemName": "0002-add-two-numbers",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Math",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/add-two-numbers/",
+    "folderPath": "problems/0002-add-two-numbers/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0002-add-two-numbers/README.md",
+    "descriptionHtml": "<p>You are given two <strong>non-empty</strong> linked lists representing two non-negative integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes contains a single digit. Add the two numbers and return the sum&nbsp;as a linked list.</p>\r\n\r\n<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg\" style=\"width: 483px; height: 342px;\" />\r\n<pre>\r\n<strong>Input:</strong> l1 = [2,4,3], l2 = [5,6,4]\r\n<strong>Output:</strong> [7,0,8]\r\n<strong>Explanation:</strong> 342 + 465 = 807.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> l1 = [0], l2 = [0]\r\n<strong>Output:</strong> [0]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]\r\n<strong>Output:</strong> [8,9,9,9,0,0,0,1]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in each linked list is in the range <code>[1, 100]</code>.</li>\r\n\t<li><code>0 &lt;= Node.val &lt;= 9</code></li>\r\n\t<li>It is guaranteed that the list represents a number that does not have leading zeros.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> l1 = [2,4,3], l2 = [5,6,4]\r\n<strong>Output:</strong> [7,0,8]\r\n<strong>Explanation:</strong> 342 + 465 = 807.",
+      "<strong>Input:</strong> l1 = [0], l2 = [0]\r\n<strong>Output:</strong> [0]",
+      "<strong>Input:</strong> l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]\r\n<strong>Output:</strong> [8,9,9,9,0,0,0,1]"
+    ],
+    "constraints": [
+      "The number of nodes in each linked list is in the range <code>[1, 100]</code>.",
+      "<code>0 &lt;= Node.val &lt;= 9</code>",
+      "It is guaranteed that the list represents a number that does not have leading zeros."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0002-add-two-numbers.java",
+        "path": "problems/0002-add-two-numbers/0002-add-two-numbers.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {\r\n        ListNode p = l1;\r\n        ListNode q = l2;\r\n        ListNode prev = null;\r\n\r\n        int carry = 0;\r\n\r\n        while (p != null || q != null) {\r\n\r\n            int val1 = (p != null) ? p.val : 0;\r\n            int val2 = (q != null) ? q.val : 0;\r\n\r\n            int sum = val1 + val2 + carry;\r\n\r\n            int value = sum % 10;\r\n            carry = sum / 10;\r\n            \r\n            if (p != null) {\r\n                p.val = value;\r\n                prev = p;\r\n                p = p.next;\r\n            } else {\r\n                // l1 ended → attach new node\r\n                prev.next = new ListNode(value);\r\n                prev = prev.next;\r\n            }\r\n\r\n            if (q != null) q = q.next;\r\n        }\r\n\r\n        // leftover carry\r\n        if (carry != 0) {\r\n            prev.next = new ListNode(carry);\r\n        }\r\n\r\n        return l1;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "median-of-two-sorted-arrays": {
+    "id": 4,
+    "frontendId": "4",
+    "title": "Median of Two Sorted Arrays",
+    "slug": "median-of-two-sorted-arrays",
+    "problemName": "0004-median-of-two-sorted-arrays",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Divide and Conquer"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "folderPath": "problems/0004-median-of-two-sorted-arrays/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0004-median-of-two-sorted-arrays/README.md",
+    "descriptionHtml": "<p>Given two sorted arrays <code>nums1</code> and <code>nums2</code> of size <code>m</code> and <code>n</code> respectively, return <strong>the median</strong> of the two sorted arrays.</p>\r\n\r\n<p>The overall run time complexity should be <code>O(log (m+n))</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums1 = [1,3], nums2 = [2]\r\n<strong>Output:</strong> 2.00000\r\n<strong>Explanation:</strong> merged array = [1,2,3] and median is 2.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums1 = [1,2], nums2 = [3,4]\r\n<strong>Output:</strong> 2.50000\r\n<strong>Explanation:</strong> merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>nums1.length == m</code></li>\r\n\t<li><code>nums2.length == n</code></li>\r\n\t<li><code>0 &lt;= m &lt;= 1000</code></li>\r\n\t<li><code>0 &lt;= n &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= m + n &lt;= 2000</code></li>\r\n\t<li><code>-10<sup>6</sup> &lt;= nums1[i], nums2[i] &lt;= 10<sup>6</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums1 = [1,3], nums2 = [2]\r\n<strong>Output:</strong> 2.00000\r\n<strong>Explanation:</strong> merged array = [1,2,3] and median is 2.",
+      "<strong>Input:</strong> nums1 = [1,2], nums2 = [3,4]\r\n<strong>Output:</strong> 2.50000\r\n<strong>Explanation:</strong> merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5."
+    ],
+    "constraints": [
+      "<code>nums1.length == m</code>",
+      "<code>nums2.length == n</code>",
+      "<code>0 &lt;= m &lt;= 1000</code>",
+      "<code>0 &lt;= n &lt;= 1000</code>",
+      "<code>1 &lt;= m + n &lt;= 2000</code>",
+      "<code>-10<sup>6</sup> &lt;= nums1[i], nums2[i] &lt;= 10<sup>6</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0004-median-of-two-sorted-arrays.java",
+        "path": "problems/0004-median-of-two-sorted-arrays/0004-median-of-two-sorted-arrays.java",
+        "code": "class Solution {\r\n    public double findMedianSortedArrays(int[] nums1, int[] nums2) {\r\n        int n = nums1.length;\r\n        int m = nums2.length;\r\n        int[] mergeArray = new int[n+m];\r\n        int i = 0;\r\n        int j = 0;\r\n        for(int k = 0 ; k < (n+m) ; k++){\r\n            if (i == n) {\r\n                mergeArray[k] = nums2[j++];\r\n            } else if (j == m) {\r\n                mergeArray[k] = nums1[i++];\r\n            } else if (nums1[i] <= nums2[j]) {\r\n                mergeArray[k] = nums1[i++];\r\n            } else {\r\n                mergeArray[k] = nums2[j++];\r\n            }             \r\n        }\r\n        int mid = (n+m)/2;\r\n        if((n+m)%2==0){\r\n            return (double)(mergeArray[mid-1]+mergeArray[mid])/2;\r\n        }\r\n        return mergeArray[mid];\r\n    }\r\n}"
+      }
+    ]
+  },
+  "remove-nth-node-from-end-of-list": {
+    "id": 19,
+    "frontendId": "19",
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list",
+    "problemName": "0019-remove-nth-node-from-end-of-list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "folderPath": "problems/0019-remove-nth-node-from-end-of-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0019-remove-nth-node-from-end-of-list/README.md",
+    "descriptionHtml": "<p>Given the <code>head</code> of a linked list, remove the <code>n<sup>th</sup></code> node from the end of the list and return its head.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg\" style=\"width: 542px; height: 222px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2,3,4,5], n = 2\r\n<strong>Output:</strong> [1,2,3,5]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> head = [1], n = 1\r\n<strong>Output:</strong> []\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> head = [1,2], n = 1\r\n<strong>Output:</strong> [1]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the list is <code>sz</code>.</li>\r\n\t<li><code>1 &lt;= sz &lt;= 30</code></li>\r\n\t<li><code>0 &lt;= Node.val &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= n &lt;= sz</code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow up:</strong> Could you do this in one pass?</p>",
+    "examples": [
+      "<strong>Input:</strong> head = [1,2,3,4,5], n = 2\r\n<strong>Output:</strong> [1,2,3,5]",
+      "<strong>Input:</strong> head = [1], n = 1\r\n<strong>Output:</strong> []",
+      "<strong>Input:</strong> head = [1,2], n = 1\r\n<strong>Output:</strong> [1]"
+    ],
+    "constraints": [
+      "The number of nodes in the list is <code>sz</code>.",
+      "<code>1 &lt;= sz &lt;= 30</code>",
+      "<code>0 &lt;= Node.val &lt;= 100</code>",
+      "<code>1 &lt;= n &lt;= sz</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0019-remove-nth-node-from-end-of-list.java",
+        "path": "problems/0019-remove-nth-node-from-end-of-list/0019-remove-nth-node-from-end-of-list.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode removeNthFromEnd(ListNode head, int n) {\r\n       ListNode p = head,q = head;\r\n       for(int i = 0 ; i<n ; i++ ){\r\n        q=q.next;\r\n       }\r\n       if (q == null) {\r\n            return head.next;\r\n        }\r\n       while(q.next != null){\r\n        p=p.next;\r\n        q=q.next;\r\n       }\r\n\r\n       p.next = p.next.next ;\r\n       return head;\r\n\r\n\r\n    }\r\n}"
+      }
+    ]
+  },
+  "merge-two-sorted-lists": {
+    "id": 21,
+    "frontendId": "21",
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "problemName": "0021-merge-two-sorted-lists",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "folderPath": "problems/0021-merge-two-sorted-lists/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0021-merge-two-sorted-lists/README.md",
+    "descriptionHtml": "<p>You are given the heads of two sorted linked lists <code>list1</code> and <code>list2</code>.</p>\r\n\r\n<p>Merge the two lists into one <strong>sorted</strong> list. The list should be made by splicing together the nodes of the first two lists.</p>\r\n\r\n<p>Return <em>the head of the merged linked list</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg\" style=\"width: 662px; height: 302px;\" />\r\n<pre>\r\n<strong>Input:</strong> list1 = [1,2,4], list2 = [1,3,4]\r\n<strong>Output:</strong> [1,1,2,3,4,4]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> list1 = [], list2 = []\r\n<strong>Output:</strong> []\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> list1 = [], list2 = [0]\r\n<strong>Output:</strong> [0]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in both lists is in the range <code>[0, 50]</code>.</li>\r\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\r\n\t<li>Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> list1 = [1,2,4], list2 = [1,3,4]\r\n<strong>Output:</strong> [1,1,2,3,4,4]",
+      "<strong>Input:</strong> list1 = [], list2 = []\r\n<strong>Output:</strong> []",
+      "<strong>Input:</strong> list1 = [], list2 = [0]\r\n<strong>Output:</strong> [0]"
+    ],
+    "constraints": [
+      "The number of nodes in both lists is in the range <code>[0, 50]</code>.",
+      "<code>-100 &lt;= Node.val &lt;= 100</code>",
+      "Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0021-merge-two-sorted-lists.java",
+        "path": "problems/0021-merge-two-sorted-lists/0021-merge-two-sorted-lists.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode sortLists(ListNode head){\r\n        ListNode temp = head;\r\n        int i = 0;\r\n        int count = 0;\r\n        while(temp != null){\r\n            temp = temp.next ;\r\n            count++;\r\n        }\r\n        int arr[] = new int[count];\r\n        temp = head;\r\n        while(temp != null){\r\n            arr[i] = temp.val;\r\n            i++;\r\n            temp = temp.next;\r\n        }\r\n        Arrays.sort(arr);\r\n        i=0;\r\n        temp = head;\r\n        while(temp != null){\r\n            temp.val = arr[i];\r\n            i++;\r\n            temp = temp.next;\r\n        }\r\n        return head;  \r\n    }\r\n\r\n    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {\r\n        if (list1 == null) {\r\n            return list2;\r\n        }\r\n\r\n        ListNode p = list1;\r\n\r\n        while (p.next != null) {\r\n            p = p.next;\r\n        }\r\n\r\n        p.next = list2;\r\n\r\n        list1 = sortLists(list1);\r\n        return list1;\r\n\r\n        \r\n    }\r\n}"
+      }
+    ]
+  },
+  "reverse-nodes-in-k-group": {
+    "id": 25,
+    "frontendId": "25",
+    "title": "Reverse Nodes in k-Group",
+    "slug": "reverse-nodes-in-k-group",
+    "problemName": "0025-reverse-nodes-in-k-group",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "folderPath": "problems/0025-reverse-nodes-in-k-group/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0025-reverse-nodes-in-k-group/README.md",
+    "descriptionHtml": "<p>Given the <code>head</code> of a linked list, reverse the nodes of the list <code>k</code> at a time, and return <em>the modified list</em>.</p>\r\n\r\n<p><code>k</code> is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of <code>k</code> then left-out nodes, in the end, should remain as it is.</p>\r\n\r\n<p>You may not alter the values in the list&#39;s nodes, only nodes themselves may be changed.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg\" style=\"width: 542px; height: 222px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2,3,4,5], k = 2\r\n<strong>Output:</strong> [2,1,4,3,5]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/03/reverse_ex2.jpg\" style=\"width: 542px; height: 222px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2,3,4,5], k = 3\r\n<strong>Output:</strong> [3,2,1,4,5]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the list is <code>n</code>.</li>\r\n\t<li><code>1 &lt;= k &lt;= n &lt;= 5000</code></li>\r\n\t<li><code>0 &lt;= Node.val &lt;= 1000</code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow-up:</strong> Can you solve the problem in <code>O(1)</code> extra memory space?</p>",
+    "examples": [
+      "<strong>Input:</strong> head = [1,2,3,4,5], k = 2\r\n<strong>Output:</strong> [2,1,4,3,5]",
+      "<strong>Input:</strong> head = [1,2,3,4,5], k = 3\r\n<strong>Output:</strong> [3,2,1,4,5]"
+    ],
+    "constraints": [
+      "The number of nodes in the list is <code>n</code>.",
+      "<code>1 &lt;= k &lt;= n &lt;= 5000</code>",
+      "<code>0 &lt;= Node.val &lt;= 1000</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0025-reverse-nodes-in-k-group.java",
+        "path": "problems/0025-reverse-nodes-in-k-group/0025-reverse-nodes-in-k-group.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode reverse(ListNode head){\r\n        ListNode prv=null , nx , temp = head;\r\n        while(temp != null){\r\n            nx =  temp.next;\r\n            temp.next = prv;\r\n            prv = temp;\r\n            temp = nx;\r\n        }\r\n        return prv;\r\n    }\r\n    public ListNode findKthNode(ListNode head ,int k){\r\n        ListNode temp = head;\r\n        for(int i = 1 ; i<k ; i++){\r\n            temp = temp.next;\r\n            if (temp == null) break;\r\n        }\r\n        return temp;\r\n    }\r\n    \r\n\r\n    public ListNode reverseKGroup(ListNode head, int k) {\r\n        ListNode prv=null, kthNode, newHead , nx , temp = head ;\r\n        while(temp != null){\r\n            kthNode = findKthNode(temp , k);\r\n            if(kthNode == null){\r\n                if(prv!=null) prv.next = temp;\r\n                break;\r\n            }\r\n            nx = kthNode.next;\r\n            kthNode.next = null;\r\n            newHead = reverse(temp);\r\n            if(temp==head){\r\n                head = newHead;\r\n            }else{\r\n                if(prv!=null) prv.next = newHead;\r\n            }\r\n            prv = temp;\r\n            temp = nx;\r\n            \r\n        }\r\n    return head;\r\n\r\n    }\r\n}"
+      }
+    ]
+  },
+  "next-permutation": {
+    "id": 31,
+    "frontendId": "31",
+    "title": "Next Permutation",
+    "slug": "next-permutation",
+    "problemName": "0031-next-permutation",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/next-permutation/",
+    "folderPath": "problems/0031-next-permutation/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0031-next-permutation/README.md",
+    "descriptionHtml": "<p>A <strong>permutation</strong> of an array of integers is an arrangement of its members into a sequence or linear order.</p>\r\n\r\n<ul>\r\n\t<li>For example, for <code>arr = [1,2,3]</code>, the following are all the permutations of <code>arr</code>: <code>[1,2,3], [1,3,2], [2, 1, 3], [2, 3, 1], [3,1,2], [3,2,1]</code>.</li>\r\n</ul>\r\n\r\n<p>The <strong>next permutation</strong> of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the <strong>next permutation</strong> of that array is the permutation that follows it in the sorted container. If such arrangement is not possible, the array must be rearranged as the lowest possible order (i.e., sorted in ascending order).</p>\r\n\r\n<ul>\r\n\t<li>For example, the next permutation of <code>arr = [1,2,3]</code> is <code>[1,3,2]</code>.</li>\r\n\t<li>Similarly, the next permutation of <code>arr = [2,3,1]</code> is <code>[3,1,2]</code>.</li>\r\n\t<li>While the next permutation of <code>arr = [3,2,1]</code> is <code>[1,2,3]</code> because <code>[3,2,1]</code> does not have a lexicographical larger rearrangement.</li>\r\n</ul>\r\n\r\n<p>Given an array of integers <code>nums</code>, <em>find the next permutation of</em> <code>nums</code>.</p>\r\n\r\n<p>The replacement must be <strong><a href=\"http://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in place</a></strong> and use only constant extra memory.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,2,3]\r\n<strong>Output:</strong> [1,3,2]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [3,2,1]\r\n<strong>Output:</strong> [1,2,3]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,1,5]\r\n<strong>Output:</strong> [1,5,1]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\r\n\t<li><code>0 &lt;= nums[i] &lt;= 100</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [1,2,3]\r\n<strong>Output:</strong> [1,3,2]",
+      "<strong>Input:</strong> nums = [3,2,1]\r\n<strong>Output:</strong> [1,2,3]",
+      "<strong>Input:</strong> nums = [1,1,5]\r\n<strong>Output:</strong> [1,5,1]"
+    ],
+    "constraints": [
+      "<code>1 &lt;= nums.length &lt;= 100</code>",
+      "<code>0 &lt;= nums[i] &lt;= 100</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0031-next-permutation.java",
+        "path": "problems/0031-next-permutation/0031-next-permutation.java",
+        "code": "class Solution {\r\n    public void nextPermutation(int[] nums) {\r\n        int n = nums.length;\r\n        int index = -1;\r\n        for(int i=n-2;i>=0;i--){\r\n            if(nums[i]<nums[i+1]){\r\n                index = i;\r\n                break;\r\n            \r\n            }\r\n        }\r\n        int temp=0;\r\n        int l;\r\n        int r;\r\n        if(index == -1){\r\n            l=0;\r\n            r=n-1;\r\n            while(r>l){\r\n                temp=nums[l];\r\n                nums[l]=nums[r];\r\n                nums[r]=temp;\r\n                l++;\r\n                r--;\r\n            }\r\n            return;\r\n        }\r\n        for(int i=n-1;i>=0;i--){\r\n            if(nums[i]>nums[index]){\r\n                temp=nums[i];\r\n                nums[i]=nums[index];\r\n                nums[index]=temp;\r\n                break;\r\n            }\r\n        }\r\n        l=index+1;\r\n        r=n-1;\r\n        while(r>l){\r\n            temp=nums[l];\r\n            nums[l]=nums[r];\r\n            nums[r]=temp;\r\n            l++;\r\n            r--;\r\n        }\r\n    }\r\n}"
+      }
+    ]
+  },
+  "rotate-image": {
+    "id": 48,
+    "frontendId": "48",
+    "title": "Rotate Image",
+    "slug": "rotate-image",
+    "problemName": "0048-rotate-image",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Math",
+      "Matrix"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-image/",
+    "folderPath": "problems/0048-rotate-image/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0048-rotate-image/README.md",
+    "descriptionHtml": "<p>You are given an <code>n x n</code> 2D <code>matrix</code> representing an image, rotate the image by <strong>90</strong> degrees (clockwise).</p>\r\n\r\n<p>You have to rotate the image <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\"><strong>in-place</strong></a>, which means you have to modify the input 2D matrix directly. <strong>DO NOT</strong> allocate another 2D matrix and do the rotation.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg\" style=\"width: 500px; height: 188px;\" />\r\n<pre>\r\n<strong>Input:</strong> matrix = [[1,2,3],[4,5,6],[7,8,9]]\r\n<strong>Output:</strong> [[7,4,1],[8,5,2],[9,6,3]]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg\" style=\"width: 500px; height: 201px;\" />\r\n<pre>\r\n<strong>Input:</strong> matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]\r\n<strong>Output:</strong> [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>n == matrix.length == matrix[i].length</code></li>\r\n\t<li><code>1 &lt;= n &lt;= 20</code></li>\r\n\t<li><code>-1000 &lt;= matrix[i][j] &lt;= 1000</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> matrix = [[1,2,3],[4,5,6],[7,8,9]]\r\n<strong>Output:</strong> [[7,4,1],[8,5,2],[9,6,3]]",
+      "<strong>Input:</strong> matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]\r\n<strong>Output:</strong> [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]"
+    ],
+    "constraints": [
+      "<code>n == matrix.length == matrix[i].length</code>",
+      "<code>1 &lt;= n &lt;= 20</code>",
+      "<code>-1000 &lt;= matrix[i][j] &lt;= 1000</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0048-rotate-image.java",
+        "path": "problems/0048-rotate-image/0048-rotate-image.java",
+        "code": "class Solution {\r\n    public int[] revers(int[]arr){\r\n        int last=arr.length-1;\r\n        int first=0;\r\n        while(first<last){\r\n            arr[first]=arr[first]^arr[last];\r\n            arr[last]=arr[first]^arr[last];\r\n            arr[first]=arr[first]^arr[last];\r\n            first++;\r\n            last--;\r\n        }\r\n        return arr;\r\n    }\r\n    public void rotate(int[][] matrix) {\r\n        for(int i=0;i<matrix.length-1;i++){\r\n            for(int j=i+1;j<matrix.length;j++){\r\n                matrix[i][j]=matrix[i][j]^matrix[j][i];\r\n                matrix[j][i]=matrix[i][j]^matrix[j][i];\r\n                matrix[i][j]=matrix[i][j]^matrix[j][i];\r\n            }\r\n        }\r\n        for(int i=0;i<matrix.length;i++){\r\n           matrix[i]=revers(matrix[i]);\r\n        }\r\n    }\r\n}"
+      }
+    ]
+  },
+  "powx-n": {
+    "id": 50,
+    "frontendId": "50",
+    "title": "Pow(x, n)",
+    "slug": "powx-n",
+    "problemName": "0050-powx-n",
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/powx-n/",
+    "folderPath": "problems/0050-powx-n/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0050-powx-n/README.md",
+    "descriptionHtml": "<p>Implement <a href=\"http://www.cplusplus.com/reference/valarray/pow/\" target=\"_blank\">pow(x, n)</a>, which calculates <code>x</code> raised to the power <code>n</code> (i.e., <code>x<sup>n</sup></code>).</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> x = 2.00000, n = 10\r\n<strong>Output:</strong> 1024.00000\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> x = 2.10000, n = 3\r\n<strong>Output:</strong> 9.26100\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> x = 2.00000, n = -2\r\n<strong>Output:</strong> 0.25000\r\n<strong>Explanation:</strong> 2<sup>-2</sup> = 1/2<sup>2</sup> = 1/4 = 0.25\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>-100.0 &lt; x &lt; 100.0</code></li>\r\n\t<li><code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup>-1</code></li>\r\n\t<li><code>n</code> is an integer.</li>\r\n\t<li>Either <code>x</code> is not zero or <code>n &gt; 0</code>.</li>\r\n\t<li><code>-10<sup>4</sup> &lt;= x<sup>n</sup> &lt;= 10<sup>4</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> x = 2.00000, n = 10\r\n<strong>Output:</strong> 1024.00000",
+      "<strong>Input:</strong> x = 2.10000, n = 3\r\n<strong>Output:</strong> 9.26100",
+      "<strong>Input:</strong> x = 2.00000, n = -2\r\n<strong>Output:</strong> 0.25000\r\n<strong>Explanation:</strong> 2<sup>-2</sup> = 1/2<sup>2</sup> = 1/4 = 0.25"
+    ],
+    "constraints": [
+      "<code>-100.0 &lt; x &lt; 100.0</code>",
+      "<code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup>-1</code>",
+      "<code>n</code> is an integer.",
+      "Either <code>x</code> is not zero or <code>n &gt; 0</code>.",
+      "<code>-10<sup>4</sup> &lt;= x<sup>n</sup> &lt;= 10<sup>4</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0050-powx-n.java",
+        "path": "problems/0050-powx-n/0050-powx-n.java",
+        "code": "class Solution {\r\n    public double myPow(double x, int n) {\r\n        \r\n        return Math.pow(x,n);\r\n    }\r\n}"
+      }
+    ]
+  },
+  "maximum-subarray": {
+    "id": 53,
+    "frontendId": "53",
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray",
+    "problemName": "0053-maximum-subarray",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Divide and Conquer",
+      "Dynamic Programming"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/",
+    "folderPath": "problems/0053-maximum-subarray/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0053-maximum-subarray/README.md",
+    "descriptionHtml": "<p>Given an integer array <code>nums</code>, find the <span data-keyword=\"subarray-nonempty\">subarray</span> with the largest sum, and return <em>its sum</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [-2,1,-3,4,-1,2,1,-5,4]\r\n<strong>Output:</strong> 6\r\n<strong>Explanation:</strong> The subarray [4,-1,2,1] has the largest sum 6.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> The subarray [1] has the largest sum 1.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [5,4,-1,7,8]\r\n<strong>Output:</strong> 23\r\n<strong>Explanation:</strong> The subarray [5,4,-1,7,8] has the largest sum 23.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow up:</strong> If you have figured out the <code>O(n)</code> solution, try coding another solution using the <strong>divide and conquer</strong> approach, which is more subtle.</p>",
+    "examples": [
+      "<strong>Input:</strong> nums = [-2,1,-3,4,-1,2,1,-5,4]\r\n<strong>Output:</strong> 6\r\n<strong>Explanation:</strong> The subarray [4,-1,2,1] has the largest sum 6.",
+      "<strong>Input:</strong> nums = [1]\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> The subarray [1] has the largest sum 1.",
+      "<strong>Input:</strong> nums = [5,4,-1,7,8]\r\n<strong>Output:</strong> 23\r\n<strong>Explanation:</strong> The subarray [5,4,-1,7,8] has the largest sum 23."
+    ],
+    "constraints": [
+      "<code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code>",
+      "<code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0053-maximum-subarray.java",
+        "path": "problems/0053-maximum-subarray/0053-maximum-subarray.java",
+        "code": "class Solution {\r\n    public int maxSubArray(int[] nums) {\r\n        int sum = 0;\r\n        int max = Integer.MIN_VALUE; \r\n        for(int i = 0;i<nums.length;i++){\r\n            sum = Math.max(nums[i],sum+nums[i]);\r\n            max = Math.max(sum,max);\r\n        }\r\n        return max;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "merge-intervals": {
+    "id": 56,
+    "frontendId": "56",
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "problemName": "0056-merge-intervals",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Quicksort",
+      "Sorting"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/merge-intervals/",
+    "folderPath": "problems/0056-merge-intervals/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0056-merge-intervals/README.md",
+    "descriptionHtml": "<p>Given an array&nbsp;of <code>intervals</code>&nbsp;where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, merge all overlapping intervals, and return <em>an array of the non-overlapping intervals that cover all the intervals in the input</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> intervals = [[1,3],[2,6],[8,10],[15,18]]\r\n<strong>Output:</strong> [[1,6],[8,10],[15,18]]\r\n<strong>Explanation:</strong> Since intervals [1,3] and [2,6] overlap, merge them into [1,6].\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> intervals = [[1,4],[4,5]]\r\n<strong>Output:</strong> [[1,5]]\r\n<strong>Explanation:</strong> Intervals [1,4] and [4,5] are considered overlapping.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> intervals = [[4,7],[1,4]]\r\n<strong>Output:</strong> [[1,7]]\r\n<strong>Explanation:</strong> Intervals [1,4] and [4,7] are considered overlapping.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= intervals.length &lt;= 10<sup>4</sup></code></li>\r\n\t<li><code>intervals[i].length == 2</code></li>\r\n\t<li><code>0 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> intervals = [[1,3],[2,6],[8,10],[15,18]]\r\n<strong>Output:</strong> [[1,6],[8,10],[15,18]]\r\n<strong>Explanation:</strong> Since intervals [1,3] and [2,6] overlap, merge them into [1,6].",
+      "<strong>Input:</strong> intervals = [[1,4],[4,5]]\r\n<strong>Output:</strong> [[1,5]]\r\n<strong>Explanation:</strong> Intervals [1,4] and [4,5] are considered overlapping.",
+      "<strong>Input:</strong> intervals = [[4,7],[1,4]]\r\n<strong>Output:</strong> [[1,7]]\r\n<strong>Explanation:</strong> Intervals [1,4] and [4,7] are considered overlapping."
+    ],
+    "constraints": [
+      "<code>1 &lt;= intervals.length &lt;= 10<sup>4</sup></code>",
+      "<code>intervals[i].length == 2</code>",
+      "<code>0 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 10<sup>4</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0056-merge-intervals.java",
+        "path": "problems/0056-merge-intervals/0056-merge-intervals.java",
+        "code": "class Solution {\r\n    public int[][] merge(int[][] intervals) {\r\n\r\n        int temp[][] = new int[intervals.length][intervals[0].length];\r\n        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);\r\n\r\n        temp[0][0] = intervals[0][0];\r\n        temp[0][1] = intervals[0][1];\r\n        int id = 0;\r\n\r\n        for(int i = 1; i < intervals.length ; i++){\r\n            if(temp[id][1] >= intervals[i][0]){\r\n                temp[id][1] = Math.max(temp[id][1],intervals[i][1]);\r\n            }else{\r\n                id++;\r\n                temp[id][0] = intervals[i][0];\r\n                temp[id][1] = intervals[i][1];\r\n            }\r\n        }\r\n        int mergeArr[][] = new int[id+1][intervals[0].length];\r\n        for(int i = 0; i <= id ; i++){\r\n            mergeArr[i][0] = temp[i][0];\r\n            mergeArr[i][1] = temp[i][1];\r\n        }\r\n\r\n\r\n        \r\n        return mergeArr;\r\n        \r\n    }\r\n}"
+      }
+    ]
+  },
+  "rotate-list": {
+    "id": 61,
+    "frontendId": "61",
+    "title": "Rotate List",
+    "slug": "rotate-list",
+    "problemName": "0061-rotate-list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-list/",
+    "folderPath": "problems/0061-rotate-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0061-rotate-list/README.md",
+    "descriptionHtml": "<p>Given the <code>head</code> of a linked&nbsp;list, rotate the list to the right by <code>k</code> places.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/13/rotate1.jpg\" style=\"width: 450px; height: 191px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2,3,4,5], k = 2\r\n<strong>Output:</strong> [4,5,1,2,3]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/11/13/roate2.jpg\" style=\"width: 305px; height: 350px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [0,1,2], k = 4\r\n<strong>Output:</strong> [2,0,1]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the list is in the range <code>[0, 500]</code>.</li>\r\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\r\n\t<li><code>0 &lt;= k &lt;= 2 * 10<sup>9</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> head = [1,2,3,4,5], k = 2\r\n<strong>Output:</strong> [4,5,1,2,3]",
+      "<strong>Input:</strong> head = [0,1,2], k = 4\r\n<strong>Output:</strong> [2,0,1]"
+    ],
+    "constraints": [
+      "The number of nodes in the list is in the range <code>[0, 500]</code>.",
+      "<code>-100 &lt;= Node.val &lt;= 100</code>",
+      "<code>0 &lt;= k &lt;= 2 * 10<sup>9</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0061-rotate-list.java",
+        "path": "problems/0061-rotate-list/0061-rotate-list.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode rotateRight(ListNode head, int k) {\r\n        if (head == null || head.next == null || k == 0) {\r\n            return head;\r\n        }\r\n\r\n        \r\n        ListNode temp = head;\r\n        int len = 1;\r\n        while (temp.next != null) {\r\n            temp = temp.next;\r\n            len++;\r\n        }\r\n\r\n        \r\n        k = k % len;\r\n        if (k == 0) return head;\r\n\r\n       \r\n        temp.next = head;\r\n\r\n      \r\n        int steps = len - k;\r\n        ListNode newTail = head;\r\n        for (int i = 1; i < steps; i++) {\r\n            newTail = newTail.next;\r\n        }\r\n\r\n        ListNode newHead = newTail.next;\r\n        newTail.next = null;\r\n\r\n        return newHead;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "unique-paths": {
+    "id": 62,
+    "frontendId": "62",
+    "title": "Unique Paths",
+    "slug": "unique-paths",
+    "problemName": "0062-unique-paths",
+    "difficulty": "Medium",
+    "topics": [
+      "Combinatorics",
+      "Dynamic Programming",
+      "Math"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/unique-paths/",
+    "folderPath": "problems/0062-unique-paths/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0062-unique-paths/README.md",
+    "descriptionHtml": "<p>There is a robot on an <code>m x n</code> grid. The robot is initially located at the <strong>top-left corner</strong> (i.e., <code>grid[0][0]</code>). The robot tries to move to the <strong>bottom-right corner</strong> (i.e., <code>grid[m - 1][n - 1]</code>). The robot can only move either down or right at any point in time.</p>\r\n\r\n<p>Given the two integers <code>m</code> and <code>n</code>, return <em>the number of possible unique paths that the robot can take to reach the bottom-right corner</em>.</p>\r\n\r\n<p>The test cases are generated so that the answer will be less than or equal to <code>2 * 10<sup>9</sup></code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img src=\"https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png\" style=\"width: 400px; height: 183px;\" />\r\n<pre>\r\n<strong>Input:</strong> m = 3, n = 7\r\n<strong>Output:</strong> 28\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> m = 3, n = 2\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\r\n1. Right -&gt; Down -&gt; Down\r\n2. Down -&gt; Down -&gt; Right\r\n3. Down -&gt; Right -&gt; Down\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> m = 3, n = 7\r\n<strong>Output:</strong> 28",
+      "<strong>Input:</strong> m = 3, n = 2\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\r\n1. Right -&gt; Down -&gt; Down\r\n2. Down -&gt; Down -&gt; Right\r\n3. Down -&gt; Right -&gt; Down"
+    ],
+    "constraints": [
+      "<code>1 &lt;= m, n &lt;= 100</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0062-unique-paths.java",
+        "path": "problems/0062-unique-paths/0062-unique-paths.java",
+        "code": "class Solution {\r\n    public int uniquePaths(int m, int n) {\r\n        int N=m+n-2;\r\n        int R=n-1;\r\n        double ans=1;\r\n        for(int i=1;i<=R;i++){\r\n            ans=ans*(N-R+i)/i;\r\n        }\r\n        return (int)ans;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "set-matrix-zeroes": {
+    "id": 73,
+    "frontendId": "73",
+    "title": "Set Matrix Zeroes",
+    "slug": "set-matrix-zeroes",
+    "problemName": "0073-set-matrix-zeroes",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Matrix"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/set-matrix-zeroes/",
+    "folderPath": "problems/0073-set-matrix-zeroes/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0073-set-matrix-zeroes/README.md",
+    "descriptionHtml": "<p>Given an <code>m x n</code> integer matrix <code>matrix</code>, if an element is <code>0</code>, set its entire row and column to <code>0</code>&#39;s.</p>\r\n\r\n<p>You must do it <a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in place</a>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg\" style=\"width: 450px; height: 169px;\" />\r\n<pre>\r\n<strong>Input:</strong> matrix = [[1,1,1],[1,0,1],[1,1,1]]\r\n<strong>Output:</strong> [[1,0,1],[0,0,0],[1,0,1]]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg\" style=\"width: 450px; height: 137px;\" />\r\n<pre>\r\n<strong>Input:</strong> matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]\r\n<strong>Output:</strong> [[0,0,0,0],[0,4,5,0],[0,3,1,0]]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>m == matrix.length</code></li>\r\n\t<li><code>n == matrix[0].length</code></li>\r\n\t<li><code>1 &lt;= m, n &lt;= 200</code></li>\r\n\t<li><code>-2<sup>31</sup> &lt;= matrix[i][j] &lt;= 2<sup>31</sup> - 1</code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow up:</strong></p>\r\n\r\n<ul>\r\n\t<li>A straightforward solution using <code>O(mn)</code> space is probably a bad idea.</li>\r\n\t<li>A simple improvement uses <code>O(m + n)</code> space, but still not the best solution.</li>\r\n\t<li>Could you devise a constant space solution?</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> matrix = [[1,1,1],[1,0,1],[1,1,1]]\r\n<strong>Output:</strong> [[1,0,1],[0,0,0],[1,0,1]]",
+      "<strong>Input:</strong> matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]\r\n<strong>Output:</strong> [[0,0,0,0],[0,4,5,0],[0,3,1,0]]"
+    ],
+    "constraints": [
+      "<code>m == matrix.length</code>",
+      "<code>n == matrix[0].length</code>",
+      "<code>1 &lt;= m, n &lt;= 200</code>",
+      "<code>-2<sup>31</sup> &lt;= matrix[i][j] &lt;= 2<sup>31</sup> - 1</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0073-set-matrix-zeroes.java",
+        "path": "problems/0073-set-matrix-zeroes/0073-set-matrix-zeroes.java",
+        "code": "class Solution {\r\n    public void setZeroes(int[][] matrix) {\r\n        int n = matrix.length;\r\n        int m = matrix[0].length;\r\n        int col0=1;\r\n        for(int i=0;i<n;i++){\r\n            for(int j=0;j<m;j++){\r\n                if(matrix[i][j]==0){\r\n                    matrix[i][0]=0;\r\n                    if(j!=0){\r\n                        matrix[0][j]=0;\r\n                    }else{\r\n                        col0=0;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        for(int i=1;i<n;i++){\r\n            for(int j=1;j<m;j++){\r\n                if(matrix[i][j]!=0){\r\n                    if(matrix[i][0]==0||matrix[0][j]==0){\r\n                        matrix[i][j]=0;\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        if( matrix[0][0]==0){\r\n            for(int j=0;j<m;j++){\r\n                matrix[0][j]=0;\r\n            }\r\n        }\r\n        if(col0==0){\r\n            for(int i=0;i<n;i++){\r\n                matrix[i][0]=0;\r\n            }\r\n        }\r\n    }\r\n}"
+      }
+    ]
+  },
+  "search-a-2d-matrix": {
+    "id": 74,
+    "frontendId": "74",
+    "title": "Search a 2D Matrix",
+    "slug": "search-a-2d-matrix",
+    "problemName": "0074-search-a-2d-matrix",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Matrix"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "folderPath": "problems/0074-search-a-2d-matrix/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0074-search-a-2d-matrix/README.md",
+    "descriptionHtml": "<p>You are given an <code>m x n</code> integer matrix <code>matrix</code> with the following two properties:</p>\r\n\r\n<ul>\r\n\t<li>Each row is sorted in non-decreasing order.</li>\r\n\t<li>The first integer of each row is greater than the last integer of the previous row.</li>\r\n</ul>\r\n\r\n<p>Given an integer <code>target</code>, return <code>true</code> <em>if</em> <code>target</code> <em>is in</em> <code>matrix</code> <em>or</em> <code>false</code> <em>otherwise</em>.</p>\r\n\r\n<p>You must write a solution in <code>O(log(m * n))</code> time complexity.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/05/mat.jpg\" style=\"width: 322px; height: 242px;\" />\r\n<pre>\r\n<strong>Input:</strong> matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3\r\n<strong>Output:</strong> true\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/10/05/mat2.jpg\" style=\"width: 322px; height: 242px;\" />\r\n<pre>\r\n<strong>Input:</strong> matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13\r\n<strong>Output:</strong> false\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>m == matrix.length</code></li>\r\n\t<li><code>n == matrix[i].length</code></li>\r\n\t<li><code>1 &lt;= m, n &lt;= 100</code></li>\r\n\t<li><code>-10<sup>4</sup> &lt;= matrix[i][j], target &lt;= 10<sup>4</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3\r\n<strong>Output:</strong> true",
+      "<strong>Input:</strong> matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13\r\n<strong>Output:</strong> false"
+    ],
+    "constraints": [
+      "<code>m == matrix.length</code>",
+      "<code>n == matrix[i].length</code>",
+      "<code>1 &lt;= m, n &lt;= 100</code>",
+      "<code>-10<sup>4</sup> &lt;= matrix[i][j], target &lt;= 10<sup>4</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0074-search-a-2d-matrix.java",
+        "path": "problems/0074-search-a-2d-matrix/0074-search-a-2d-matrix.java",
+        "code": "class Solution {\r\n    public boolean searchMatrix(int[][] matrix, int target) {\r\n        int row = 0;\r\n        int col = matrix[0].length-1;\r\n        while(row < matrix.length && col >= 0){\r\n            if(matrix[row][col]==target){\r\n                return true;\r\n            }else if(matrix[row][col] > target){\r\n                col--;\r\n            }else{\r\n                row++;\r\n            }\r\n        }\r\n        return false;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "sort-colors": {
+    "id": 75,
+    "frontendId": "75",
+    "title": "Sort Colors",
+    "slug": "sort-colors",
+    "problemName": "0075-sort-colors",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Bubble Sort",
+      "Quicksort",
+      "Sorting",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/sort-colors/",
+    "folderPath": "problems/0075-sort-colors/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0075-sort-colors/README.md",
+    "descriptionHtml": "<p>You are given an array <code>nums</code> with <code>n</code> objects colored red, white, or blue, sort them <strong><a href=\"https://en.wikipedia.org/wiki/In-place_algorithm\" target=\"_blank\">in-place</a> </strong>so that objects of the same color are adjacent, with the colors in the order red, white, and blue.</p>\r\n\r\n<p>We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.</p>\r\n\r\n<p>You must solve this problem without using the library&#39;s sort function.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,0,2,1,1,0]</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">[0,0,1,1,2,2]</span></p>\r\n\r\n<p><strong>Explanation:</strong></p>\r\n\r\n<p>The array has two 0s, two 1s, and two 2s. Sorting them in-place places all 0s first, then all 1s, then all 2s.</p>\r\n</div>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [2,0,1]</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">[0,1,2]</span></p>\r\n\r\n<p><strong>Explanation:</strong></p>\r\n\r\n<p>The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2.</p>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>n == nums.length</code></li>\r\n\t<li><code>1 &lt;= n &lt;= 300</code></li>\r\n\t<li><code>nums[i]</code> is either 0, 1, or 2.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow up:</strong>&nbsp;Could you come up with a one-pass algorithm using only&nbsp;constant extra space?</p>",
+    "examples": [],
+    "constraints": [
+      "<code>n == nums.length</code>",
+      "<code>1 &lt;= n &lt;= 300</code>",
+      "<code>nums[i]</code> is either 0, 1, or 2."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0075-sort-colors.java",
+        "path": "problems/0075-sort-colors/0075-sort-colors.java",
+        "code": "class Solution {\r\n    public void sortColors(int[] nums) {\r\n        int temp=0;\r\n        for(int i=0;i<(nums.length)-1;i++){\r\n            for(int j=0;j<(nums.length)-1;j++){\r\n                if(nums[j]>nums[j+1]){\r\n                    temp=nums[j];\r\n                    nums[j]=nums[j+1];\r\n                    nums[j+1]=temp;\r\n                }\r\n            }\r\n        }\r\n    }\r\n}"
+      }
+    ]
+  },
+  "merge-sorted-array": {
+    "id": 88,
+    "frontendId": "88",
+    "title": "Merge Sorted Array",
+    "slug": "merge-sorted-array",
+    "problemName": "0088-merge-sorted-array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Sorting",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/merge-sorted-array/",
+    "folderPath": "problems/0088-merge-sorted-array/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0088-merge-sorted-array/README.md",
+    "descriptionHtml": "<p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>\r\n\r\n<p><strong>Merge</strong> <code>nums1</code> and <code>nums2</code> into a single array sorted in <strong>non-decreasing order</strong>.</p>\r\n\r\n<p>The final sorted array should not be returned by the function, but instead be <em>stored inside the array </em><code>nums1</code>. To accommodate this, <code>nums1</code> has a length of <code>m + n</code>, where the first <code>m</code> elements denote the elements that should be merged, and the last <code>n</code> elements are set to <code>0</code> and should be ignored. <code>nums2</code> has a length of <code>n</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3\r\n<strong>Output:</strong> [1,2,2,3,5,6]\r\n<strong>Explanation:</strong> The arrays we are merging are [1,2,3] and [2,5,6].\r\nThe result of the merge is [<u>1</u>,<u>2</u>,2,<u>3</u>,5,6] with the underlined elements coming from nums1.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums1 = [1], m = 1, nums2 = [], n = 0\r\n<strong>Output:</strong> [1]\r\n<strong>Explanation:</strong> The arrays we are merging are [1] and [].\r\nThe result of the merge is [1].\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums1 = [0], m = 0, nums2 = [1], n = 1\r\n<strong>Output:</strong> [1]\r\n<strong>Explanation:</strong> The arrays we are merging are [] and [1].\r\nThe result of the merge is [1].\r\nNote that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>nums1.length == m + n</code></li>\r\n\t<li><code>nums2.length == n</code></li>\r\n\t<li><code>0 &lt;= m, n &lt;= 200</code></li>\r\n\t<li><code>1 &lt;= m + n &lt;= 200</code></li>\r\n\t<li><code>-10<sup>9</sup> &lt;= nums1[i], nums2[j] &lt;= 10<sup>9</sup></code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow up: </strong>Can you come up with an algorithm that runs in <code>O(m + n)</code> time?</p>",
+    "examples": [
+      "<strong>Input:</strong> nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3\r\n<strong>Output:</strong> [1,2,2,3,5,6]\r\n<strong>Explanation:</strong> The arrays we are merging are [1,2,3] and [2,5,6].\r\nThe result of the merge is [<u>1</u>,<u>2</u>,2,<u>3</u>,5,6] with the underlined elements coming from nums1.",
+      "<strong>Input:</strong> nums1 = [1], m = 1, nums2 = [], n = 0\r\n<strong>Output:</strong> [1]\r\n<strong>Explanation:</strong> The arrays we are merging are [1] and [].\r\nThe result of the merge is [1].",
+      "<strong>Input:</strong> nums1 = [0], m = 0, nums2 = [1], n = 1\r\n<strong>Output:</strong> [1]\r\n<strong>Explanation:</strong> The arrays we are merging are [] and [1].\r\nThe result of the merge is [1].\r\nNote that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1."
+    ],
+    "constraints": [
+      "<code>nums1.length == m + n</code>",
+      "<code>nums2.length == n</code>",
+      "<code>0 &lt;= m, n &lt;= 200</code>",
+      "<code>1 &lt;= m + n &lt;= 200</code>",
+      "<code>-10<sup>9</sup> &lt;= nums1[i], nums2[j] &lt;= 10<sup>9</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0088-merge-sorted-array.java",
+        "path": "problems/0088-merge-sorted-array/0088-merge-sorted-array.java",
+        "code": "class Solution {\r\n    public int[] sort(int []arr){\r\n        for(int i=0;i<arr.length;i++){\r\n            for(int j=0;j<arr.length-1;j++){\r\n                if(arr[j]>arr[j+1]){\r\n                    arr[j]=arr[j]^arr[j+1];\r\n                    arr[j+1]=arr[j]^arr[j+1];\r\n                    arr[j]=arr[j]^arr[j+1];\r\n                }\r\n            }\r\n        }\r\n        return arr;\r\n    }\r\n    public void merge(int[] nums1, int m, int[] nums2, int n) {\r\n        for(int i=0;i<n;i++){\r\n            nums1[m+i]=nums2[i];\r\n        }\r\n        nums1=sort(nums1);\r\n    }\r\n}\r\n"
+      }
+    ]
+  },
+  "pascals-triangle": {
+    "id": 118,
+    "frontendId": "118",
+    "title": "Pascal's Triangle",
+    "slug": "pascals-triangle",
+    "problemName": "0118-pascals-triangle",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/pascals-triangle/",
+    "folderPath": "problems/0118-pascals-triangle/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0118-pascals-triangle/README.md",
+    "descriptionHtml": "<p>Given an integer <code>numRows</code>, return the first numRows of <strong>Pascal&#39;s triangle</strong>.</p>\r\n\r\n<p>In <strong>Pascal&#39;s triangle</strong>, each number is the sum of the two numbers directly above it as shown:</p>\r\n<img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif\" style=\"height:240px; width:260px\" />\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<pre><strong>Input:</strong> numRows = 5\r\n<strong>Output:</strong> [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]\r\n</pre><p><strong class=\"example\">Example 2:</strong></p>\r\n<pre><strong>Input:</strong> numRows = 1\r\n<strong>Output:</strong> [[1]]\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= numRows &lt;= 30</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> numRows = 5\r\n<strong>Output:</strong> [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]",
+      "<strong>Input:</strong> numRows = 1\r\n<strong>Output:</strong> [[1]]"
+    ],
+    "constraints": [
+      "<code>1 &lt;= numRows &lt;= 30</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0118-pascals-triangle.java",
+        "path": "problems/0118-pascals-triangle/0118-pascals-triangle.java",
+        "code": "class Solution {\r\n    public List<Integer> theRow(int num){\r\n        List<Integer> row = new ArrayList<>();\r\n        row.add(1);\r\n        int ans=1;\r\n        for(int i=1;i<num;i++){\r\n            ans=ans*(num-i);\r\n            ans=ans/i;\r\n            row.add(ans);\r\n        }\r\n        return row;\r\n    }\r\n    public List<List<Integer>> generate(int numRows) {\r\n        List<List<Integer>> triangle= new ArrayList<>();\r\n        for(int i=1;i<=numRows;i++){\r\n            triangle.add(theRow(i));\r\n        }\r\n        return triangle;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "best-time-to-buy-and-sell-stock": {
+    "id": 121,
+    "frontendId": "121",
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "problemName": "0121-best-time-to-buy-and-sell-stock",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "folderPath": "problems/0121-best-time-to-buy-and-sell-stock/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0121-best-time-to-buy-and-sell-stock/README.md",
+    "descriptionHtml": "<p>You are given an array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>\r\n\r\n<p>You want to maximize your profit by choosing a <strong>single day</strong> to buy one stock and choosing a <strong>different day in the future</strong> to sell that stock.</p>\r\n\r\n<p>Return <em>the maximum profit you can achieve from this transaction</em>. If you cannot achieve any profit, return <code>0</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> prices = [7,1,5,3,6,4]\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.\r\nNote that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> prices = [7,6,4,3,1]\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> In this case, no transactions are done and the max profit = 0.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> prices = [7,1,5,3,6,4]\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.\r\nNote that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.",
+      "<strong>Input:</strong> prices = [7,6,4,3,1]\r\n<strong>Output:</strong> 0\r\n<strong>Explanation:</strong> In this case, no transactions are done and the max profit = 0."
+    ],
+    "constraints": [
+      "<code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code>",
+      "<code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0121-best-time-to-buy-and-sell-stock.java",
+        "path": "problems/0121-best-time-to-buy-and-sell-stock/0121-best-time-to-buy-and-sell-stock.java",
+        "code": "class Solution {\r\n    public int maxProfit(int[] prices) {\r\n        int Mprofit=0;\r\n        int min=prices[0];\r\n\r\n        for(int item:prices){\r\n            if(item<min){\r\n                min=item;\r\n            }\r\n            if((item-min)>Mprofit){\r\n                Mprofit=item-min;\r\n            }\r\n        }\r\n        return Mprofit;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "linked-list-cycle": {
+    "id": 141,
+    "frontendId": "141",
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "problemName": "0141-linked-list-cycle",
+    "difficulty": "Easy",
+    "topics": [
+      "Floyd's Cycle Finding Algorithm",
+      "Hash Table",
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/",
+    "folderPath": "problems/0141-linked-list-cycle/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0141-linked-list-cycle/README.md",
+    "descriptionHtml": "<p>Given <code>head</code>, the head of a linked list, determine if the linked list has a cycle in it.</p>\r\n\r\n<p>There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the&nbsp;<code>next</code>&nbsp;pointer. Internally, <code>pos</code>&nbsp;is used to denote the index of the node that&nbsp;tail&#39;s&nbsp;<code>next</code>&nbsp;pointer is connected to.&nbsp;<strong>Note that&nbsp;<code>pos</code>&nbsp;is not passed as a parameter</strong>.</p>\r\n\r\n<p>Return&nbsp;<code>true</code><em> if there is a cycle in the linked list</em>. Otherwise, return <code>false</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png\" style=\"width: 300px; height: 97px; margin-top: 8px; margin-bottom: 8px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [3,2,0,-4], pos = 1\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png\" style=\"width: 141px; height: 74px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2], pos = 0\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> There is a cycle in the linked list, where the tail connects to the 0th node.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png\" style=\"width: 45px; height: 45px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1], pos = -1\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> There is no cycle in the linked list.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of the nodes in the list is in the range <code>[0, 10<sup>4</sup>]</code>.</li>\r\n\t<li><code>-10<sup>5</sup> &lt;= Node.val &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>pos</code> is <code>-1</code> or a <strong>valid index</strong> in the linked-list.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow up:</strong> Can you solve it using <code>O(1)</code> (i.e. constant) memory?</p>",
+    "examples": [
+      "<strong>Input:</strong> head = [3,2,0,-4], pos = 1\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).",
+      "<strong>Input:</strong> head = [1,2], pos = 0\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> There is a cycle in the linked list, where the tail connects to the 0th node.",
+      "<strong>Input:</strong> head = [1], pos = -1\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> There is no cycle in the linked list."
+    ],
+    "constraints": [
+      "The number of the nodes in the list is in the range <code>[0, 10<sup>4</sup>]</code>.",
+      "<code>-10<sup>5</sup> &lt;= Node.val &lt;= 10<sup>5</sup></code>",
+      "<code>pos</code> is <code>-1</code> or a <strong>valid index</strong> in the linked-list."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0141-linked-list-cycle.java",
+        "path": "problems/0141-linked-list-cycle/0141-linked-list-cycle.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode(int x) {\r\n *         val = x;\r\n *         next = null;\r\n *     }\r\n * }\r\n */\r\npublic class Solution {\r\n    public boolean hasCycle(ListNode head) {\r\n        ListNode slow = head;\r\n        ListNode fast = head;\r\n        while(fast != null && fast.next != null){\r\n           slow = slow.next;\r\n           fast = fast.next.next;\r\n           if(slow == fast) return true;\r\n        }\r\n        return false;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "intersection-of-two-linked-lists": {
+    "id": 160,
+    "frontendId": "160",
+    "title": "Intersection of Two Linked Lists",
+    "slug": "intersection-of-two-linked-lists",
+    "problemName": "0160-intersection-of-two-linked-lists",
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table",
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+    "folderPath": "problems/0160-intersection-of-two-linked-lists/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0160-intersection-of-two-linked-lists/README.md",
+    "descriptionHtml": "<p>Given the heads of two singly linked-lists <code>headA</code> and <code>headB</code>, return <em>the node at which the two lists intersect</em>. If the two linked lists have no intersection at all, return <code>null</code>.</p>\r\n\r\n<p>For example, the following two linked lists begin to intersect at node <code>c1</code>:</p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/05/160_statement.png\" style=\"width: 500px; height: 162px;\" />\r\n<p>The test cases are generated such that there are no cycles anywhere in the entire linked structure.</p>\r\n\r\n<p><strong>Note</strong> that the linked lists must <strong>retain their original structure</strong> after the function returns.</p>\r\n\r\n<p><strong>Custom Judge:</strong></p>\r\n\r\n<p>The inputs to the <strong>judge</strong> are given as follows (your program is <strong>not</strong> given these inputs):</p>\r\n\r\n<ul>\r\n\t<li><code>intersectVal</code> - The value of the node where the intersection occurs. This is <code>0</code> if there is no intersected node.</li>\r\n\t<li><code>listA</code> - The first linked list.</li>\r\n\t<li><code>listB</code> - The second linked list.</li>\r\n\t<li><code>skipA</code> - The number of nodes to skip ahead in <code>listA</code> (starting from the head) to get to the intersected node.</li>\r\n\t<li><code>skipB</code> - The number of nodes to skip ahead in <code>listB</code> (starting from the head) to get to the intersected node.</li>\r\n</ul>\r\n\r\n<p>The judge will then create the linked structure based on these inputs and pass the two heads, <code>headA</code> and <code>headB</code> to your program. If you correctly return the intersected node, then your solution will be <strong>accepted</strong>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/05/160_example_1_1.png\" style=\"width: 500px; height: 162px;\" />\r\n<pre>\r\n<strong>Input:</strong> intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3\r\n<strong>Output:</strong> Intersected at &#39;8&#39;\r\n<strong>Explanation:</strong> The intersected node&#39;s value is 8 (note that this must not be 0 if the two lists intersect).\r\nFrom the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,6,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B.\r\n- Note that the intersected node&#39;s value is not 1 because the nodes with value 1 in A and B (2<sup>nd</sup> node in A and 3<sup>rd</sup> node in B) are different node references. In other words, they point to two different locations in memory, while the nodes with value 8 in A and B (3<sup>rd</sup> node in A and 4<sup>th</sup> node in B) point to the same location in memory.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/05/160_example_2.png\" style=\"width: 500px; height: 194px;\" />\r\n<pre>\r\n<strong>Input:</strong> intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1\r\n<strong>Output:</strong> Intersected at &#39;2&#39;\r\n<strong>Explanation:</strong> The intersected node&#39;s value is 2 (note that this must not be 0 if the two lists intersect).\r\nFrom the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/05/160_example_3.png\" style=\"width: 300px; height: 189px;\" />\r\n<pre>\r\n<strong>Input:</strong> intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2\r\n<strong>Output:</strong> No intersection\r\n<strong>Explanation:</strong> From the head of A, it reads as [2,6,4]. From the head of B, it reads as [1,5]. Since the two lists do not intersect, intersectVal must be 0, while skipA and skipB can be arbitrary values.\r\nExplanation: The two lists do not intersect, so return null.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes of <code>listA</code> is in the <code>m</code>.</li>\r\n\t<li>The number of nodes of <code>listB</code> is in the <code>n</code>.</li>\r\n\t<li><code>1 &lt;= m, n &lt;= 3 * 10<sup>4</sup></code></li>\r\n\t<li><code>1 &lt;= Node.val &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>0 &lt;= skipA &lt;= m</code></li>\r\n\t<li><code>0 &lt;= skipB &lt;= n</code></li>\r\n\t<li><code>intersectVal</code> is <code>0</code> if <code>listA</code> and <code>listB</code> do not intersect.</li>\r\n\t<li><code>intersectVal == listA[skipA] == listB[skipB]</code> if <code>listA</code> and <code>listB</code> intersect.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<strong>Follow up:</strong> Could you write a solution that runs in <code>O(m + n)</code> time and use only <code>O(1)</code> memory?",
+    "examples": [
+      "<strong>Input:</strong> intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3\r\n<strong>Output:</strong> Intersected at &#39;8&#39;\r\n<strong>Explanation:</strong> The intersected node&#39;s value is 8 (note that this must not be 0 if the two lists intersect).\r\nFrom the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,6,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B.\r\n- Note that the intersected node&#39;s value is not 1 because the nodes with value 1 in A and B (2<sup>nd</sup> node in A and 3<sup>rd</sup> node in B) are different node references. In other words, they point to two different locations in memory, while the nodes with value 8 in A and B (3<sup>rd</sup> node in A and 4<sup>th</sup> node in B) point to the same location in memory.",
+      "<strong>Input:</strong> intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1\r\n<strong>Output:</strong> Intersected at &#39;2&#39;\r\n<strong>Explanation:</strong> The intersected node&#39;s value is 2 (note that this must not be 0 if the two lists intersect).\r\nFrom the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B.",
+      "<strong>Input:</strong> intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2\r\n<strong>Output:</strong> No intersection\r\n<strong>Explanation:</strong> From the head of A, it reads as [2,6,4]. From the head of B, it reads as [1,5]. Since the two lists do not intersect, intersectVal must be 0, while skipA and skipB can be arbitrary values.\r\nExplanation: The two lists do not intersect, so return null."
+    ],
+    "constraints": [
+      "The number of nodes of <code>listA</code> is in the <code>m</code>.",
+      "The number of nodes of <code>listB</code> is in the <code>n</code>.",
+      "<code>1 &lt;= m, n &lt;= 3 * 10<sup>4</sup></code>",
+      "<code>1 &lt;= Node.val &lt;= 10<sup>5</sup></code>",
+      "<code>0 &lt;= skipA &lt;= m</code>",
+      "<code>0 &lt;= skipB &lt;= n</code>",
+      "<code>intersectVal</code> is <code>0</code> if <code>listA</code> and <code>listB</code> do not intersect.",
+      "<code>intersectVal == listA[skipA] == listB[skipB]</code> if <code>listA</code> and <code>listB</code> intersect."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0160-intersection-of-two-linked-lists.java",
+        "path": "problems/0160-intersection-of-two-linked-lists/0160-intersection-of-two-linked-lists.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode(int x) {\r\n *         val = x;\r\n *         next = null;\r\n *     }\r\n * }\r\n */\r\npublic class Solution {\r\n    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {\r\n        if (headA == null || headB == null){\r\n            return null;\r\n        }\r\n        ListNode t1 = headA;\r\n        ListNode t2 = headB;\r\n\r\n        while(t1 != t2){\r\n           \r\n            t1 = t1.next;\r\n            t2 = t2.next;\r\n            if(t1==t2){ \r\n                return t1;\r\n            }\r\n            if(t1==null){\r\n                t1 = headB;\r\n            }\r\n            if(t2==null){\r\n                t2 = headA;\r\n            }\r\n        }\r\n        return t1;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "majority-element": {
+    "id": 169,
+    "frontendId": "169",
+    "title": "Majority Element",
+    "slug": "majority-element",
+    "problemName": "0169-majority-element",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Boyer–Moore Majority Vote Algorithm",
+      "Counting",
+      "Divide and Conquer",
+      "Hash Table",
+      "Sorting"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/majority-element/",
+    "folderPath": "problems/0169-majority-element/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0169-majority-element/README.md",
+    "descriptionHtml": "<p>Given an array <code>nums</code> of size <code>n</code>, return <em>the majority element</em>.</p>\r\n\r\n<p>The majority element is the element that appears more than <code>&lfloor;n / 2&rfloor;</code> times. You may assume that the majority element always exists in the array.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<pre><strong>Input:</strong> nums = [3,2,3]\r\n<strong>Output:</strong> 3\r\n</pre><p><strong class=\"example\">Example 2:</strong></p>\r\n<pre><strong>Input:</strong> nums = [2,2,1,1,1,2,2]\r\n<strong>Output:</strong> 2\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>n == nums.length</code></li>\r\n\t<li><code>1 &lt;= n &lt;= 5 * 10<sup>4</sup></code></li>\r\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>\r\n\t<li>The input is generated such that a majority element will exist in the array.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<strong>Follow-up:</strong> Could you solve the problem in linear time and in <code>O(1)</code> space?",
+    "examples": [
+      "<strong>Input:</strong> nums = [3,2,3]\r\n<strong>Output:</strong> 3",
+      "<strong>Input:</strong> nums = [2,2,1,1,1,2,2]\r\n<strong>Output:</strong> 2"
+    ],
+    "constraints": [
+      "<code>n == nums.length</code>",
+      "<code>1 &lt;= n &lt;= 5 * 10<sup>4</sup></code>",
+      "<code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code>",
+      "The input is generated such that a majority element will exist in the array."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0169-majority-element.java",
+        "path": "problems/0169-majority-element/0169-majority-element.java",
+        "code": "class Solution {\r\n    public int majorityElement(int[] nums) {\r\n        int count = 0, candidate = 0;\r\n        for (int num : nums) {\r\n            if (count == 0) {\r\n                candidate = num;\r\n            }\r\n            count += (num == candidate) ? 1 : -1;\r\n        }\r\n        return candidate;\r\n    }\r\n}\r\n"
+      }
+    ]
+  },
+  "reverse-linked-list": {
+    "id": 206,
+    "frontendId": "206",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "problemName": "0206-reverse-linked-list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/",
+    "folderPath": "problems/0206-reverse-linked-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0206-reverse-linked-list/README.md",
+    "descriptionHtml": "<p>Given the <code>head</code> of a singly linked list, reverse the list, and return <em>the reversed list</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg\" style=\"width: 542px; height: 222px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2,3,4,5]\r\n<strong>Output:</strong> [5,4,3,2,1]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg\" style=\"width: 182px; height: 222px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2]\r\n<strong>Output:</strong> [2,1]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> head = []\r\n<strong>Output:</strong> []\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the list is the range <code>[0, 5000]</code>.</li>\r\n\t<li><code>-5000 &lt;= Node.val &lt;= 5000</code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow up:</strong> A linked list can be reversed either iteratively or recursively. Could you implement both?</p>",
+    "examples": [
+      "<strong>Input:</strong> head = [1,2,3,4,5]\r\n<strong>Output:</strong> [5,4,3,2,1]",
+      "<strong>Input:</strong> head = [1,2]\r\n<strong>Output:</strong> [2,1]",
+      "<strong>Input:</strong> head = []\r\n<strong>Output:</strong> []"
+    ],
+    "constraints": [
+      "The number of nodes in the list is the range <code>[0, 5000]</code>.",
+      "<code>-5000 &lt;= Node.val &lt;= 5000</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0206-reverse-linked-list.java",
+        "path": "problems/0206-reverse-linked-list/0206-reverse-linked-list.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode reverseList(ListNode head) {\r\n        ListNode pv = null;\r\n        ListNode temp = head;\r\n        ListNode nt = null;\r\n        while(temp != null ){\r\n            nt = temp.next ;\r\n            temp.next = pv;\r\n            pv = temp;\r\n            temp = nt;\r\n        }\r\n        return pv;\r\n        \r\n\r\n    }\r\n}"
+      }
+    ]
+  },
+  "palindrome-linked-list": {
+    "id": 234,
+    "frontendId": "234",
+    "title": "Palindrome Linked List",
+    "slug": "palindrome-linked-list",
+    "problemName": "0234-palindrome-linked-list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Recursion",
+      "Stack",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/palindrome-linked-list/",
+    "folderPath": "problems/0234-palindrome-linked-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0234-palindrome-linked-list/README.md",
+    "descriptionHtml": "<p>Given the <code>head</code> of a singly linked list, return <code>true</code><em> if it is a </em><span data-keyword=\"palindrome-sequence\"><em>palindrome</em></span><em> or </em><code>false</code><em> otherwise</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg\" style=\"width: 422px; height: 62px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2,2,1]\r\n<strong>Output:</strong> true\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg\" style=\"width: 182px; height: 62px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2]\r\n<strong>Output:</strong> false\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the list is in the range <code>[1, 10<sup>5</sup>]</code>.</li>\r\n\t<li><code>0 &lt;= Node.val &lt;= 9</code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<strong>Follow up:</strong> Could you do it in <code>O(n)</code> time and <code>O(1)</code> space?",
+    "examples": [
+      "<strong>Input:</strong> head = [1,2,2,1]\r\n<strong>Output:</strong> true",
+      "<strong>Input:</strong> head = [1,2]\r\n<strong>Output:</strong> false"
+    ],
+    "constraints": [
+      "The number of nodes in the list is in the range <code>[1, 10<sup>5</sup>]</code>.",
+      "<code>0 &lt;= Node.val &lt;= 9</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0234-palindrome-linked-list.java",
+        "path": "problems/0234-palindrome-linked-list/0234-palindrome-linked-list.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode middleNode(ListNode head){\r\n        ListNode temp = head;\r\n        int count = 0;\r\n        while(temp != null){\r\n            temp = temp.next ;\r\n            count++;\r\n        }\r\n        temp = head;\r\n        \r\n        for(int i = 0; i< (count/2) ; i++ ){\r\n            temp = temp.next;\r\n        }\r\n        return temp;\r\n    }\r\n    public ListNode reverse(ListNode head) {\r\n        ListNode prv = null, nx, temp = head;\r\n        while (temp != null) {\r\n            nx = temp.next;\r\n            temp.next = prv;\r\n            prv = temp;\r\n            temp = nx;\r\n        }\r\n        return prv;\r\n    }\r\n    public boolean isPalindrome(ListNode head) {\r\n        ListNode reversehead, midnode , temp = head;\r\n        midnode = middleNode(temp);\r\n        reversehead = reverse(midnode);\r\n        ListNode temp2 = reversehead;\r\n        while(temp != midnode ){\r\n            if (temp2.val != temp.val){\r\n                return false;\r\n            }\r\n            temp = temp.next;\r\n            temp2 =temp2.next;\r\n        }\r\n        return true;\r\n        \r\n    }\r\n}"
+      }
+    ]
+  },
+  "delete-node-in-a-linked-list": {
+    "id": 237,
+    "frontendId": "237",
+    "title": "Delete Node in a Linked List",
+    "slug": "delete-node-in-a-linked-list",
+    "problemName": "0237-delete-node-in-a-linked-list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+    "folderPath": "problems/0237-delete-node-in-a-linked-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0237-delete-node-in-a-linked-list/README.md",
+    "descriptionHtml": "<p>There is a singly-linked list <code>head</code> and we want to delete a node <code>node</code> in it.</p>\r\n\r\n<p>You are given the node to be deleted <code>node</code>. You will <strong>not be given access</strong> to the first node of <code>head</code>.</p>\r\n\r\n<p>All the values of the linked list are <strong>unique</strong>, and it is guaranteed that the given node <code>node</code> is not the last node in the linked list.</p>\r\n\r\n<p>Delete the given node. Note that by deleting the node, we do not mean removing it from memory. We mean:</p>\r\n\r\n<ul>\r\n\t<li>The value of the given node should not exist in the linked list.</li>\r\n\t<li>The number of nodes in the linked list should decrease by one.</li>\r\n\t<li>All the values before <code>node</code> should be in the same order.</li>\r\n\t<li>All the values after <code>node</code> should be in the same order.</li>\r\n</ul>\r\n\r\n<p><strong>Custom testing:</strong></p>\r\n\r\n<ul>\r\n\t<li>For the input, you should provide the entire linked list <code>head</code> and the node to be given <code>node</code>. <code>node</code> should not be the last node of the list and should be an actual node in the list.</li>\r\n\t<li>We will build the linked list and pass the node to your function.</li>\r\n\t<li>The output will be the entire list after calling your function.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/09/01/node1.jpg\" style=\"width: 400px; height: 286px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [4,5,1,9], node = 5\r\n<strong>Output:</strong> [4,1,9]\r\n<strong>Explanation: </strong>You are given the second node with value 5, the linked list should become 4 -&gt; 1 -&gt; 9 after calling your function.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/09/01/node2.jpg\" style=\"width: 400px; height: 315px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [4,5,1,9], node = 1\r\n<strong>Output:</strong> [4,5,9]\r\n<strong>Explanation: </strong>You are given the third node with value 1, the linked list should become 4 -&gt; 5 -&gt; 9 after calling your function.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of the nodes in the given list is in the range <code>[2, 1000]</code>.</li>\r\n\t<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>\r\n\t<li>The value of each node in the list is <strong>unique</strong>.</li>\r\n\t<li>The <code>node</code> to be deleted is <strong>in the list</strong> and is <strong>not a tail</strong> node.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> head = [4,5,1,9], node = 5\r\n<strong>Output:</strong> [4,1,9]\r\n<strong>Explanation: </strong>You are given the second node with value 5, the linked list should become 4 -&gt; 1 -&gt; 9 after calling your function.",
+      "<strong>Input:</strong> head = [4,5,1,9], node = 1\r\n<strong>Output:</strong> [4,5,9]\r\n<strong>Explanation: </strong>You are given the third node with value 1, the linked list should become 4 -&gt; 5 -&gt; 9 after calling your function."
+    ],
+    "constraints": [
+      "The number of the nodes in the given list is in the range <code>[2, 1000]</code>.",
+      "<code>-1000 &lt;= Node.val &lt;= 1000</code>",
+      "The value of each node in the list is <strong>unique</strong>.",
+      "The <code>node</code> to be deleted is <strong>in the list</strong> and is <strong>not a tail</strong> node."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0237-delete-node-in-a-linked-list.java",
+        "path": "problems/0237-delete-node-in-a-linked-list/0237-delete-node-in-a-linked-list.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode(int x) { val = x; }\r\n * }\r\n */\r\nclass Solution {\r\n    public void deleteNode(ListNode node) {\r\n        node.val = node.next.val;\r\n        node.next = node.next.next;      \r\n    }\r\n}"
+      }
+    ]
+  },
+  "find-the-duplicate-number": {
+    "id": 287,
+    "frontendId": "287",
+    "title": "Find the Duplicate Number",
+    "slug": "find-the-duplicate-number",
+    "problemName": "0287-find-the-duplicate-number",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Bit Manipulation",
+      "Floyd's Cycle Finding Algorithm",
+      "Pigeonhole Principle",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "folderPath": "problems/0287-find-the-duplicate-number/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0287-find-the-duplicate-number/README.md",
+    "descriptionHtml": "<p>Given an array of integers <code>nums</code> containing&nbsp;<code>n + 1</code> integers where each integer is in the range <code>[1, n]</code> inclusive.</p>\r\n\r\n<p>There is only <strong>one repeated number</strong> in <code>nums</code>, return <em>this&nbsp;repeated&nbsp;number</em>.</p>\r\n\r\n<p>You must solve the problem <strong>without</strong> modifying the array <code>nums</code>&nbsp;and using only constant extra space.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,3,4,2,2]\r\n<strong>Output:</strong> 2\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [3,1,3,4,2]\r\n<strong>Output:</strong> 3\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [3,3,3,3,3]\r\n<strong>Output:</strong> 3</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>nums.length == n + 1</code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= n</code></li>\r\n\t<li>All the integers in <code>nums</code> appear only <strong>once</strong> except for <strong>precisely one integer</strong> which appears <strong>two or more</strong> times.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><b>Follow up:</b></p>\r\n\r\n<ul>\r\n\t<li>How can we prove that at least one duplicate number must exist in <code>nums</code>?</li>\r\n\t<li>Can you solve the problem in linear runtime complexity?</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [1,3,4,2,2]\r\n<strong>Output:</strong> 2",
+      "<strong>Input:</strong> nums = [3,1,3,4,2]\r\n<strong>Output:</strong> 3",
+      "<strong>Input:</strong> nums = [3,3,3,3,3]\r\n<strong>Output:</strong> 3"
+    ],
+    "constraints": [
+      "<code>1 &lt;= n &lt;= 10<sup>5</sup></code>",
+      "<code>nums.length == n + 1</code>",
+      "<code>1 &lt;= nums[i] &lt;= n</code>",
+      "All the integers in <code>nums</code> appear only <strong>once</strong> except for <strong>precisely one integer</strong> which appears <strong>two or more</strong> times."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0287-find-the-duplicate-number.java",
+        "path": "problems/0287-find-the-duplicate-number/0287-find-the-duplicate-number.java",
+        "code": "class Solution {\r\n    public int findDuplicate(int[] nums) {\r\n        Arrays.sort(nums);\r\n        for(int i=0;i<nums.length-1;i++){\r\n            if(nums[i]==nums[i+1]){\r\n                return nums[i];\r\n            }\r\n        }\r\n        return 0;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "find-all-numbers-disappeared-in-an-array": {
+    "id": 448,
+    "frontendId": "448",
+    "title": "Find All Numbers Disappeared in an Array",
+    "slug": "find-all-numbers-disappeared-in-an-array",
+    "problemName": "0448-find-all-numbers-disappeared-in-an-array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/",
+    "folderPath": "problems/0448-find-all-numbers-disappeared-in-an-array/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0448-find-all-numbers-disappeared-in-an-array/README.md",
+    "descriptionHtml": "<p>Given an array <code>nums</code> of <code>n</code> integers where <code>nums[i]</code> is in the range <code>[1, n]</code>, return <em>an array of all the integers in the range</em> <code>[1, n]</code> <em>that do not appear in</em> <code>nums</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<pre><strong>Input:</strong> nums = [4,3,2,7,8,2,3,1]\r\n<strong>Output:</strong> [5,6]\r\n</pre><p><strong class=\"example\">Example 2:</strong></p>\r\n<pre><strong>Input:</strong> nums = [1,1]\r\n<strong>Output:</strong> [2]\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>n == nums.length</code></li>\r\n\t<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= n</code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow up:</strong> Could you do it without extra space and in <code>O(n)</code> runtime? You may assume the returned list does not count as extra space.</p>",
+    "examples": [
+      "<strong>Input:</strong> nums = [4,3,2,7,8,2,3,1]\r\n<strong>Output:</strong> [5,6]",
+      "<strong>Input:</strong> nums = [1,1]\r\n<strong>Output:</strong> [2]"
+    ],
+    "constraints": [
+      "<code>n == nums.length</code>",
+      "<code>1 &lt;= n &lt;= 10<sup>5</sup></code>",
+      "<code>1 &lt;= nums[i] &lt;= n</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0448-find-all-numbers-disappeared-in-an-array.java",
+        "path": "problems/0448-find-all-numbers-disappeared-in-an-array/0448-find-all-numbers-disappeared-in-an-array.java",
+        "code": "class Solution {\r\n    public List<Integer> findDisappearedNumbers(int[] nums) {\r\n        int count[] = new int[nums.length];\r\n        List<Integer> result = new ArrayList<>();\r\n\r\n        for(int num:nums){\r\n            count[num-1]++;\r\n        }\r\n        \r\n        for(int i = 0 ; i<nums.length ; i++){\r\n            if(count[i] == 0){\r\n                result.add(i+1);\r\n            }\r\n        }\r\n        return result;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "max-consecutive-ones": {
+    "id": 485,
+    "frontendId": "485",
+    "title": "Max Consecutive Ones",
+    "slug": "max-consecutive-ones",
+    "problemName": "0485-max-consecutive-ones",
+    "difficulty": "Easy",
+    "topics": [
+      "Array"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones/",
+    "folderPath": "problems/0485-max-consecutive-ones/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0485-max-consecutive-ones/README.md",
+    "descriptionHtml": "<p>Given a binary array <code>nums</code>, return <em>the maximum number of consecutive </em><code>1</code><em>&#39;s in the array</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,1,0,1,1,1]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,0,1,1,0,1]\r\n<strong>Output:</strong> 2\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [1,1,0,1,1,1]\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3.",
+      "<strong>Input:</strong> nums = [1,0,1,1,0,1]\r\n<strong>Output:</strong> 2"
+    ],
+    "constraints": [
+      "<code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code>",
+      "<code>nums[i]</code> is either <code>0</code> or <code>1</code>."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0485-max-consecutive-ones.java",
+        "path": "problems/0485-max-consecutive-ones/0485-max-consecutive-ones.java",
+        "code": "class Solution {\r\n    public int findMaxConsecutiveOnes(int[] nums) {\r\n        int count = 0;\r\n        int max = 0;\r\n        for(int num : nums){\r\n            if(num == 1){   \r\n                count++;\r\n                max = Math.max(max,count);\r\n            }else{\r\n                count = 0;\r\n            }\r\n        }\r\n        return max;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "set-mismatch": {
+    "id": 645,
+    "frontendId": "645",
+    "title": "Set Mismatch",
+    "slug": "set-mismatch",
+    "problemName": "0645-set-mismatch",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Bit Manipulation",
+      "Hash Table",
+      "Sorting"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/set-mismatch/",
+    "folderPath": "problems/0645-set-mismatch/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0645-set-mismatch/README.md",
+    "descriptionHtml": "<p>You have a set of integers <code>s</code>, which originally contains all the numbers from <code>1</code> to <code>n</code>. Unfortunately, due to some error, one of the numbers in <code>s</code> got duplicated to another number in the set, which results in <strong>repetition of one</strong> number and <strong>loss of another</strong> number.</p>\r\n\r\n<p>You are given an integer array <code>nums</code> representing the data status of this set after the error.</p>\r\n\r\n<p>Find the number that occurs twice and the number that is missing and return <em>them in the form of an array</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<pre><strong>Input:</strong> nums = [1,2,2,4]\r\n<strong>Output:</strong> [2,3]\r\n</pre><p><strong class=\"example\">Example 2:</strong></p>\r\n<pre><strong>Input:</strong> nums = [1,1]\r\n<strong>Output:</strong> [1,2]\r\n</pre>\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [1,2,2,4]\r\n<strong>Output:</strong> [2,3]",
+      "<strong>Input:</strong> nums = [1,1]\r\n<strong>Output:</strong> [1,2]"
+    ],
+    "constraints": [
+      "<code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code>",
+      "<code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0645-set-mismatch.java",
+        "path": "problems/0645-set-mismatch/0645-set-mismatch.java",
+        "code": "class Solution {\r\n    public int[] findErrorNums(int[] nums) {\r\n      int count[] = new int[nums.length];\r\n      int repetition = 0;\r\n      int lost = 0;\r\n      for(int i = 0 ; i<nums.length ; i++){\r\n        count[nums[i]-1]++;\r\n      }\r\n      for(int i = 0 ; i<nums.length ; i++){\r\n        if(count[i] == 0){\r\n            lost = i+1; \r\n        }\r\n        if(count[i] == 2){\r\n            repetition = i+1; \r\n        }\r\n      }\r\n      return new int[]{repetition,lost};\r\n\r\n    }\r\n}"
+      }
+    ]
+  },
+  "middle-of-the-linked-list": {
+    "id": 876,
+    "frontendId": "876",
+    "title": "Middle of the Linked List",
+    "slug": "middle-of-the-linked-list",
+    "problemName": "0876-middle-of-the-linked-list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/middle-of-the-linked-list/",
+    "folderPath": "problems/0876-middle-of-the-linked-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0876-middle-of-the-linked-list/README.md",
+    "descriptionHtml": "<p>Given the <code>head</code> of a singly linked list, return <em>the middle node of the linked list</em>.</p>\r\n\r\n<p>If there are two middle nodes, return <strong>the second middle</strong> node.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/07/23/lc-midlist1.jpg\" style=\"width: 544px; height: 65px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2,3,4,5]\r\n<strong>Output:</strong> [3,4,5]\r\n<strong>Explanation:</strong> The middle node of the list is node 3.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/07/23/lc-midlist2.jpg\" style=\"width: 664px; height: 65px;\" />\r\n<pre>\r\n<strong>Input:</strong> head = [1,2,3,4,5,6]\r\n<strong>Output:</strong> [4,5,6]\r\n<strong>Explanation:</strong> Since the list has two middle nodes with values 3 and 4, we return the second one.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li>The number of nodes in the list is in the range <code>[1, 100]</code>.</li>\r\n\t<li><code>1 &lt;= Node.val &lt;= 100</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> head = [1,2,3,4,5]\r\n<strong>Output:</strong> [3,4,5]\r\n<strong>Explanation:</strong> The middle node of the list is node 3.",
+      "<strong>Input:</strong> head = [1,2,3,4,5,6]\r\n<strong>Output:</strong> [4,5,6]\r\n<strong>Explanation:</strong> Since the list has two middle nodes with values 3 and 4, we return the second one."
+    ],
+    "constraints": [
+      "The number of nodes in the list is in the range <code>[1, 100]</code>.",
+      "<code>1 &lt;= Node.val &lt;= 100</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0876-middle-of-the-linked-list.java",
+        "path": "problems/0876-middle-of-the-linked-list/0876-middle-of-the-linked-list.java",
+        "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode middleNode(ListNode head) {\r\n        ListNode p = head;\r\n        int count = 0;\r\n        while(p != null){\r\n            p = p.next ;\r\n            count++;\r\n        }\r\n        p = head;\r\n        \r\n        for(int i = 0; i< (count/2) ; i++ ){\r\n            p = p.next;\r\n        }\r\n        return p;\r\n        \r\n    }\r\n\r\n    \r\n}"
+      }
+    ]
+  },
+  "binary-prefix-divisible-by-5": {
+    "id": 1018,
+    "frontendId": "1018",
+    "title": "Binary Prefix Divisible By 5",
+    "slug": "binary-prefix-divisible-by-5",
+    "problemName": "1018-binary-prefix-divisible-by-5",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Bit Manipulation"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/binary-prefix-divisible-by-5/",
+    "folderPath": "problems/1018-binary-prefix-divisible-by-5/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1018-binary-prefix-divisible-by-5/README.md",
+    "descriptionHtml": "<p>You are given a binary array <code>nums</code> (<strong>0-indexed</strong>).</p>\r\n\r\n<p>We define <code>x<sub>i</sub></code> as the number whose binary representation is the subarray <code>nums[0..i]</code> (from most-significant-bit to least-significant-bit).</p>\r\n\r\n<ul>\r\n\t<li>For example, if <code>nums = [1,0,1]</code>, then <code>x<sub>0</sub> = 1</code>, <code>x<sub>1</sub> = 2</code>, and <code>x<sub>2</sub> = 5</code>.</li>\r\n</ul>\r\n\r\n<p>Return <em>an array of booleans </em><code>answer</code><em> where </em><code>answer[i]</code><em> is </em><code>true</code><em> if </em><code>x<sub>i</sub></code><em> is divisible by </em><code>5</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [0,1,1]\r\n<strong>Output:</strong> [true,false,false]\r\n<strong>Explanation:</strong> The input numbers in binary are 0, 01, 011; which are 0, 1, and 3 in base-10.\r\nOnly the first number is divisible by 5, so answer[0] is true.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,1,1]\r\n<strong>Output:</strong> [false,false,false]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [0,1,1]\r\n<strong>Output:</strong> [true,false,false]\r\n<strong>Explanation:</strong> The input numbers in binary are 0, 01, 011; which are 0, 1, and 3 in base-10.\r\nOnly the first number is divisible by 5, so answer[0] is true.",
+      "<strong>Input:</strong> nums = [1,1,1]\r\n<strong>Output:</strong> [false,false,false]"
+    ],
+    "constraints": [
+      "<code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code>",
+      "<code>nums[i]</code> is either <code>0</code> or <code>1</code>."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1018-binary-prefix-divisible-by-5.java",
+        "path": "problems/1018-binary-prefix-divisible-by-5/1018-binary-prefix-divisible-by-5.java",
+        "code": "class Solution {\r\n    public List<Boolean> prefixesDivBy5(int[] nums) {\r\n        ArrayList<Boolean> answer = new ArrayList<>();\r\n        int current = 0;\r\n\r\n        for (int bit : nums) {\r\n            current = (current * 2 + bit) % 5;\r\n            answer.add(current == 0);\r\n        }\r\n        \r\n        return answer;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "how-many-numbers-are-smaller-than-the-current-number": {
+    "id": 1365,
+    "frontendId": "1365",
+    "title": "How Many Numbers Are Smaller Than the Current Number",
+    "slug": "how-many-numbers-are-smaller-than-the-current-number",
+    "problemName": "1365-how-many-numbers-are-smaller-than-the-current-number",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Counting Sort",
+      "Hash Table",
+      "Sorting"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/",
+    "folderPath": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/README.md",
+    "descriptionHtml": "<p>Given the array <code>nums</code>, for each <code>nums[i]</code> find out how many numbers in the array are smaller than it. That is, for each <code>nums[i]</code> you have to count the number of valid <code>j&#39;s</code>&nbsp;such that&nbsp;<code>j != i</code> <strong>and</strong> <code>nums[j] &lt; nums[i]</code>.</p>\r\n\r\n<p>Return the answer in an array.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [8,1,2,2,3]\r\n<strong>Output:</strong> [4,0,1,1,3]\r\n<strong>Explanation:</strong> \r\nFor nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3). \r\nFor nums[1]=1 does not exist any smaller number than it.\r\nFor nums[2]=2 there exist one smaller number than it (1). \r\nFor nums[3]=2 there exist one smaller number than it (1). \r\nFor nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [6,5,4,8]\r\n<strong>Output:</strong> [2,1,0,3]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [7,7,7,7]\r\n<strong>Output:</strong> [0,0,0,0]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>2 &lt;= nums.length &lt;= 500</code></li>\r\n\t<li><code>0 &lt;= nums[i] &lt;= 100</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [8,1,2,2,3]\r\n<strong>Output:</strong> [4,0,1,1,3]\r\n<strong>Explanation:</strong> \r\nFor nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3). \r\nFor nums[1]=1 does not exist any smaller number than it.\r\nFor nums[2]=2 there exist one smaller number than it (1). \r\nFor nums[3]=2 there exist one smaller number than it (1). \r\nFor nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).",
+      "<strong>Input:</strong> nums = [6,5,4,8]\r\n<strong>Output:</strong> [2,1,0,3]",
+      "<strong>Input:</strong> nums = [7,7,7,7]\r\n<strong>Output:</strong> [0,0,0,0]"
+    ],
+    "constraints": [
+      "<code>2 &lt;= nums.length &lt;= 500</code>",
+      "<code>0 &lt;= nums[i] &lt;= 100</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1365-how-many-numbers-are-smaller-than-the-current-number.java",
+        "path": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/1365-how-many-numbers-are-smaller-than-the-current-number.java",
+        "code": "class Solution {\r\n    public int[] smallerNumbersThanCurrent(int[] nums) {\r\n        int ans[] = new int [nums.length];\r\n        int count = 0;\r\n\r\n        for(int i = 0 ; i < nums.length ; i++){\r\n            count = 0;\r\n            for(int j = 0 ; j < nums.length ; j++){\r\n                if(i != j){\r\n                    if(nums[i] > nums[j]){\r\n                        count++;\r\n                    }\r\n                }\r\n            }\r\n            ans[i] = count; \r\n        }\r\n        return ans ;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "build-an-array-with-stack-operations": {
+    "id": 1441,
+    "frontendId": "1441",
+    "title": "Build an Array With Stack Operations",
+    "slug": "build-an-array-with-stack-operations",
+    "problemName": "1441-build-an-array-with-stack-operations",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Simulation",
+      "Stack"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/build-an-array-with-stack-operations/",
+    "folderPath": "problems/1441-build-an-array-with-stack-operations/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1441-build-an-array-with-stack-operations/README.md",
+    "descriptionHtml": "<p>You are given an integer array <code>target</code> and an integer <code>n</code>.</p>\r\n\r\n<p>You have an empty stack with the two following operations:</p>\r\n\r\n<ul>\r\n\t<li><strong><code>&quot;Push&quot;</code></strong>: pushes an integer to the top of the stack.</li>\r\n\t<li><strong><code>&quot;Pop&quot;</code></strong>: removes the integer on the top of the stack.</li>\r\n</ul>\r\n\r\n<p>You also have a stream of the integers in the range <code>[1, n]</code>.</p>\r\n\r\n<p>Use the two stack operations to make the numbers in the stack (from the bottom to the top) equal to <code>target</code>. You should follow the following rules:</p>\r\n\r\n<ul>\r\n\t<li>If the stream of the integers is not empty, pick the next integer from the stream and push it to the top of the stack.</li>\r\n\t<li>If the stack is not empty, pop the integer at the top of the stack.</li>\r\n\t<li>If, at any moment, the elements in the stack (from the bottom to the top) are equal to <code>target</code>, do not read new integers from the stream and do not do more operations on the stack.</li>\r\n</ul>\r\n\r\n<p>Return <em>the stack operations needed to build </em><code>target</code> following the mentioned rules. If there are multiple valid answers, return <strong>any of them</strong>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> target = [1,3], n = 3\r\n<strong>Output:</strong> [&quot;Push&quot;,&quot;Push&quot;,&quot;Pop&quot;,&quot;Push&quot;]\r\n<strong>Explanation:</strong> Initially the stack s is empty. The last element is the top of the stack.\r\nRead 1 from the stream and push it to the stack. s = [1].\r\nRead 2 from the stream and push it to the stack. s = [1,2].\r\nPop the integer on the top of the stack. s = [1].\r\nRead 3 from the stream and push it to the stack. s = [1,3].\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> target = [1,2,3], n = 3\r\n<strong>Output:</strong> [&quot;Push&quot;,&quot;Push&quot;,&quot;Push&quot;]\r\n<strong>Explanation:</strong> Initially the stack s is empty. The last element is the top of the stack.\r\nRead 1 from the stream and push it to the stack. s = [1].\r\nRead 2 from the stream and push it to the stack. s = [1,2].\r\nRead 3 from the stream and push it to the stack. s = [1,2,3].\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> target = [1,2], n = 4\r\n<strong>Output:</strong> [&quot;Push&quot;,&quot;Push&quot;]\r\n<strong>Explanation:</strong> Initially the stack s is empty. The last element is the top of the stack.\r\nRead 1 from the stream and push it to the stack. s = [1].\r\nRead 2 from the stream and push it to the stack. s = [1,2].\r\nSince the stack (from the bottom to the top) is equal to target, we stop the stack operations.\r\nThe answers that read integer 3 from the stream are not accepted.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= target.length &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= n &lt;= 100</code></li>\r\n\t<li><code>1 &lt;= target[i] &lt;= n</code></li>\r\n\t<li><code>target</code> is strictly increasing.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> target = [1,3], n = 3\r\n<strong>Output:</strong> [&quot;Push&quot;,&quot;Push&quot;,&quot;Pop&quot;,&quot;Push&quot;]\r\n<strong>Explanation:</strong> Initially the stack s is empty. The last element is the top of the stack.\r\nRead 1 from the stream and push it to the stack. s = [1].\r\nRead 2 from the stream and push it to the stack. s = [1,2].\r\nPop the integer on the top of the stack. s = [1].\r\nRead 3 from the stream and push it to the stack. s = [1,3].",
+      "<strong>Input:</strong> target = [1,2,3], n = 3\r\n<strong>Output:</strong> [&quot;Push&quot;,&quot;Push&quot;,&quot;Push&quot;]\r\n<strong>Explanation:</strong> Initially the stack s is empty. The last element is the top of the stack.\r\nRead 1 from the stream and push it to the stack. s = [1].\r\nRead 2 from the stream and push it to the stack. s = [1,2].\r\nRead 3 from the stream and push it to the stack. s = [1,2,3].",
+      "<strong>Input:</strong> target = [1,2], n = 4\r\n<strong>Output:</strong> [&quot;Push&quot;,&quot;Push&quot;]\r\n<strong>Explanation:</strong> Initially the stack s is empty. The last element is the top of the stack.\r\nRead 1 from the stream and push it to the stack. s = [1].\r\nRead 2 from the stream and push it to the stack. s = [1,2].\r\nSince the stack (from the bottom to the top) is equal to target, we stop the stack operations.\r\nThe answers that read integer 3 from the stream are not accepted."
+    ],
+    "constraints": [
+      "<code>1 &lt;= target.length &lt;= 100</code>",
+      "<code>1 &lt;= n &lt;= 100</code>",
+      "<code>1 &lt;= target[i] &lt;= n</code>",
+      "<code>target</code> is strictly increasing."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1441-build-an-array-with-stack-operations.java",
+        "path": "problems/1441-build-an-array-with-stack-operations/1441-build-an-array-with-stack-operations.java",
+        "code": "class Solution {\r\n    public List<String> buildArray(int[] target, int n) {\r\n        List<String> s = new ArrayList<>();\r\n        int i , j = 0 ;\r\n        for(i = 1 ; i <= n ; i++ ){\r\n            if(j==target.length) break;\r\n                s.add(\"Push\");\r\n                if(i == target[j] ){\r\n                    j++;\r\n                }else{\r\n                    s.add(\"Pop\");\r\n                }\r\n            \r\n        }\r\n        return s;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "shuffle-the-array": {
+    "id": 1470,
+    "frontendId": "1470",
+    "title": "Shuffle the Array",
+    "slug": "shuffle-the-array",
+    "problemName": "1470-shuffle-the-array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/shuffle-the-array/",
+    "folderPath": "problems/1470-shuffle-the-array/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1470-shuffle-the-array/README.md",
+    "descriptionHtml": "<p>Given the array <code>nums</code> consisting of <code>2n</code> elements in the form <code>[x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>,y<sub>1</sub>,y<sub>2</sub>,...,y<sub>n</sub>]</code>.</p>\r\n\r\n<p><em>Return the array in the form</em> <code>[x<sub>1</sub>,y<sub>1</sub>,x<sub>2</sub>,y<sub>2</sub>,...,x<sub>n</sub>,y<sub>n</sub>]</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [2,5,1,3,4,7], n = 3\r\n<strong>Output:</strong> [2,3,5,4,1,7] \r\n<strong>Explanation:</strong> Since x<sub>1</sub>=2, x<sub>2</sub>=5, x<sub>3</sub>=1, y<sub>1</sub>=3, y<sub>2</sub>=4, y<sub>3</sub>=7 then the answer is [2,3,5,4,1,7].\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,2,3,4,4,3,2,1], n = 4\r\n<strong>Output:</strong> [1,4,2,3,3,2,4,1]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,1,2,2], n = 2\r\n<strong>Output:</strong> [1,2,1,2]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= n &lt;= 500</code></li>\r\n\t<li><code>nums.length == 2n</code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= 10^3</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [2,5,1,3,4,7], n = 3\r\n<strong>Output:</strong> [2,3,5,4,1,7] \r\n<strong>Explanation:</strong> Since x<sub>1</sub>=2, x<sub>2</sub>=5, x<sub>3</sub>=1, y<sub>1</sub>=3, y<sub>2</sub>=4, y<sub>3</sub>=7 then the answer is [2,3,5,4,1,7].",
+      "<strong>Input:</strong> nums = [1,2,3,4,4,3,2,1], n = 4\r\n<strong>Output:</strong> [1,4,2,3,3,2,4,1]",
+      "<strong>Input:</strong> nums = [1,1,2,2], n = 2\r\n<strong>Output:</strong> [1,2,1,2]"
+    ],
+    "constraints": [
+      "<code>1 &lt;= n &lt;= 500</code>",
+      "<code>nums.length == 2n</code>",
+      "<code>1 &lt;= nums[i] &lt;= 10^3</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1470-shuffle-the-array.java",
+        "path": "problems/1470-shuffle-the-array/1470-shuffle-the-array.java",
+        "code": "class Solution {\r\n    public int[] shuffle(int[] nums, int n) {\r\n        int arr[] = new int[2 * n];\r\n        int r = 0;\r\n        int m = n;\r\n        int i = 0;\r\n        while (i < 2*n) {\r\n            if(i%2 != 0){\r\n                arr[i] = nums[m]; \r\n                m++;\r\n            }else{\r\n                arr[i] = nums[r];\r\n                r++;\r\n            }\r\n            i++;\r\n            \r\n        }\r\n        return arr ;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "find-two-non-overlapping-sub-arrays-each-with-target-sum": {
+    "id": 1477,
+    "frontendId": "1477",
+    "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
+    "slug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
+    "problemName": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Dynamic Programming",
+      "Hash Table",
+      "Sliding Window"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+    "folderPath": "problems/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/README.md",
+    "descriptionHtml": "<p>You are given an array of integers <code>arr</code> and an integer <code>target</code>.</p>\r\n\r\n<p>You have to find <strong>two non-overlapping sub-arrays</strong> of <code>arr</code> each with a sum equal <code>target</code>. There can be multiple answers so you have to find an answer where the sum of the lengths of the two sub-arrays is <strong>minimum</strong>.</p>\r\n\r\n<p>Return <em>the minimum sum of the lengths</em> of the two required sub-arrays, or return <code>-1</code> if you cannot find such two sub-arrays.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [3,2,2,4,3], target = 3\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> Only two sub-arrays have sum = 3 ([3] and [3]). The sum of their lengths is 2.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [7,3,4,7], target = 7\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> Although we have three non-overlapping sub-arrays of sum = 7 ([7], [3,4] and [7]), but we will choose the first and third sub-arrays as the sum of their lengths is 2.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> arr = [4,3,2,6,2,3,4], target = 6\r\n<strong>Output:</strong> -1\r\n<strong>Explanation:</strong> We have only one sub-array of sum = 6.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>1 &lt;= arr[i] &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= target &lt;= 10<sup>8</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> arr = [3,2,2,4,3], target = 3\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> Only two sub-arrays have sum = 3 ([3] and [3]). The sum of their lengths is 2.",
+      "<strong>Input:</strong> arr = [7,3,4,7], target = 7\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> Although we have three non-overlapping sub-arrays of sum = 7 ([7], [3,4] and [7]), but we will choose the first and third sub-arrays as the sum of their lengths is 2.",
+      "<strong>Input:</strong> arr = [4,3,2,6,2,3,4], target = 6\r\n<strong>Output:</strong> -1\r\n<strong>Explanation:</strong> We have only one sub-array of sum = 6."
+    ],
+    "constraints": [
+      "<code>1 &lt;= arr.length &lt;= 10<sup>5</sup></code>",
+      "<code>1 &lt;= arr[i] &lt;= 1000</code>",
+      "<code>1 &lt;= target &lt;= 10<sup>8</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum.java",
+        "path": "problems/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum.java",
+        "code": "class Solution {\r\n    public int minSumOfLengths(int[] arr, int target) {\r\n\r\n        int n = arr.length;\r\n\r\n        int[] prefix = new int[n];\r\n\r\n        int left = 0;\r\n        int currentSum = 0;\r\n\r\n        int minLength = Integer.MAX_VALUE;\r\n        int answer = Integer.MAX_VALUE;\r\n\r\n        for (int right = 0; right < n; right++) {\r\n\r\n            currentSum += arr[right];\r\n\r\n            while (currentSum > target) {\r\n                currentSum -= arr[left];\r\n                left++;\r\n            }\r\n\r\n            if (currentSum == target) {\r\n\r\n                int length = right - left + 1;\r\n\r\n                // Check if there is a previous\r\n                // non-overlapping subarray\r\n                if (left > 0 && prefix[left - 1] != Integer.MAX_VALUE) {\r\n\r\n                    answer = Math.min(\r\n                        answer,\r\n                        length + prefix[left - 1]\r\n                    );\r\n                }\r\n\r\n                // Store the shortest subarray found so far\r\n                minLength = Math.min(minLength, length);\r\n            }\r\n\r\n            // Carry forward the best length\r\n            // found up to this index\r\n            if (right == 0) {\r\n                prefix[right] = minLength;\r\n            } else {\r\n                prefix[right] = Math.min(\r\n                    prefix[right - 1],\r\n                    minLength\r\n                );\r\n            }\r\n        }\r\n\r\n        if (answer == Integer.MAX_VALUE) {\r\n            return -1;\r\n        }\r\n\r\n        return answer;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "number-of-sets-of-k-non-overlapping-line-segments": {
+    "id": 1621,
+    "frontendId": "1621",
+    "title": "Number of Sets of K Non-Overlapping Line Segments",
+    "slug": "number-of-sets-of-k-non-overlapping-line-segments",
+    "problemName": "1621-number-of-sets-of-k-non-overlapping-line-segments",
+    "difficulty": "Medium",
+    "topics": [
+      "Combinatorics",
+      "Dynamic Programming",
+      "Math",
+      "Prefix Sum"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/",
+    "folderPath": "problems/1621-number-of-sets-of-k-non-overlapping-line-segments/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1621-number-of-sets-of-k-non-overlapping-line-segments/README.md",
+    "descriptionHtml": "<p>Given <code>n</code> points on a 1-D plane, where the <code>i<sup>th</sup></code> point (from <code>0</code> to <code>n-1</code>) is at <code>x = i</code>, find the number of ways we can draw <strong>exactly</strong> <code>k</code> <strong>non-overlapping</strong> line segments such that each segment covers two or more points. The endpoints of each segment must have <strong>integral coordinates</strong>. The <code>k</code> line segments <strong>do not</strong> have to cover all <code>n</code> points, and they are <strong>allowed</strong> to share endpoints.</p>\r\n\r\n<p>Return <em>the number of ways we can draw </em><code>k</code><em> non-overlapping line segments</em><em>.</em> Since this number can be huge, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2020/09/07/ex1.png\" style=\"width: 179px; height: 222px;\" />\r\n<pre>\r\n<strong>Input:</strong> n = 4, k = 2\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> The two line segments are shown in red and blue.\r\nThe image above shows the 5 different ways {(0,2),(2,3)}, {(0,1),(1,3)}, {(0,1),(2,3)}, {(1,2),(2,3)}, {(0,1),(1,2)}.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> n = 3, k = 1\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The 3 ways are {(0,1)}, {(0,2)}, {(1,2)}.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> n = 30, k = 7\r\n<strong>Output:</strong> 796297179\r\n<strong>Explanation:</strong> The total number of possible ways to draw 7 line segments is 3796297200. Taking this number modulo 10<sup>9</sup> + 7 gives us 796297179.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>2 &lt;= n &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= k &lt;= n-1</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> n = 4, k = 2\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> The two line segments are shown in red and blue.\r\nThe image above shows the 5 different ways {(0,2),(2,3)}, {(0,1),(1,3)}, {(0,1),(2,3)}, {(1,2),(2,3)}, {(0,1),(1,2)}.",
+      "<strong>Input:</strong> n = 3, k = 1\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The 3 ways are {(0,1)}, {(0,2)}, {(1,2)}.",
+      "<strong>Input:</strong> n = 30, k = 7\r\n<strong>Output:</strong> 796297179\r\n<strong>Explanation:</strong> The total number of possible ways to draw 7 line segments is 3796297200. Taking this number modulo 10<sup>9</sup> + 7 gives us 796297179."
+    ],
+    "constraints": [
+      "<code>2 &lt;= n &lt;= 1000</code>",
+      "<code>1 &lt;= k &lt;= n-1</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1621-number-of-sets-of-k-non-overlapping-line-segments.java",
+        "path": "problems/1621-number-of-sets-of-k-non-overlapping-line-segments/1621-number-of-sets-of-k-non-overlapping-line-segments.java",
+        "code": "class Solution {\r\n    public int numberOfSets(int n, int k) {\r\n        int MOD = 1_000_000_007;\r\n        long numerator = 1;\r\n        long denominator = 1;\r\n\r\n        int total = n + k - 1;\r\n        int choose = 2 * k;\r\n\r\n        for (int i = 0; i < choose; i++) {\r\n            numerator = (numerator * (total - i)) % MOD;\r\n            denominator = (denominator * (choose - i)) % MOD;\r\n        }\r\n\r\n\r\n        long inverse = 1;\r\n        long exponent = MOD-2;\r\n\r\n        while (exponent > 0) {\r\n            if (exponent % 2 == 1) {\r\n                inverse = (inverse * denominator) % MOD;\r\n            }\r\n\r\n            denominator = (denominator * denominator) % MOD;\r\n            exponent /= 2;\r\n        }\r\n\r\n\r\n        long result = (numerator * inverse) % MOD;\r\n\r\n        return (int) result;\r\n    \r\n    }\r\n}"
+      }
+    ]
+  },
+  "minimum-operations-to-reduce-x-to-zero": {
+    "id": 1658,
+    "frontendId": "1658",
+    "title": "Minimum Operations to Reduce X to Zero",
+    "slug": "minimum-operations-to-reduce-x-to-zero",
+    "problemName": "1658-minimum-operations-to-reduce-x-to-zero",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Hash Table",
+      "Prefix Sum",
+      "Sliding Window"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/",
+    "folderPath": "problems/1658-minimum-operations-to-reduce-x-to-zero/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1658-minimum-operations-to-reduce-x-to-zero/README.md",
+    "descriptionHtml": "<p>You are given an integer array <code>nums</code> and an integer <code>x</code>. In one operation, you can either remove the leftmost or the rightmost element from the array <code>nums</code> and subtract its value from <code>x</code>. Note that this <strong>modifies</strong> the array for future operations.</p>\r\n\r\n<p>Return <em>the <strong>minimum number</strong> of operations to reduce </em><code>x</code> <em>to <strong>exactly</strong></em> <code>0</code> <em>if it is possible</em><em>, otherwise, return </em><code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,1,4,2,3], x = 5\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> The optimal solution is to remove the last two elements to reduce x to zero.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [5,6,7,8,9], x = 4\r\n<strong>Output:</strong> -1\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [3,2,20,1,1,3], x = 10\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> The optimal solution is to remove the last three elements and the first two elements (5 operations in total) to reduce x to zero.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\r\n\t<li><code>1 &lt;= x &lt;= 10<sup>9</sup></code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [1,1,4,2,3], x = 5\r\n<strong>Output:</strong> 2\r\n<strong>Explanation:</strong> The optimal solution is to remove the last two elements to reduce x to zero.",
+      "<strong>Input:</strong> nums = [5,6,7,8,9], x = 4\r\n<strong>Output:</strong> -1",
+      "<strong>Input:</strong> nums = [3,2,20,1,1,3], x = 10\r\n<strong>Output:</strong> 5\r\n<strong>Explanation:</strong> The optimal solution is to remove the last three elements and the first two elements (5 operations in total) to reduce x to zero."
+    ],
+    "constraints": [
+      "<code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code>",
+      "<code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code>",
+      "<code>1 &lt;= x &lt;= 10<sup>9</sup></code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1658-minimum-operations-to-reduce-x-to-zero.java",
+        "path": "problems/1658-minimum-operations-to-reduce-x-to-zero/1658-minimum-operations-to-reduce-x-to-zero.java",
+        "code": "class Solution {\r\n    public int minOperations(int[] nums, int x) {\r\n        int totalSumOfArray = Arrays.stream(nums).sum();\r\n        if(totalSumOfArray < x){\r\n            return -1;\r\n        }\r\n        if(totalSumOfArray == x){\r\n            return nums.length;\r\n        }\r\n        int currentSum = 0;\r\n        int target = totalSumOfArray - x;\r\n        int minOp = Integer.MAX_VALUE;\r\n        int left = 0;\r\n        \r\n        for(int right = 0 ; right < nums.length ; right++){\r\n            currentSum += nums[right];\r\n            while( currentSum >= target){\r\n                if(currentSum == target){\r\n                    minOp = Math.min(minOp , (nums.length - (right-left+1)) );\r\n                }\r\n                currentSum -= nums[left];\r\n                left++;\r\n            } \r\n        }\r\n\r\n        if(minOp == Integer.MAX_VALUE){\r\n            return -1;\r\n        }\r\n        return minOp;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "concatenation-of-array": {
+    "id": 1929,
+    "frontendId": "1929",
+    "title": "Concatenation of Array",
+    "slug": "concatenation-of-array",
+    "problemName": "1929-concatenation-of-array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Simulation"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/concatenation-of-array/",
+    "folderPath": "problems/1929-concatenation-of-array/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1929-concatenation-of-array/README.md",
+    "descriptionHtml": "<p>Given an integer array <code>nums</code> of length <code>n</code>, you want to create an array <code>ans</code> of length <code>2n</code> where <code>ans[i] == nums[i]</code> and <code>ans[i + n] == nums[i]</code> for <code>0 &lt;= i &lt; n</code> (<strong>0-indexed</strong>).</p>\r\n\r\n<p>Specifically, <code>ans</code> is the <strong>concatenation</strong> of two <code>nums</code> arrays.</p>\r\n\r\n<p>Return <em>the array </em><code>ans</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,2,1]\r\n<strong>Output:</strong> [1,2,1,1,2,1]\r\n<strong>Explanation:</strong> The array ans is formed as follows:\r\n- ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]\r\n- ans = [1,2,1,1,2,1]</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> nums = [1,3,2,1]\r\n<strong>Output:</strong> [1,3,2,1,1,3,2,1]\r\n<strong>Explanation:</strong> The array ans is formed as follows:\r\n- ans = [nums[0],nums[1],nums[2],nums[3],nums[0],nums[1],nums[2],nums[3]]\r\n- ans = [1,3,2,1,1,3,2,1]\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>n == nums.length</code></li>\r\n\t<li><code>1 &lt;= n &lt;= 1000</code></li>\r\n\t<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> nums = [1,2,1]\r\n<strong>Output:</strong> [1,2,1,1,2,1]\r\n<strong>Explanation:</strong> The array ans is formed as follows:\r\n- ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]\r\n- ans = [1,2,1,1,2,1]",
+      "<strong>Input:</strong> nums = [1,3,2,1]\r\n<strong>Output:</strong> [1,3,2,1,1,3,2,1]\r\n<strong>Explanation:</strong> The array ans is formed as follows:\r\n- ans = [nums[0],nums[1],nums[2],nums[3],nums[0],nums[1],nums[2],nums[3]]\r\n- ans = [1,3,2,1,1,3,2,1]"
+    ],
+    "constraints": [
+      "<code>n == nums.length</code>",
+      "<code>1 &lt;= n &lt;= 1000</code>",
+      "<code>1 &lt;= nums[i] &lt;= 1000</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1929-concatenation-of-array.java",
+        "path": "problems/1929-concatenation-of-array/1929-concatenation-of-array.java",
+        "code": "class Solution {\r\n    public int[] getConcatenation(int[] nums) {\r\n        int ans[] = new int [nums.length+nums.length];\r\n        for(int i = 0 ; i < nums.length ; i++){\r\n            ans[i] = nums[i];\r\n            ans[i+nums.length] = nums[i];\r\n        }\r\n        return ans;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "find-missing-and-repeated-values": {
+    "id": 2965,
+    "frontendId": "2965",
+    "title": "Find Missing and Repeated Values",
+    "slug": "find-missing-and-repeated-values",
+    "problemName": "2965-find-missing-and-repeated-values",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Math",
+      "Matrix"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/find-missing-and-repeated-values/",
+    "folderPath": "problems/2965-find-missing-and-repeated-values/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/2965-find-missing-and-repeated-values/README.md",
+    "descriptionHtml": "<p>You are given a <strong>0-indexed</strong> 2D integer matrix <code><font face=\"monospace\">grid</font></code> of size <code>n * n</code> with values in the range <code>[1, n<sup>2</sup>]</code>. Each integer appears <strong>exactly once</strong> except <code>a</code> which appears <strong>twice</strong> and <code>b</code> which is <strong>missing</strong>. The task is to find the repeating and missing numbers <code>a</code> and <code>b</code>.</p>\r\n\r\n<p>Return <em>a <strong>0-indexed </strong>integer array </em><code>ans</code><em> of size </em><code>2</code><em> where </em><code>ans[0]</code><em> equals to </em><code>a</code><em> and </em><code>ans[1]</code><em> equals to </em><code>b</code><em>.</em></p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = [[1,3],[2,2]]\r\n<strong>Output:</strong> [2,4]\r\n<strong>Explanation:</strong> Number 2 is repeated and number 4 is missing so the answer is [2,4].\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> grid = [[9,1,7],[8,9,2],[3,4,6]]\r\n<strong>Output:</strong> [9,5]\r\n<strong>Explanation:</strong> Number 9 is repeated and number 5 is missing so the answer is [9,5].\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>2 &lt;= n == grid.length == grid[i].length &lt;= 50</code></li>\r\n\t<li><code>1 &lt;= grid[i][j] &lt;= n * n</code></li>\r\n\t<li>For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> there is exactly one <code>x</code> that is not equal to any of the grid members.</li>\r\n\t<li>For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> there is exactly one <code>x</code> that is equal to exactly two of the grid members.</li>\r\n\t<li>For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> except two of them there is exactly one pair of <code>i, j</code> that <code>0 &lt;= i, j &lt;= n - 1</code> and <code>grid[i][j] == x</code>.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> grid = [[1,3],[2,2]]\r\n<strong>Output:</strong> [2,4]\r\n<strong>Explanation:</strong> Number 2 is repeated and number 4 is missing so the answer is [2,4].",
+      "<strong>Input:</strong> grid = [[9,1,7],[8,9,2],[3,4,6]]\r\n<strong>Output:</strong> [9,5]\r\n<strong>Explanation:</strong> Number 9 is repeated and number 5 is missing so the answer is [9,5]."
+    ],
+    "constraints": [
+      "<code>2 &lt;= n == grid.length == grid[i].length &lt;= 50</code>",
+      "<code>1 &lt;= grid[i][j] &lt;= n * n</code>",
+      "For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> there is exactly one <code>x</code> that is not equal to any of the grid members.",
+      "For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> there is exactly one <code>x</code> that is equal to exactly two of the grid members.",
+      "For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> except two of them there is exactly one pair of <code>i, j</code> that <code>0 &lt;= i, j &lt;= n - 1</code> and <code>grid[i][j] == x</code>."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "2965-find-missing-and-repeated-values.java",
+        "path": "problems/2965-find-missing-and-repeated-values/2965-find-missing-and-repeated-values.java",
+        "code": "class Solution {\r\n    public int[] findMissingAndRepeatedValues(int[][] grid) {\r\n        int count[] = new int [grid.length*grid.length];\r\n        for(int i = 0; i<grid.length ; i++){\r\n            for(int j = 0; j<grid.length ; j++){\r\n                count[grid[i][j]-1] = count[grid[i][j]-1] + 1;\r\n            }\r\n        }\r\n        int A = 0 , B = 0;\r\n        for(int i = 0 ; i < count.length ; i++){\r\n            if(count[i] == 2){\r\n                A = i+1;\r\n            }\r\n            if(count[i] == 0){\r\n                B = i+1;\r\n            }\r\n        }   \r\n       \r\n        return new int[]{A,B};\r\n        \r\n    }\r\n}"
+      }
+    ]
+  },
+  "reverse-degree-of-a-string": {
+    "id": 3498,
+    "frontendId": "3498",
+    "title": "Reverse Degree of a String",
+    "slug": "reverse-degree-of-a-string",
+    "problemName": "3498-reverse-degree-of-a-string",
+    "difficulty": "Easy",
+    "topics": [
+      "Simulation",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+    "folderPath": "problems/3498-reverse-degree-of-a-string/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/3498-reverse-degree-of-a-string/README.md",
+    "descriptionHtml": "<p>Given a string <code>s</code>, calculate its <strong>reverse degree</strong>.</p>\r\n\r\n<p>The <strong>reverse degree</strong> is calculated as follows:</p>\r\n\r\n<ol>\r\n\t<li>For each character, multiply its position in the <em>reversed</em> alphabet (<code>&#39;a&#39;</code> = 26, <code>&#39;b&#39;</code> = 25, ..., <code>&#39;z&#39;</code> = 1) with its position in the string <strong>(1-indexed)</strong>.</li>\r\n\t<li>Sum these products for all characters in the string.</li>\r\n</ol>\r\n\r\n<p>Return the <strong>reverse degree</strong> of <code>s</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;abc&quot;</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">148</span></p>\r\n\r\n<p><strong>Explanation:</strong></p>\r\n\r\n<table style=\"border: 1px solid black;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th style=\"border: 1px solid black;\">Letter</th>\r\n\t\t\t<th style=\"border: 1px solid black;\">Index in Reversed Alphabet</th>\r\n\t\t\t<th style=\"border: 1px solid black;\">Index in String</th>\r\n\t\t\t<th style=\"border: 1px solid black;\">Product</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;a&#39;</code></td>\r\n\t\t\t<td style=\"border: 1px solid black;\">26</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">26</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;b&#39;</code></td>\r\n\t\t\t<td style=\"border: 1px solid black;\">25</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">50</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;c&#39;</code></td>\r\n\t\t\t<td style=\"border: 1px solid black;\">24</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">72</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>The reversed degree is <code>26 + 50 + 72 = 148</code>.</p>\r\n</div>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;zaza&quot;</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">160</span></p>\r\n\r\n<p><strong>Explanation:</strong></p>\r\n\r\n<table style=\"border: 1px solid black;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th style=\"border: 1px solid black;\">Letter</th>\r\n\t\t\t<th style=\"border: 1px solid black;\">Index in Reversed Alphabet</th>\r\n\t\t\t<th style=\"border: 1px solid black;\">Index in String</th>\r\n\t\t\t<th style=\"border: 1px solid black;\">Product</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;z&#39;</code></td>\r\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;a&#39;</code></td>\r\n\t\t\t<td style=\"border: 1px solid black;\">26</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">2</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">52</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;z&#39;</code></td>\r\n\t\t\t<td style=\"border: 1px solid black;\">1</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">3</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"border: 1px solid black;\"><code>&#39;a&#39;</code></td>\r\n\t\t\t<td style=\"border: 1px solid black;\">26</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">4</td>\r\n\t\t\t<td style=\"border: 1px solid black;\">104</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>The reverse degree is <code>1 + 52 + 3 + 104 = 160</code>.</p>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= s.length &lt;= 1000</code></li>\r\n\t<li><code>s</code> contains only lowercase English letters.</li>\r\n</ul>",
+    "examples": [],
+    "constraints": [
+      "<code>1 &lt;= s.length &lt;= 1000</code>",
+      "<code>s</code> contains only lowercase English letters."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "3498-reverse-degree-of-a-string.java",
+        "path": "problems/3498-reverse-degree-of-a-string/3498-reverse-degree-of-a-string.java",
+        "code": "class Solution {\r\n    \r\n    public int reverseDegree(String s) {\r\n        int sum = 0;\r\n        for (int i = 0; i < s.length(); i++) {\r\n            int reversed_Index = 'z' - s.charAt(i) + 1;\r\n            sum += (i + 1)*reversed_Index ;\r\n        }\r\n        return sum;\r\n    }\r\n    \r\n}\r\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,294 @@
+[
+  {
+    "name": "Array",
+    "slug": "array",
+    "problemCount": 25,
+    "problems": [
+      "0001-two-sum",
+      "0004-median-of-two-sorted-arrays",
+      "0031-next-permutation",
+      "0048-rotate-image",
+      "0053-maximum-subarray",
+      "0056-merge-intervals",
+      "0073-set-matrix-zeroes",
+      "0074-search-a-2d-matrix",
+      "0075-sort-colors",
+      "0088-merge-sorted-array",
+      "0118-pascals-triangle",
+      "0121-best-time-to-buy-and-sell-stock",
+      "0169-majority-element",
+      "0287-find-the-duplicate-number",
+      "0448-find-all-numbers-disappeared-in-an-array",
+      "0485-max-consecutive-ones",
+      "0645-set-mismatch",
+      "1018-binary-prefix-divisible-by-5",
+      "1365-how-many-numbers-are-smaller-than-the-current-number",
+      "1441-build-an-array-with-stack-operations",
+      "1470-shuffle-the-array",
+      "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "1658-minimum-operations-to-reduce-x-to-zero",
+      "1929-concatenation-of-array",
+      "2965-find-missing-and-repeated-values"
+    ]
+  },
+  {
+    "name": "Binary Search",
+    "slug": "binary-search",
+    "problemCount": 5,
+    "problems": [
+      "0004-median-of-two-sorted-arrays",
+      "0074-search-a-2d-matrix",
+      "0287-find-the-duplicate-number",
+      "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "1658-minimum-operations-to-reduce-x-to-zero"
+    ]
+  },
+  {
+    "name": "Bit Manipulation",
+    "slug": "bit-manipulation",
+    "problemCount": 3,
+    "problems": [
+      "0287-find-the-duplicate-number",
+      "0645-set-mismatch",
+      "1018-binary-prefix-divisible-by-5"
+    ]
+  },
+  {
+    "name": "Boyer–Moore Majority Vote Algorithm",
+    "slug": "boyer-moore-majority-vote-algorithm",
+    "problemCount": 1,
+    "problems": [
+      "0169-majority-element"
+    ]
+  },
+  {
+    "name": "Bubble Sort",
+    "slug": "bubble-sort",
+    "problemCount": 1,
+    "problems": [
+      "0075-sort-colors"
+    ]
+  },
+  {
+    "name": "Combinatorics",
+    "slug": "combinatorics",
+    "problemCount": 2,
+    "problems": [
+      "0062-unique-paths",
+      "1621-number-of-sets-of-k-non-overlapping-line-segments"
+    ]
+  },
+  {
+    "name": "Counting",
+    "slug": "counting",
+    "problemCount": 1,
+    "problems": [
+      "0169-majority-element"
+    ]
+  },
+  {
+    "name": "Counting Sort",
+    "slug": "counting-sort",
+    "problemCount": 1,
+    "problems": [
+      "1365-how-many-numbers-are-smaller-than-the-current-number"
+    ]
+  },
+  {
+    "name": "Divide and Conquer",
+    "slug": "divide-and-conquer",
+    "problemCount": 3,
+    "problems": [
+      "0004-median-of-two-sorted-arrays",
+      "0053-maximum-subarray",
+      "0169-majority-element"
+    ]
+  },
+  {
+    "name": "Dynamic Programming",
+    "slug": "dynamic-programming",
+    "problemCount": 6,
+    "problems": [
+      "0053-maximum-subarray",
+      "0062-unique-paths",
+      "0118-pascals-triangle",
+      "0121-best-time-to-buy-and-sell-stock",
+      "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "1621-number-of-sets-of-k-non-overlapping-line-segments"
+    ]
+  },
+  {
+    "name": "Floyd's Cycle Finding Algorithm",
+    "slug": "floyds-cycle-finding-algorithm",
+    "problemCount": 2,
+    "problems": [
+      "0141-linked-list-cycle",
+      "0287-find-the-duplicate-number"
+    ]
+  },
+  {
+    "name": "Hash Table",
+    "slug": "hash-table",
+    "problemCount": 11,
+    "problems": [
+      "0001-two-sum",
+      "0073-set-matrix-zeroes",
+      "0141-linked-list-cycle",
+      "0160-intersection-of-two-linked-lists",
+      "0169-majority-element",
+      "0448-find-all-numbers-disappeared-in-an-array",
+      "0645-set-mismatch",
+      "1365-how-many-numbers-are-smaller-than-the-current-number",
+      "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "1658-minimum-operations-to-reduce-x-to-zero",
+      "2965-find-missing-and-repeated-values"
+    ]
+  },
+  {
+    "name": "Linked List",
+    "slug": "linked-list",
+    "problemCount": 11,
+    "problems": [
+      "0002-add-two-numbers",
+      "0019-remove-nth-node-from-end-of-list",
+      "0021-merge-two-sorted-lists",
+      "0025-reverse-nodes-in-k-group",
+      "0061-rotate-list",
+      "0141-linked-list-cycle",
+      "0160-intersection-of-two-linked-lists",
+      "0206-reverse-linked-list",
+      "0234-palindrome-linked-list",
+      "0237-delete-node-in-a-linked-list",
+      "0876-middle-of-the-linked-list"
+    ]
+  },
+  {
+    "name": "Math",
+    "slug": "math",
+    "problemCount": 6,
+    "problems": [
+      "0002-add-two-numbers",
+      "0048-rotate-image",
+      "0050-powx-n",
+      "0062-unique-paths",
+      "1621-number-of-sets-of-k-non-overlapping-line-segments",
+      "2965-find-missing-and-repeated-values"
+    ]
+  },
+  {
+    "name": "Matrix",
+    "slug": "matrix",
+    "problemCount": 4,
+    "problems": [
+      "0048-rotate-image",
+      "0073-set-matrix-zeroes",
+      "0074-search-a-2d-matrix",
+      "2965-find-missing-and-repeated-values"
+    ]
+  },
+  {
+    "name": "Pigeonhole Principle",
+    "slug": "pigeonhole-principle",
+    "problemCount": 1,
+    "problems": [
+      "0287-find-the-duplicate-number"
+    ]
+  },
+  {
+    "name": "Prefix Sum",
+    "slug": "prefix-sum",
+    "problemCount": 2,
+    "problems": [
+      "1621-number-of-sets-of-k-non-overlapping-line-segments",
+      "1658-minimum-operations-to-reduce-x-to-zero"
+    ]
+  },
+  {
+    "name": "Quicksort",
+    "slug": "quicksort",
+    "problemCount": 2,
+    "problems": [
+      "0056-merge-intervals",
+      "0075-sort-colors"
+    ]
+  },
+  {
+    "name": "Recursion",
+    "slug": "recursion",
+    "problemCount": 6,
+    "problems": [
+      "0002-add-two-numbers",
+      "0021-merge-two-sorted-lists",
+      "0025-reverse-nodes-in-k-group",
+      "0050-powx-n",
+      "0206-reverse-linked-list",
+      "0234-palindrome-linked-list"
+    ]
+  },
+  {
+    "name": "Simulation",
+    "slug": "simulation",
+    "problemCount": 3,
+    "problems": [
+      "1441-build-an-array-with-stack-operations",
+      "1929-concatenation-of-array",
+      "3498-reverse-degree-of-a-string"
+    ]
+  },
+  {
+    "name": "Sliding Window",
+    "slug": "sliding-window",
+    "problemCount": 2,
+    "problems": [
+      "1477-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+      "1658-minimum-operations-to-reduce-x-to-zero"
+    ]
+  },
+  {
+    "name": "Sorting",
+    "slug": "sorting",
+    "problemCount": 6,
+    "problems": [
+      "0056-merge-intervals",
+      "0075-sort-colors",
+      "0088-merge-sorted-array",
+      "0169-majority-element",
+      "0645-set-mismatch",
+      "1365-how-many-numbers-are-smaller-than-the-current-number"
+    ]
+  },
+  {
+    "name": "Stack",
+    "slug": "stack",
+    "problemCount": 2,
+    "problems": [
+      "0234-palindrome-linked-list",
+      "1441-build-an-array-with-stack-operations"
+    ]
+  },
+  {
+    "name": "String",
+    "slug": "string",
+    "problemCount": 1,
+    "problems": [
+      "3498-reverse-degree-of-a-string"
+    ]
+  },
+  {
+    "name": "Two Pointers",
+    "slug": "two-pointers",
+    "problemCount": 10,
+    "problems": [
+      "0019-remove-nth-node-from-end-of-list",
+      "0031-next-permutation",
+      "0061-rotate-list",
+      "0075-sort-colors",
+      "0088-merge-sorted-array",
+      "0141-linked-list-cycle",
+      "0160-intersection-of-two-linked-lists",
+      "0234-palindrome-linked-list",
+      "0287-find-the-duplicate-number",
+      "0876-middle-of-the-linked-list"
+    ]
+  }
+]
