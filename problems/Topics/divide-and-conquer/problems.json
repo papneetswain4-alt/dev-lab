@@ -4,7 +4,7 @@
     "slug": "divide-and-conquer",
     "name": "Divide and Conquer"
   },
-  "updatedAt": "2026-09-23T09:50:36.525Z",
+  "updatedAt": "2026-09-23T09:51:04.992Z",
   "problems": [
     {
       "frontendId": "4",
@@ -43,6 +43,26 @@
           "path": "problems/0053-maximum-subarray/0053-maximum-subarray.java",
           "sha": "0f3b1d420c4deee76ebb003870f1ec527568a090",
           "lastSyncedAt": "2026-09-23T09:50:36.525Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "169",
+      "title": "Majority Element",
+      "slug": "majority-element",
+      "problemName": "0169-majority-element",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/majority-element/",
+      "folderPath": "problems/0169-majority-element/",
+      "readmePath": "problems/0169-majority-element/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0169-majority-element.java",
+          "path": "problems/0169-majority-element/0169-majority-element.java",
+          "sha": "95018988571176e67416ef239845fd5bd361d1db",
+          "lastSyncedAt": "2026-09-23T09:51:04.992Z"
         }
       ]
     }
