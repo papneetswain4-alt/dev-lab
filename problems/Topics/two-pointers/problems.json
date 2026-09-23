@@ -4,7 +4,7 @@
     "slug": "two-pointers",
     "name": "Two Pointers"
   },
-  "updatedAt": "2026-09-23T09:52:42.142Z",
+  "updatedAt": "2026-09-23T09:53:00.268Z",
   "problems": [
     {
       "frontendId": "19",
@@ -23,6 +23,26 @@
           "path": "problems/0019-remove-nth-node-from-end-of-list/0019-remove-nth-node-from-end-of-list.java",
           "sha": "5c99ce63cda5f871933f91d552ca762e85a73f1a",
           "lastSyncedAt": "2026-09-23T09:47:59.590Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "31",
+      "title": "Next Permutation",
+      "slug": "next-permutation",
+      "problemName": "0031-next-permutation",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/next-permutation/",
+      "folderPath": "problems/0031-next-permutation/",
+      "readmePath": "problems/0031-next-permutation/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0031-next-permutation.java",
+          "path": "problems/0031-next-permutation/0031-next-permutation.java",
+          "sha": "8e76a4cd86cabe4209e3eff66d615293fcc4bbae",
+          "lastSyncedAt": "2026-09-23T09:53:00.268Z"
         }
       ]
     },
