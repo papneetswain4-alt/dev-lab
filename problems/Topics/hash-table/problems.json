@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-09-23T09:48:19.686Z",
+  "updatedAt": "2026-09-23T09:48:27.691Z",
   "problems": [
     {
       "frontendId": "1",
@@ -83,6 +83,26 @@
           "path": "problems/0448-find-all-numbers-disappeared-in-an-array/0448-find-all-numbers-disappeared-in-an-array.java",
           "sha": "870d7798ef684c82329903fbdb8579a45c049bd6",
           "lastSyncedAt": "2026-09-23T09:48:19.686Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "645",
+      "title": "Set Mismatch",
+      "slug": "set-mismatch",
+      "problemName": "0645-set-mismatch",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/set-mismatch/",
+      "folderPath": "problems/0645-set-mismatch/",
+      "readmePath": "problems/0645-set-mismatch/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0645-set-mismatch.java",
+          "path": "problems/0645-set-mismatch/0645-set-mismatch.java",
+          "sha": "ea996f1b96543ff105e1c5ad643f47224539aae3",
+          "lastSyncedAt": "2026-09-23T09:48:27.691Z"
         }
       ]
     }
