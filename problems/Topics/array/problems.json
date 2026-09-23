@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-23T09:49:09.795Z",
+  "updatedAt": "2026-09-23T09:49:16.542Z",
   "problems": [
     {
       "frontendId": "1",
@@ -163,6 +163,26 @@
           "path": "problems/1441-build-an-array-with-stack-operations/1441-build-an-array-with-stack-operations.java",
           "sha": "35d0aa2090a1405f1e67e2622e38b7f46e4af10b",
           "lastSyncedAt": "2026-09-23T09:46:03.086Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1470",
+      "title": "Shuffle the Array",
+      "slug": "shuffle-the-array",
+      "problemName": "1470-shuffle-the-array",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/shuffle-the-array/",
+      "folderPath": "problems/1470-shuffle-the-array/",
+      "readmePath": "problems/1470-shuffle-the-array/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1470-shuffle-the-array.java",
+          "path": "problems/1470-shuffle-the-array/1470-shuffle-the-array.java",
+          "sha": "e849b220fd795e7b112cca83cd32ccfca507cbe5",
+          "lastSyncedAt": "2026-09-23T09:49:16.542Z"
         }
       ]
     }
