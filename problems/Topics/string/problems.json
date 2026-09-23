@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "string",
+    "name": "String"
+  },
+  "updatedAt": "2026-09-23T15:10:41.576Z",
+  "problems": [
+    {
+      "frontendId": "3498",
+      "title": "Reverse Degree of a String",
+      "slug": "reverse-degree-of-a-string",
+      "problemName": "3498-reverse-degree-of-a-string",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+      "folderPath": "problems/3498-reverse-degree-of-a-string/",
+      "readmePath": "problems/3498-reverse-degree-of-a-string/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "3498-reverse-degree-of-a-string.java",
+          "path": "problems/3498-reverse-degree-of-a-string/3498-reverse-degree-of-a-string.java",
+          "sha": "6535807ea2f87c327f8bfb431a90abd034d7fde7",
+          "lastSyncedAt": "2026-09-23T15:10:41.576Z"
+        }
+      ]
+    }
+  ]
+}
