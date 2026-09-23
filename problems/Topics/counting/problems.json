@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "counting",
+    "name": "Counting"
+  },
+  "updatedAt": "2026-09-23T09:51:04.992Z",
+  "problems": [
+    {
+      "frontendId": "169",
+      "title": "Majority Element",
+      "slug": "majority-element",
+      "problemName": "0169-majority-element",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/majority-element/",
+      "folderPath": "problems/0169-majority-element/",
+      "readmePath": "problems/0169-majority-element/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0169-majority-element.java",
+          "path": "problems/0169-majority-element/0169-majority-element.java",
+          "sha": "95018988571176e67416ef239845fd5bd361d1db",
+          "lastSyncedAt": "2026-09-23T09:51:04.992Z"
+        }
+      ]
+    }
+  ]
+}
