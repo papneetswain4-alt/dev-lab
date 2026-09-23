@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-23T09:51:28.719Z",
+  "updatedAt": "2026-09-23T09:52:21.199Z",
   "problems": [
     {
       "frontendId": "2",
@@ -23,6 +23,26 @@
           "path": "problems/0002-add-two-numbers/0002-add-two-numbers.java",
           "sha": "05f49732b6f474cdff4adb9b7da7c71e6099fd19",
           "lastSyncedAt": "2026-09-23T09:47:48.158Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "48",
+      "title": "Rotate Image",
+      "slug": "rotate-image",
+      "problemName": "0048-rotate-image",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/rotate-image/",
+      "folderPath": "problems/0048-rotate-image/",
+      "readmePath": "problems/0048-rotate-image/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0048-rotate-image.java",
+          "path": "problems/0048-rotate-image/0048-rotate-image.java",
+          "sha": "f2011cbf63a406deb469abf48901e55790f6fe5d",
+          "lastSyncedAt": "2026-09-23T09:52:21.199Z"
         }
       ]
     },
