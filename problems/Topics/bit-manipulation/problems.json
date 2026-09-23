@@ -4,7 +4,7 @@
     "slug": "bit-manipulation",
     "name": "Bit Manipulation"
   },
-  "updatedAt": "2026-09-23T09:51:49.359Z",
+  "updatedAt": "2026-09-23T15:23:58.651Z",
   "problems": [
     {
       "frontendId": "287",
@@ -42,7 +42,7 @@
           "filename": "0645-set-mismatch.java",
           "path": "problems/0645-set-mismatch/0645-set-mismatch.java",
           "sha": "ea996f1b96543ff105e1c5ad643f47224539aae3",
-          "lastSyncedAt": "2026-09-23T09:48:27.691Z"
+          "lastSyncedAt": "2026-09-23T15:23:58.651Z"
         }
       ]
     },
