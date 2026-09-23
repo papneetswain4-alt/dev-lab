@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-23T09:50:55.547Z",
+  "updatedAt": "2026-09-23T09:51:28.719Z",
   "problems": [
     {
       "frontendId": "2",
@@ -23,6 +23,26 @@
           "path": "problems/0002-add-two-numbers/0002-add-two-numbers.java",
           "sha": "05f49732b6f474cdff4adb9b7da7c71e6099fd19",
           "lastSyncedAt": "2026-09-23T09:47:48.158Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "50",
+      "title": "Pow(x, n)",
+      "slug": "powx-n",
+      "problemName": "0050-powx-n",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/powx-n/",
+      "folderPath": "problems/0050-powx-n/",
+      "readmePath": "problems/0050-powx-n/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0050-powx-n.java",
+          "path": "problems/0050-powx-n/0050-powx-n.java",
+          "sha": "ed0b53195db39eab858d99412d7c05ab5df686ca",
+          "lastSyncedAt": "2026-09-23T09:51:28.719Z"
         }
       ]
     },
