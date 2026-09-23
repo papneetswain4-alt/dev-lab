@@ -4,8 +4,28 @@
     "slug": "combinatorics",
     "name": "Combinatorics"
   },
-  "updatedAt": "2026-09-23T09:45:41.998Z",
+  "updatedAt": "2026-09-23T09:50:55.547Z",
   "problems": [
+    {
+      "frontendId": "62",
+      "title": "Unique Paths",
+      "slug": "unique-paths",
+      "problemName": "0062-unique-paths",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/unique-paths/",
+      "folderPath": "problems/0062-unique-paths/",
+      "readmePath": "problems/0062-unique-paths/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0062-unique-paths.java",
+          "path": "problems/0062-unique-paths/0062-unique-paths.java",
+          "sha": "989f711c7d145eaa404c16e046a85ad2291e1dc4",
+          "lastSyncedAt": "2026-09-23T09:50:55.547Z"
+        }
+      ]
+    },
     {
       "frontendId": "1621",
       "title": "Number of Sets of K Non-Overlapping Line Segments",
