@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-23T09:49:53.242Z",
+  "updatedAt": "2026-09-23T09:50:36.525Z",
   "problems": [
     {
       "frontendId": "1",
@@ -43,6 +43,26 @@
           "path": "problems/0004-median-of-two-sorted-arrays/0004-median-of-two-sorted-arrays.java",
           "sha": "391f63cd01fbc1b8f0be1d93ff4103b9f33ea0c7",
           "lastSyncedAt": "2026-09-23T09:45:22.142Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "53",
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "problemName": "0053-maximum-subarray",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/",
+      "folderPath": "problems/0053-maximum-subarray/",
+      "readmePath": "problems/0053-maximum-subarray/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0053-maximum-subarray.java",
+          "path": "problems/0053-maximum-subarray/0053-maximum-subarray.java",
+          "sha": "0f3b1d420c4deee76ebb003870f1ec527568a090",
+          "lastSyncedAt": "2026-09-23T09:50:36.525Z"
         }
       ]
     },
