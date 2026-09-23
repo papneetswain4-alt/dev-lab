@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-09-23T09:51:37.322Z",
+  "updatedAt": "2026-09-23T09:51:49.359Z",
   "problems": [
     {
       "frontendId": "4",
@@ -43,6 +43,26 @@
           "path": "problems/0074-search-a-2d-matrix/0074-search-a-2d-matrix.java",
           "sha": "3e2a6c414488acd111bf611943c7723b58967bb2",
           "lastSyncedAt": "2026-09-23T09:51:37.322Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "287",
+      "title": "Find the Duplicate Number",
+      "slug": "find-the-duplicate-number",
+      "problemName": "0287-find-the-duplicate-number",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
+      "folderPath": "problems/0287-find-the-duplicate-number/",
+      "readmePath": "problems/0287-find-the-duplicate-number/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0287-find-the-duplicate-number.java",
+          "path": "problems/0287-find-the-duplicate-number/0287-find-the-duplicate-number.java",
+          "sha": "2417d85ec0873ea5164121086f6557e0bc745a38",
+          "lastSyncedAt": "2026-09-23T09:51:49.359Z"
         }
       ]
     }
