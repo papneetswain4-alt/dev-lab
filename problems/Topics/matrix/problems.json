@@ -4,8 +4,28 @@
     "slug": "matrix",
     "name": "Matrix"
   },
-  "updatedAt": "2026-09-23T09:49:32.831Z",
+  "updatedAt": "2026-09-23T09:51:37.322Z",
   "problems": [
+    {
+      "frontendId": "74",
+      "title": "Search a 2D Matrix",
+      "slug": "search-a-2d-matrix",
+      "problemName": "0074-search-a-2d-matrix",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/",
+      "folderPath": "problems/0074-search-a-2d-matrix/",
+      "readmePath": "problems/0074-search-a-2d-matrix/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0074-search-a-2d-matrix.java",
+          "path": "problems/0074-search-a-2d-matrix/0074-search-a-2d-matrix.java",
+          "sha": "3e2a6c414488acd111bf611943c7723b58967bb2",
+          "lastSyncedAt": "2026-09-23T09:51:37.322Z"
+        }
+      ]
+    },
     {
       "frontendId": "2965",
       "title": "Find Missing and Repeated Values",
