@@ -5,7 +5,7 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 45 | 23 | 20 | 2 |
+| 46 | 24 | 20 | 2 |
 
 ## Activity
 
@@ -28,22 +28,22 @@ Contains topicwise list of solved problems.
 | 2026-09-17 | 1 |
 | 2026-09-18 | 1 |
 | 2026-09-23 | 2 |
-| 2026-09-24 | 5 |
+| 2026-09-24 | 6 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 27 | 60% |
-| Hash Table | 12 | 27% |
+| Array | 27 | 59% |
+| Hash Table | 12 | 26% |
 | Linked List | 11 | 24% |
 | Two Pointers | 10 | 22% |
-| Math | 7 | 16% |
+| Math | 7 | 15% |
 | Dynamic Programming | 6 | 13% |
 | Recursion | 6 | 13% |
 | Sorting | 6 | 13% |
 | Binary Search | 5 | 11% |
-| Matrix | 4 | 9% |
+| Stack | 5 | 11% |
 
 ## Topics
 
@@ -53,6 +53,7 @@ Contains topicwise list of solved problems.
 | [Binary Search](Topics/binary-search/) | 5 |
 | [Bit Manipulation](Topics/bit-manipulation/) | 3 |
 | [Boyer–Moore Majority Vote Algorithm](Topics/boyer-moore-majority-vote-algorithm/) | 1 |
+| [Bracket Sequences](Topics/bracket-sequences/) | 1 |
 | [Bubble Sort](Topics/bubble-sort/) | 1 |
 | [Combinatorics](Topics/combinatorics/) | 2 |
 | [Counting](Topics/counting/) | 1 |
@@ -73,7 +74,7 @@ Contains topicwise list of solved problems.
 | [Simulation](Topics/simulation/) | 3 |
 | [Sliding Window](Topics/sliding-window/) | 4 |
 | [Sorting](Topics/sorting/) | 6 |
-| [Stack](Topics/stack/) | 4 |
-| [String](Topics/string/) | 2 |
+| [Stack](Topics/stack/) | 5 |
+| [String](Topics/string/) | 3 |
 | [Two Pointers](Topics/two-pointers/) | 10 |
 <!---LeetHub Summary End-->
