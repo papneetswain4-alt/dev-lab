@@ -4,8 +4,28 @@
     "slug": "prefix-sum",
     "name": "Prefix Sum"
   },
-  "updatedAt": "2026-09-23T15:22:36.302Z",
+  "updatedAt": "2026-09-24T07:05:59.883Z",
   "problems": [
+    {
+      "frontendId": "1423",
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "problemName": "1423-maximum-points-you-can-obtain-from-cards",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+      "folderPath": "problems/1423-maximum-points-you-can-obtain-from-cards/",
+      "readmePath": "problems/1423-maximum-points-you-can-obtain-from-cards/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1423-maximum-points-you-can-obtain-from-cards.java",
+          "path": "problems/1423-maximum-points-you-can-obtain-from-cards/1423-maximum-points-you-can-obtain-from-cards.java",
+          "sha": "415defbc02184ac26449bea78c4cbf69d625d614",
+          "lastSyncedAt": "2026-09-24T07:05:59.883Z"
+        }
+      ]
+    },
     {
       "frontendId": "1621",
       "title": "Number of Sets of K Non-Overlapping Line Segments",
