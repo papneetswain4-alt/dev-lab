@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-24T03:57:24.308Z",
+  "updatedAt": "2026-09-24T07:05:59.883Z",
   "problems": [
     {
       "frontendId": "1",
@@ -383,6 +383,26 @@
           "path": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/1365-how-many-numbers-are-smaller-than-the-current-number.java",
           "sha": "e0f52ce2b081599c88d82bfa6527f34a1796b188",
           "lastSyncedAt": "2026-09-23T15:24:14.849Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1423",
+      "title": "Maximum Points You Can Obtain from Cards",
+      "slug": "maximum-points-you-can-obtain-from-cards",
+      "problemName": "1423-maximum-points-you-can-obtain-from-cards",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+      "folderPath": "problems/1423-maximum-points-you-can-obtain-from-cards/",
+      "readmePath": "problems/1423-maximum-points-you-can-obtain-from-cards/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1423-maximum-points-you-can-obtain-from-cards.java",
+          "path": "problems/1423-maximum-points-you-can-obtain-from-cards/1423-maximum-points-you-can-obtain-from-cards.java",
+          "sha": "415defbc02184ac26449bea78c4cbf69d625d614",
+          "lastSyncedAt": "2026-09-24T07:05:59.883Z"
         }
       ]
     },
