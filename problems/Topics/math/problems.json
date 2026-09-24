@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-24T03:57:24.308Z",
+  "updatedAt": "2026-09-24T18:44:13.122Z",
   "problems": [
     {
       "frontendId": "2",
@@ -23,6 +23,26 @@
           "path": "problems/0002-add-two-numbers/0002-add-two-numbers.java",
           "sha": "05f49732b6f474cdff4adb9b7da7c71e6099fd19",
           "lastSyncedAt": "2026-09-23T15:23:36.566Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "9",
+      "title": "Palindrome Number",
+      "slug": "palindrome-number",
+      "problemName": "0009-palindrome-number",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/palindrome-number/",
+      "folderPath": "problems/0009-palindrome-number/",
+      "readmePath": "problems/0009-palindrome-number/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0009-palindrome-number.java",
+          "path": "problems/0009-palindrome-number/0009-palindrome-number.java",
+          "sha": "ea9e48d8bb8058a615310c1e77ff4b202b213053",
+          "lastSyncedAt": "2026-09-24T18:44:13.122Z"
         }
       ]
     },
