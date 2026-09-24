@@ -4,8 +4,28 @@
     "slug": "stack",
     "name": "Stack"
   },
-  "updatedAt": "2026-09-24T14:55:27.560Z",
+  "updatedAt": "2026-09-24T15:52:38.188Z",
   "problems": [
+    {
+      "frontendId": "20",
+      "title": "Valid Parentheses",
+      "slug": "valid-parentheses",
+      "problemName": "0020-valid-parentheses",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
+      "folderPath": "problems/0020-valid-parentheses/",
+      "readmePath": "problems/0020-valid-parentheses/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0020-valid-parentheses.java",
+          "path": "problems/0020-valid-parentheses/0020-valid-parentheses.java",
+          "sha": "ff95895ac530ba101344b5ea51bf55185d72b9ed",
+          "lastSyncedAt": "2026-09-24T15:52:38.188Z"
+        }
+      ]
+    },
     {
       "frontendId": "225",
       "title": "Implement Stack using Queues",
