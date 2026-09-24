@@ -5,7 +5,7 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 43 | 21 | 20 | 2 |
+| 44 | 22 | 20 | 2 |
 
 ## Activity
 
@@ -28,21 +28,21 @@ Contains topicwise list of solved problems.
 | 2026-09-17 | 1 |
 | 2026-09-18 | 1 |
 | 2026-09-23 | 2 |
-| 2026-09-24 | 3 |
+| 2026-09-24 | 4 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 27 | 63% |
-| Hash Table | 12 | 28% |
-| Linked List | 11 | 26% |
+| Array | 27 | 61% |
+| Hash Table | 12 | 27% |
+| Linked List | 11 | 25% |
 | Two Pointers | 10 | 23% |
 | Math | 7 | 16% |
 | Dynamic Programming | 6 | 14% |
 | Recursion | 6 | 14% |
 | Sorting | 6 | 14% |
-| Binary Search | 5 | 12% |
+| Binary Search | 5 | 11% |
 | Matrix | 4 | 9% |
 
 ## Topics
@@ -57,6 +57,7 @@ Contains topicwise list of solved problems.
 | [Combinatorics](Topics/combinatorics/) | 2 |
 | [Counting](Topics/counting/) | 1 |
 | [Counting Sort](Topics/counting-sort/) | 1 |
+| [Design](Topics/design/) | 1 |
 | [Divide and Conquer](Topics/divide-and-conquer/) | 3 |
 | [Dynamic Programming](Topics/dynamic-programming/) | 6 |
 | [Floyd's Cycle Finding Algorithm](Topics/floyds-cycle-finding-algorithm/) | 2 |
@@ -66,12 +67,13 @@ Contains topicwise list of solved problems.
 | [Matrix](Topics/matrix/) | 4 |
 | [Pigeonhole Principle](Topics/pigeonhole-principle/) | 1 |
 | [Prefix Sum](Topics/prefix-sum/) | 3 |
+| [Queue](Topics/queue/) | 1 |
 | [Quicksort](Topics/quicksort/) | 2 |
 | [Recursion](Topics/recursion/) | 6 |
 | [Simulation](Topics/simulation/) | 3 |
 | [Sliding Window](Topics/sliding-window/) | 4 |
 | [Sorting](Topics/sorting/) | 6 |
-| [Stack](Topics/stack/) | 2 |
+| [Stack](Topics/stack/) | 3 |
 | [String](Topics/string/) | 2 |
 | [Two Pointers](Topics/two-pointers/) | 10 |
 <!---LeetHub Summary End-->
