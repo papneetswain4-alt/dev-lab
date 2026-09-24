@@ -4,8 +4,28 @@
     "slug": "stack",
     "name": "Stack"
   },
-  "updatedAt": "2026-09-23T15:23:01.539Z",
+  "updatedAt": "2026-09-24T11:54:01.932Z",
   "problems": [
+    {
+      "frontendId": "225",
+      "title": "Implement Stack using Queues",
+      "slug": "implement-stack-using-queues",
+      "problemName": "0225-implement-stack-using-queues",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/implement-stack-using-queues/",
+      "folderPath": "problems/0225-implement-stack-using-queues/",
+      "readmePath": "problems/0225-implement-stack-using-queues/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0225-implement-stack-using-queues.java",
+          "path": "problems/0225-implement-stack-using-queues/0225-implement-stack-using-queues.java",
+          "sha": "3a2f5633350310e6ddc88fae278da24140cfe32a",
+          "lastSyncedAt": "2026-09-24T11:54:01.932Z"
+        }
+      ]
+    },
     {
       "frontendId": "234",
       "title": "Palindrome Linked List",
