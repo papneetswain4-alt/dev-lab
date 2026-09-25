@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-25T14:32:24.191Z",
+  "updatedAt": "2026-09-25T14:32:29.643Z",
   "problems": [
     {
       "frontendId": "1",
@@ -302,7 +302,7 @@
           "filename": "0448-find-all-numbers-disappeared-in-an-array.java",
           "path": "problems/0448-find-all-numbers-disappeared-in-an-array/0448-find-all-numbers-disappeared-in-an-array.java",
           "sha": "870d7798ef684c82329903fbdb8579a45c049bd6",
-          "lastSyncedAt": "2026-09-23T15:23:53.559Z"
+          "lastSyncedAt": "2026-09-25T14:32:29.643Z"
         }
       ]
     },
