@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-25T14:35:01.797Z",
+  "updatedAt": "2026-09-25T14:35:06.322Z",
   "problems": [
     {
       "frontendId": "1",
@@ -142,7 +142,7 @@
           "filename": "0073-set-matrix-zeroes.java",
           "path": "problems/0073-set-matrix-zeroes/0073-set-matrix-zeroes.java",
           "sha": "4f413226d6bd06280eb92db37fadec6169fd4aae",
-          "lastSyncedAt": "2026-09-23T09:53:09.668Z"
+          "lastSyncedAt": "2026-09-25T14:35:06.322Z"
         }
       ]
     },
