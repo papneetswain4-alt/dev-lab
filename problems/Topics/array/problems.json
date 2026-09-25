@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-24T07:05:59.883Z",
+  "updatedAt": "2026-09-25T14:30:36.132Z",
   "problems": [
     {
       "frontendId": "1",
@@ -402,7 +402,7 @@
           "filename": "1423-maximum-points-you-can-obtain-from-cards.java",
           "path": "problems/1423-maximum-points-you-can-obtain-from-cards/1423-maximum-points-you-can-obtain-from-cards.java",
           "sha": "415defbc02184ac26449bea78c4cbf69d625d614",
-          "lastSyncedAt": "2026-09-24T07:05:59.883Z"
+          "lastSyncedAt": "2026-09-25T14:30:36.132Z"
         }
       ]
     },
