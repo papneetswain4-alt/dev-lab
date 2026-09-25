@@ -4,7 +4,7 @@
     "slug": "hash-table",
     "name": "Hash Table"
   },
-  "updatedAt": "2026-09-25T14:32:33.793Z",
+  "updatedAt": "2026-09-25T14:32:50.989Z",
   "problems": [
     {
       "frontendId": "1",
@@ -182,7 +182,7 @@
           "filename": "1365-how-many-numbers-are-smaller-than-the-current-number.java",
           "path": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/1365-how-many-numbers-are-smaller-than-the-current-number.java",
           "sha": "e0f52ce2b081599c88d82bfa6527f34a1796b188",
-          "lastSyncedAt": "2026-09-23T15:24:14.849Z"
+          "lastSyncedAt": "2026-09-25T14:32:50.989Z"
         }
       ]
     },
