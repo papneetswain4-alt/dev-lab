@@ -4,7 +4,7 @@
     "slug": "sorting",
     "name": "Sorting"
   },
-  "updatedAt": "2026-09-25T14:32:50.989Z",
+  "updatedAt": "2026-09-25T14:33:18.873Z",
   "problems": [
     {
       "frontendId": "56",
@@ -22,7 +22,7 @@
           "filename": "0056-merge-intervals.java",
           "path": "problems/0056-merge-intervals/0056-merge-intervals.java",
           "sha": "2b7e5be5fd156c78adfbd27c884937fa175c3c4b",
-          "lastSyncedAt": "2026-09-23T15:24:50.319Z"
+          "lastSyncedAt": "2026-09-25T14:33:18.873Z"
         }
       ]
     },
