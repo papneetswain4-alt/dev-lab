@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "breadth-first-search",
+    "name": "Breadth-First Search"
+  },
+  "updatedAt": "2026-09-25T17:10:26.005Z",
+  "problems": [
+    {
+      "frontendId": "1096",
+      "title": "Brace Expansion II",
+      "slug": "brace-expansion-ii",
+      "problemName": "1096-brace-expansion-ii",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/brace-expansion-ii/",
+      "folderPath": "problems/1096-brace-expansion-ii/",
+      "readmePath": "problems/1096-brace-expansion-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1096-brace-expansion-ii.java",
+          "path": "problems/1096-brace-expansion-ii/1096-brace-expansion-ii.java",
+          "sha": "9cc0f34b0acf6e5e9d37000ab6327678fca9414f",
+          "lastSyncedAt": "2026-09-25T17:10:26.005Z"
+        }
+      ]
+    }
+  ]
+}
