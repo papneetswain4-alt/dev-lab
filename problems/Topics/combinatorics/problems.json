@@ -4,7 +4,7 @@
     "slug": "combinatorics",
     "name": "Combinatorics"
   },
-  "updatedAt": "2026-09-25T14:31:21.156Z",
+  "updatedAt": "2026-09-25T14:33:50.775Z",
   "problems": [
     {
       "frontendId": "62",
@@ -22,7 +22,7 @@
           "filename": "0062-unique-paths.java",
           "path": "problems/0062-unique-paths/0062-unique-paths.java",
           "sha": "989f711c7d145eaa404c16e046a85ad2291e1dc4",
-          "lastSyncedAt": "2026-09-23T15:25:31.152Z"
+          "lastSyncedAt": "2026-09-25T14:33:50.775Z"
         }
       ]
     },
