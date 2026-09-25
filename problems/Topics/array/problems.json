@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-25T14:34:46.733Z",
+  "updatedAt": "2026-09-25T14:34:51.502Z",
   "problems": [
     {
       "frontendId": "1",
@@ -182,7 +182,7 @@
           "filename": "0075-sort-colors.java",
           "path": "problems/0075-sort-colors/0075-sort-colors.java",
           "sha": "8a23d4144a1edc6b25675042796a9758fca95cf1",
-          "lastSyncedAt": "2026-09-23T15:26:39.763Z"
+          "lastSyncedAt": "2026-09-25T14:34:51.502Z"
         }
       ]
     },
