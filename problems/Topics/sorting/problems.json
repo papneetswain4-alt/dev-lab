@@ -4,7 +4,7 @@
     "slug": "sorting",
     "name": "Sorting"
   },
-  "updatedAt": "2026-09-25T14:34:51.502Z",
+  "updatedAt": "2026-09-25T17:10:26.005Z",
   "problems": [
     {
       "frontendId": "56",
@@ -103,6 +103,26 @@
           "path": "problems/0645-set-mismatch/0645-set-mismatch.java",
           "sha": "ea996f1b96543ff105e1c5ad643f47224539aae3",
           "lastSyncedAt": "2026-09-25T14:32:33.793Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1096",
+      "title": "Brace Expansion II",
+      "slug": "brace-expansion-ii",
+      "problemName": "1096-brace-expansion-ii",
+      "difficulty": "Hard",
+      "leetcodeUrl": "https://leetcode.com/problems/brace-expansion-ii/",
+      "folderPath": "problems/1096-brace-expansion-ii/",
+      "readmePath": "problems/1096-brace-expansion-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1096-brace-expansion-ii.java",
+          "path": "problems/1096-brace-expansion-ii/1096-brace-expansion-ii.java",
+          "sha": "9cc0f34b0acf6e5e9d37000ab6327678fca9414f",
+          "lastSyncedAt": "2026-09-25T17:10:26.005Z"
         }
       ]
     },
