@@ -4,7 +4,7 @@
     "slug": "queue",
     "name": "Queue"
   },
-  "updatedAt": "2026-09-24T14:55:27.560Z",
+  "updatedAt": "2026-09-25T14:30:14.223Z",
   "problems": [
     {
       "frontendId": "225",
@@ -42,7 +42,7 @@
           "filename": "0232-implement-queue-using-stacks.java",
           "path": "problems/0232-implement-queue-using-stacks/0232-implement-queue-using-stacks.java",
           "sha": "67e11f0be869e3782f0d6f3a9d9787227bd0f269",
-          "lastSyncedAt": "2026-09-24T14:55:27.560Z"
+          "lastSyncedAt": "2026-09-25T14:30:14.223Z"
         }
       ]
     }
