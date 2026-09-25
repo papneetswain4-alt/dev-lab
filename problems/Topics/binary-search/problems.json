@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-09-25T14:34:14.143Z",
+  "updatedAt": "2026-09-25T14:34:20.607Z",
   "problems": [
     {
       "frontendId": "4",
@@ -62,7 +62,7 @@
           "filename": "0287-find-the-duplicate-number.java",
           "path": "problems/0287-find-the-duplicate-number/0287-find-the-duplicate-number.java",
           "sha": "2417d85ec0873ea5164121086f6557e0bc745a38",
-          "lastSyncedAt": "2026-09-23T15:26:06.586Z"
+          "lastSyncedAt": "2026-09-25T14:34:20.607Z"
         }
       ]
     },
