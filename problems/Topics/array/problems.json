@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-25T14:34:51.502Z",
+  "updatedAt": "2026-09-25T14:35:01.797Z",
   "problems": [
     {
       "frontendId": "1",
@@ -62,7 +62,7 @@
           "filename": "0031-next-permutation.java",
           "path": "problems/0031-next-permutation/0031-next-permutation.java",
           "sha": "8e76a4cd86cabe4209e3eff66d615293fcc4bbae",
-          "lastSyncedAt": "2026-09-23T15:26:52.255Z"
+          "lastSyncedAt": "2026-09-25T14:35:01.797Z"
         }
       ]
     },
