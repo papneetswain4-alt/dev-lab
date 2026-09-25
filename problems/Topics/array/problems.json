@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-09-25T14:33:05.105Z",
+  "updatedAt": "2026-09-25T14:33:09.792Z",
   "problems": [
     {
       "frontendId": "1",
@@ -522,7 +522,7 @@
           "filename": "2965-find-missing-and-repeated-values.java",
           "path": "problems/2965-find-missing-and-repeated-values/2965-find-missing-and-repeated-values.java",
           "sha": "3c80907d2e8caef7e12534dc32c87f16d1f7c1c6",
-          "lastSyncedAt": "2026-09-23T15:24:40.447Z"
+          "lastSyncedAt": "2026-09-25T14:33:09.792Z"
         }
       ]
     },
