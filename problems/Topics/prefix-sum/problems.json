@@ -4,7 +4,7 @@
     "slug": "prefix-sum",
     "name": "Prefix Sum"
   },
-  "updatedAt": "2026-09-25T14:30:53.980Z",
+  "updatedAt": "2026-09-25T14:31:21.156Z",
   "problems": [
     {
       "frontendId": "1423",
@@ -42,7 +42,7 @@
           "filename": "1621-number-of-sets-of-k-non-overlapping-line-segments.java",
           "path": "problems/1621-number-of-sets-of-k-non-overlapping-line-segments/1621-number-of-sets-of-k-non-overlapping-line-segments.java",
           "sha": "16f52eabeea876c089a84416073abad63cbf0b0e",
-          "lastSyncedAt": "2026-09-23T15:22:36.302Z"
+          "lastSyncedAt": "2026-09-25T14:31:21.156Z"
         }
       ]
     },
