@@ -4,7 +4,7 @@
     "slug": "linked-list",
     "name": "Linked List"
   },
-  "updatedAt": "2026-09-25T14:32:04.878Z",
+  "updatedAt": "2026-09-25T14:32:11.573Z",
   "problems": [
     {
       "frontendId": "2",
@@ -202,7 +202,7 @@
           "filename": "0237-delete-node-in-a-linked-list.java",
           "path": "problems/0237-delete-node-in-a-linked-list/0237-delete-node-in-a-linked-list.java",
           "sha": "a6173ec0abb103f09aa71d1ec235d4b282624e8f",
-          "lastSyncedAt": "2026-09-23T15:23:33.742Z"
+          "lastSyncedAt": "2026-09-25T14:32:11.573Z"
         }
       ]
     },
