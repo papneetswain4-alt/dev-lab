@@ -4,7 +4,7 @@
     "slug": "simulation",
     "name": "Simulation"
   },
-  "updatedAt": "2026-09-25T14:30:48.714Z",
+  "updatedAt": "2026-09-25T14:31:30.116Z",
   "problems": [
     {
       "frontendId": "1441",
@@ -22,7 +22,7 @@
           "filename": "1441-build-an-array-with-stack-operations.java",
           "path": "problems/1441-build-an-array-with-stack-operations/1441-build-an-array-with-stack-operations.java",
           "sha": "35d0aa2090a1405f1e67e2622e38b7f46e4af10b",
-          "lastSyncedAt": "2026-09-23T15:22:47.007Z"
+          "lastSyncedAt": "2026-09-25T14:31:30.116Z"
         }
       ]
     },
