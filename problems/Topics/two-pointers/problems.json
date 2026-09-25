@@ -4,7 +4,7 @@
     "slug": "two-pointers",
     "name": "Two Pointers"
   },
-  "updatedAt": "2026-09-23T15:26:39.763Z",
+  "updatedAt": "2026-09-25T14:31:37.313Z",
   "problems": [
     {
       "frontendId": "19",
@@ -62,7 +62,7 @@
           "filename": "0061-rotate-list.java",
           "path": "problems/0061-rotate-list/0061-rotate-list.java",
           "sha": "cedc02f17b94cee4b45a62b2790916d38ca1193d",
-          "lastSyncedAt": "2026-09-23T15:22:55.176Z"
+          "lastSyncedAt": "2026-09-25T14:31:37.313Z"
         }
       ]
     },
