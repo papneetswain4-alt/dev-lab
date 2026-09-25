@@ -4,7 +4,7 @@
     "slug": "sorting",
     "name": "Sorting"
   },
-  "updatedAt": "2026-09-23T15:26:39.763Z",
+  "updatedAt": "2026-09-25T14:32:33.793Z",
   "problems": [
     {
       "frontendId": "56",
@@ -102,7 +102,7 @@
           "filename": "0645-set-mismatch.java",
           "path": "problems/0645-set-mismatch/0645-set-mismatch.java",
           "sha": "ea996f1b96543ff105e1c5ad643f47224539aae3",
-          "lastSyncedAt": "2026-09-23T15:23:58.651Z"
+          "lastSyncedAt": "2026-09-25T14:32:33.793Z"
         }
       ]
     },
