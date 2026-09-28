@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Code2 } from 'lucide-react';
+import { ExternalLink, Code2, ArrowRight } from 'lucide-react';
 import type { Problem } from '../../types/dsa';
+import { AsciiImageTexture } from '../cinematic/AsciiImageTexture';
 
 interface ProblemCardProps {
   problem: Problem;
@@ -11,35 +12,49 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({ problem }) => {
   const getDifficultyBadge = (difficulty: Problem['difficulty']) => {
     switch (difficulty) {
       case 'Easy':
-        return 'text-[#00B8A3] bg-[#00B8A3]/10 border-[#00B8A3]/30';
+        return 'text-[#00B8A3] bg-[#00B8A3]/10 border-[#00B8A3]/25';
       case 'Medium':
-        return 'text-[#FFC01E] bg-[#FFC01E]/10 border-[#FFC01E]/30';
+        return 'text-[#FFC01E] bg-[#FFC01E]/10 border-[#FFC01E]/25';
       case 'Hard':
-        return 'text-[#FF375F] bg-[#FF375F]/10 border-[#FF375F]/30';
+        return 'text-[#FF375F] bg-[#FF375F]/10 border-[#FF375F]/25';
       default:
-        return 'text-muted-foreground bg-white/5 border-white/10';
+        return 'text-[#9a9a9a] bg-white/5 border-white/10';
     }
   };
 
   const displayedTopics = (problem.topics || []).slice(0, 3);
   const remainingTopicsCount = (problem.topics || []).length - displayedTopics.length;
   const formattedId = `#${String(problem.frontendId || problem.id).padStart(4, '0')}`;
+  const textureChoice = (Number(problem.frontendId || problem.id) % 2 === 0) ? 'texture-01' : 'texture-02';
 
   return (
-    <article className="liquid-glass rounded-2xl p-6 h-full flex flex-col justify-between transition-all duration-300 hover:scale-[1.015] hover:border-white/20 group">
-      {/* Main card content link (No nested anchor tags) */}
+    <article className="relative cinematic-panel p-5 sm:p-6 rounded-2xl flex flex-col justify-between transition-all duration-300 hover:border-white/30 hover:-translate-y-0.5 group overflow-hidden">
+      {/* Decorative ASCII Halftone Texture */}
+      <AsciiImageTexture
+        texture={textureChoice}
+        crop="center"
+        fade="corner-tr"
+        dotSpacing={5.8}
+        density={1.05}
+        detail={1.15}
+        contrast={1.38}
+        opacity={0.36}
+        hoverOpacity={0.62}
+      />
+
+      {/* Main card content link */}
       <Link
         to={`/problems/${problem.slug}`}
-        className="flex-1 flex flex-col focus:outline-none focus-visible:ring-1 focus-visible:ring-neon-accent rounded-xl text-left"
+        className="relative z-10 flex-1 flex flex-col focus:outline-none rounded-xl text-left"
         aria-label={`View details for ${problem.title}`}
       >
         {/* Header row: ID & Difficulty badge */}
-        <div className="flex items-center justify-between gap-2 mb-4">
-          <span className="font-mono text-xs tracking-wider text-muted-foreground group-hover:text-foreground/90 transition-colors">
+        <div className="flex items-center justify-between gap-2 mb-3">
+          <span className="font-mono text-xs text-[#6f6f6f] group-hover:text-[#9a9a9a] transition-colors">
             {formattedId}
           </span>
           <span
-            className={`text-xs px-2.5 py-0.5 rounded-full font-medium border uppercase tracking-wider ${getDifficultyBadge(
+            className={`text-[10px] font-mono px-2 py-0.5 rounded border uppercase tracking-wider ${getDifficultyBadge(
               problem.difficulty
             )}`}
           >
@@ -48,7 +63,7 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({ problem }) => {
         </div>
 
         {/* Title */}
-        <h3 className="font-sans text-xl font-semibold text-foreground group-hover:text-neon-accent transition-colors duration-200 line-clamp-2">
+        <h3 className="font-sans text-lg font-semibold text-white group-hover:text-white/80 transition-colors line-clamp-2 leading-snug">
           {problem.title}
         </h3>
 
@@ -58,13 +73,13 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({ problem }) => {
             {displayedTopics.map((topic) => (
               <span
                 key={topic}
-                className="text-xs px-2.5 py-1 rounded-md bg-white/[0.03] border border-white/10 text-muted-foreground group-hover:border-white/20 transition-colors"
+                className="text-[10px] font-mono px-2 py-0.5 rounded border border-white/5 bg-white/[0.02] text-[#9a9a9a] group-hover:border-white/15 transition-colors"
               >
                 {topic}
               </span>
             ))}
             {remainingTopicsCount > 0 && (
-              <span className="text-xs px-2 py-0.5 rounded-md bg-white/[0.02] border border-white/5 text-muted-foreground/70 font-mono">
+              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded border border-white/5 bg-white/[0.01] text-[#6f6f6f]">
                 +{remainingTopicsCount}
               </span>
             )}
@@ -72,28 +87,38 @@ export const ProblemCard: React.FC<ProblemCardProps> = ({ problem }) => {
         )}
       </Link>
 
-      {/* Footer (completely outside main Link) */}
-      <div className="flex items-center justify-between pt-5 mt-6 border-t border-white/5 text-xs text-muted-foreground">
+      {/* Footer */}
+      <div className="relative z-10 flex items-center justify-between pt-4 mt-5 border-t border-white/5 text-xs font-mono text-[#6f6f6f]">
         <Link
           to={`/problems/${problem.slug}`}
-          className="flex items-center gap-1.5 hover:text-foreground transition-colors py-1 focus:outline-none focus:ring-1 focus:ring-neon-accent rounded"
+          className="flex items-center gap-1.5 hover:text-white transition-colors py-1"
         >
-          <Code2 size={14} className="text-neon-accent/80" />
-          <span>{problem.languages?.join(', ') || 'Java'}</span>
+          <Code2 size={13} className="opacity-70" />
+          <span>Java Solution</span>
         </Link>
 
-        {problem.leetcodeUrl && (
-          <a
-            href={problem.leetcodeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors p-1 -m-1 rounded focus:outline-none focus:ring-1 focus:ring-neon-accent cursor-pointer"
-            aria-label={`View ${problem.title} on LeetCode`}
+        <div className="flex items-center gap-3">
+          {problem.leetcodeUrl && (
+            <a
+              href={problem.leetcodeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#6f6f6f] hover:text-white transition-colors p-1"
+              aria-label={`View ${problem.title} on LeetCode`}
+              title="Open on LeetCode"
+            >
+              <ExternalLink size={12} />
+            </a>
+          )}
+
+          <Link
+            to={`/problems/${problem.slug}`}
+            className="metallic-btn px-2 py-0.5 text-[10px] text-[#9a9a9a] group-hover:text-white inline-flex items-center gap-1"
           >
-            <span>LeetCode</span>
-            <ExternalLink size={12} />
-          </a>
-        )}
+            <span>VIEW</span>
+            <ArrowRight size={10} />
+          </Link>
+        </div>
       </div>
     </article>
   );

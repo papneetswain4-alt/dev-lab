@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Layers, Code2 } from 'lucide-react';
 import { getTopicBySlug, getProblemsForTopic } from '../services/repository';
 import { ProblemCard } from '../components/problems/ProblemCard';
+import { AsciiImageTexture } from '../components/cinematic/AsciiImageTexture';
 
 export const TopicDetailPage: React.FC = () => {
   const { topic: topicSlug } = useParams<{ topic: string }>();
@@ -28,21 +29,21 @@ export const TopicDetailPage: React.FC = () => {
   if (!topic) {
     return (
       <div className="w-full flex-1 flex flex-col items-center justify-center px-4 py-24 text-center">
-        <div className="liquid-glass rounded-3xl p-10 sm:p-14 max-w-lg w-full border border-white/10">
-          <span className="font-mono text-xs text-neon-accent uppercase tracking-widest block mb-3">
+        <div className="cinematic-panel rounded-3xl p-10 sm:p-14 max-w-lg w-full border border-white/10">
+          <span className="font-mono text-xs text-[#9a9a9a] uppercase tracking-widest block mb-3">
             404 NOT FOUND
           </span>
-          <h1 className="font-display text-4xl text-foreground mb-4">
+          <h1 className="font-sans text-3xl text-white mb-4">
             Topic Not Found
           </h1>
-          <p className="text-muted-foreground text-sm font-body mb-8 leading-relaxed">
+          <p className="text-[#9a9a9a] text-xs font-mono mb-8 leading-relaxed">
             The requested topic could not be found in the archive. Check the topic name or explore all patterns.
           </p>
           <Link
             to="/topics"
-            className="liquid-glass rounded-full px-8 py-3.5 text-sm font-medium text-foreground tracking-wider inline-flex items-center gap-2 hover:scale-[1.03] active:scale-[0.98] transition-transform cursor-pointer"
+            className="metallic-btn-primary px-8 py-3 text-xs font-mono tracking-wider uppercase inline-flex items-center gap-2"
           >
-            <ArrowLeft size={16} />
+            <ArrowLeft size={14} />
             <span>BACK TO TOPICS</span>
           </Link>
         </div>
@@ -52,42 +53,56 @@ export const TopicDetailPage: React.FC = () => {
 
   return (
     <div className="w-full flex-1 flex flex-col">
-      <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10">
+      <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Breadcrumb Navigation */}
-        <nav className="mb-8" aria-label="Breadcrumb">
+        <nav className="mb-6" aria-label="Breadcrumb">
           <Link
             to="/topics"
-            className="inline-flex items-center gap-2 text-xs font-mono text-muted-foreground hover:text-neon-accent transition-colors group py-1.5 px-3 rounded-lg liquid-glass border border-white/5 hover:border-neon-accent/30"
+            className="inline-flex items-center gap-2 text-xs font-mono text-[#9a9a9a] hover:text-white transition-colors group py-1.5 px-3 rounded-lg border border-white/10 hover:border-white/30"
           >
-            <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
+            <ArrowLeft size={13} className="group-hover:-translate-x-1 transition-transform" />
             <span>BACK TO TOPICS</span>
           </Link>
         </nav>
 
         {/* Topic Header Card */}
-        <header className="liquid-glass rounded-3xl p-6 sm:p-10 border border-white/10 mb-10">
-          <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
-            <div className="flex items-center gap-2 text-xs font-mono text-neon-accent tracking-wider uppercase">
-              <Layers size={14} />
-              <span>ALGORITHM PATTERN</span>
+        <header className="relative overflow-hidden group cinematic-panel rounded-3xl p-6 sm:p-10 border border-white/10 mb-10">
+          <AsciiImageTexture
+            texture="texture-04"
+            crop="top-right"
+            fade="corner-tr"
+            dotSpacing={5.8}
+            density={1.08}
+            detail={1.15}
+            contrast={1.38}
+            opacity={0.34}
+            hoverOpacity={0.58}
+          />
+
+          <div className="relative z-10">
+            <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+              <div className="flex items-center gap-2 text-xs font-mono text-[#9a9a9a] tracking-wider uppercase">
+                <Layers size={14} />
+                <span>ALGORITHM PATTERN</span>
+              </div>
+              <span className="font-mono text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#9a9a9a]">
+                {topic.problemCount} {topic.problemCount === 1 ? 'problem' : 'problems'}
+              </span>
             </div>
-            <span className="font-mono text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-muted-foreground">
-              {topic.problemCount} {topic.problemCount === 1 ? 'problem' : 'problems'}
-            </span>
-          </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-foreground uppercase tracking-tight mb-4">
-            {topic.name}
-          </h1>
+            <h1 className="font-sans font-light text-4xl sm:text-5xl lg:text-6xl text-white uppercase tracking-tight mb-4">
+              {topic.name}
+            </h1>
 
-          <p className="text-muted-foreground text-sm sm:text-base font-body leading-relaxed max-w-2xl">
-            All LeetCode challenges in DEV.LAB solved using {topic.name} techniques, patterns, and principles.
-          </p>
+            <p className="text-[#9a9a9a] text-sm sm:text-base font-sans font-light leading-relaxed max-w-2xl">
+              All LeetCode challenges in DEV.LAB solved using {topic.name} techniques, patterns, and principles.
+            </p>
 
-          <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/10 text-xs font-mono text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Code2 size={14} className="text-neon-accent" />
-              <span>Showing {problems.length} solved problems</span>
+            <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/10 text-xs font-mono text-[#6f6f6f]">
+              <div className="flex items-center gap-2">
+                <Code2 size={13} className="opacity-70" />
+                <span>Showing {problems.length} verified solutions</span>
+              </div>
             </div>
           </div>
         </header>
@@ -95,12 +110,12 @@ export const TopicDetailPage: React.FC = () => {
         {/* Problems Grid */}
         <section aria-label={`${topic.name} Problems`}>
           <div className="flex items-center justify-between mb-6 px-1">
-            <h2 className="font-mono text-xs uppercase tracking-widest text-foreground font-semibold">
+            <h2 className="font-mono text-xs uppercase tracking-widest text-[#9a9a9a]">
               PROBLEMS IN THIS TOPIC
             </h2>
             <Link
               to={`/problems?topic=${encodeURIComponent(topic.name)}`}
-              className="text-xs font-mono text-neon-accent hover:underline"
+              className="text-xs font-mono text-white/80 hover:text-white hover:underline"
             >
               Open in Problems Explorer &rarr;
             </Link>
@@ -113,8 +128,8 @@ export const TopicDetailPage: React.FC = () => {
               ))}
             </div>
           ) : (
-            <div className="liquid-glass rounded-2xl p-12 text-center border border-white/10">
-              <p className="text-muted-foreground text-sm">
+            <div className="cinematic-panel rounded-2xl p-12 text-center border border-white/10">
+              <p className="text-[#9a9a9a] text-xs font-mono">
                 No problems found specifically linked to this topic.
               </p>
             </div>

@@ -7,32 +7,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#010828',
-        foreground: '#FFFFFF',
-        'muted-foreground': '#A7A7AE',
-        'neon-accent': '#6FFF00',
+        background: '#000000',
+        surface: {
+          DEFAULT: '#080808',
+          soft: '#101010',
+          elevated: '#161616',
+          border: 'rgba(255, 255, 255, 0.14)',
+          'border-soft': 'rgba(255, 255, 255, 0.08)',
+        },
+        muted: '#9a9a9a',
+        subtle: '#6f6f6f',
+        foreground: '#ffffff',
       },
       fontFamily: {
         display: ['"Instrument Serif"', 'serif'],
+        sans: ['Inter', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
-        accent: ['Condiment', 'cursive'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
-      animation: {
-        'fade-rise': 'fade-rise 0.8s ease-out forwards',
-        'fade-rise-delay': 'fade-rise 0.8s ease-out 0.2s forwards',
-        'fade-rise-delay-2': 'fade-rise 0.8s ease-out 0.4s forwards',
-      },
-      keyframes: {
-        'fade-rise': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(24px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
-        },
+      backgroundImage: {
+        'metal-nav': 'linear-gradient(105deg, #050505 0%, #242424 48%, #444444 100%)',
+        'metal-glow': 'radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.08), transparent 70%)',
       },
     },
   },

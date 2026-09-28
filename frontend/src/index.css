@@ -3,129 +3,268 @@
 @tailwind utilities;
 
 :root {
-  --font-display: 'Instrument Serif', serif;
-  --font-body: 'Inter', sans-serif;
-  --font-accent: 'Condiment', cursive;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --bg: #000000;
+  --surface: #080808;
+  --surface-soft: #101010;
+  --surface-elevated: #161616;
+  --text: #ffffff;
+  --muted: #9a9a9a;
+  --subtle: #6f6f6f;
+  --border: rgba(255, 255, 255, 0.14);
+  --border-soft: rgba(255, 255, 255, 0.08);
+
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--text);
+  color-scheme: dark;
 }
 
 body {
   font-family: var(--font-body);
-  background-color: #010828;
-  color: #FFFFFF;
+  background-color: var(--bg);
+  color: var(--text);
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.liquid-glass {
-  background: rgba(255, 255, 255, 0.01);
-  background-blend-mode: luminosity;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: none;
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
-  position: relative;
+/* Lenis smooth scrolling core styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
   overflow: hidden;
 }
 
-.liquid-glass::before {
+/* Film Grain Overlay */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Vesper-inspired Metallic Navbar */
+.nav-metallic {
+  background: linear-gradient(105deg, #050505 0%, #1e1e1e 48%, #3e3e3e 100%);
+  border: 1px solid rgba(198, 198, 198, 0.45);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-metallic:hover {
+  border-color: rgba(220, 220, 220, 0.65);
+}
+
+/* Metallic Button Tokens */
+.metallic-btn {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  border-radius: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  font-family: var(--font-body);
+}
+
+.metallic-btn::after {
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: inherit;
-  padding: 1.4px;
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0.45) 0%,
-    rgba(255,255,255,0.15) 20%,
-    rgba(255,255,255,0) 40%,
-    rgba(255,255,255,0) 60%,
-    rgba(255,255,255,0.15) 80%,
-    rgba(255,255,255,0.45) 100%
-  );
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.metallic-btn:hover::after {
+  transform: translateX(100%);
+}
+
+.metallic-btn:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+
+.metallic-btn-primary {
+  background: linear-gradient(180deg, #ffffff 0%, #d8d8d8 100%);
+  color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.metallic-btn-primary:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #ececec 100%);
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.metallic-btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Cinematic Surface Panels */
+.cinematic-panel {
+  background: rgba(8, 8, 8, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.cinematic-panel:hover {
+  border-color: var(--border);
+}
+
+/* Card ASCII Texture Canvas */
+.card-ascii-canvas {
+  opacity: var(--base-opacity, 0.32);
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .card-ascii-canvas.hover-active {
+  opacity: var(--hover-opacity, 0.52);
+  transform: scale(1.025);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-fade-rise,
-  .animate-fade-rise-delay,
-  .animate-fade-rise-delay-2 {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
+  .group:hover .card-ascii-canvas.hover-active {
+    transform: none;
   }
 }
 
-/* LeetCode Problem Statement HTML Styling */
+/* Subtle Editorial Typography Utility */
+.font-italic-serif {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Hero Editorial Typography: Bold, cinematic presence balanced with following chapters */
+.hero-headline {
+  font-size: clamp(4.5rem, 7.5vw, 5.85rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 1024px) and (min-width: 641px) {
+  .hero-headline {
+    font-size: clamp(3.75rem, 8vw, 4.85rem);
+    line-height: 0.92;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-headline {
+    font-size: clamp(2.75rem, 12.5vw, 3.85rem);
+    line-height: 0.94;
+    letter-spacing: -0.025em;
+  }
+}
+
+@media (max-height: 680px) and (min-width: 641px) {
+  .hero-headline {
+    font-size: clamp(3.2rem, min(6.5vw, 10.5vh), 4.4rem);
+    line-height: 0.90;
+  }
+}
+
+.hero-subtext {
+  font-size: clamp(0.875rem, 1.1vw, 1.0625rem);
+  line-height: 1.55;
+}
+
+/* LeetCode Problem Statement HTML Styling (Monochrome & Refined) */
 .problem-description p {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.7;
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.75;
+  color: #c4c4c4;
 }
 
 .problem-description strong {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
 }
 
 .problem-description em {
   font-style: italic;
-  color: #EFF4FF;
+  color: #e2e2e2;
 }
 
 .problem-description code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.85em;
-  padding: 0.15rem 0.35rem;
+  padding: 0.15rem 0.4rem;
   border-radius: 0.375rem;
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #6FFF00;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
 }
 
 .problem-description pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.85rem;
-  padding: 1rem;
+  padding: 1.15rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.75rem;
   background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #EFF4FF;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #d1d1d1;
   overflow-x: auto;
   line-height: 1.6;
 }
 
 .problem-description pre strong {
-  color: #A7A7AE;
+  color: #ffffff;
 }
 
 .problem-description .example-block {
   background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0.75rem;
-  padding: 1rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
 }
 
 .problem-description .example-io {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  color: #6FFF00;
+  font-family: var(--font-mono);
+  color: #e5e5e5;
 }
 
 .problem-description ul,
 .problem-description ol {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
   padding-left: 1.5rem;
 }
 
@@ -140,34 +279,34 @@ body {
 .problem-description li {
   margin-top: 0.35rem;
   margin-bottom: 0.35rem;
-  color: #A7A7AE;
+  color: #a8a8a8;
 }
 
 .problem-description li code {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .problem-description table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   border-radius: 0.5rem;
   overflow: hidden;
 }
 
 .problem-description th,
 .problem-description td {
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  padding: 0.6rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding: 0.65rem 0.95rem;
   text-align: left;
 }
 
 .problem-description th {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.04);
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .problem-description img {
@@ -179,21 +318,21 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Problem Detail Examples & Constraints Formatting */
+/* Problem Detail Examples & Constraints */
 .problem-example code,
 .problem-constraint code {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #00F0FF;
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
   padding: 0.15rem 0.4rem;
   border-radius: 0.25rem;
   font-family: var(--font-mono);
   font-size: 0.85em;
-  border: 1px solid rgba(0, 240, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .problem-example strong,
 .problem-constraint strong {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -201,7 +340,15 @@ body {
 .problem-constraint sup {
   font-size: 0.75em;
   vertical-align: super;
-  color: #00F0FF;
+  color: #a0a0a0;
 }
 
-
+/* Reduced Motion Safety */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

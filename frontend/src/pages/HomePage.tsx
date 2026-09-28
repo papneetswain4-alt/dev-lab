@@ -1,60 +1,55 @@
-import React, { useEffect, useMemo } from 'react';
-import { useLocation } from 'react-router-dom';
-import { HeroSection } from '../components/home/HeroSection';
-import { ProblemsPreview } from '../components/home/ProblemsPreview';
-import { TopicsPreview } from '../components/home/TopicsPreview';
-import { JourneySection } from '../components/home/JourneySection';
-import { GitHubSection } from '../components/home/GitHubSection';
-import { HomeFooter } from '../components/home/HomeFooter';
+import React, { useMemo, useEffect } from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { HeroIdentityScene } from '../components/cinematic/HeroIdentityScene';
+import { ProblemsCinematicScene } from '../components/cinematic/ProblemsCinematicScene';
+import { TopicsCinematicScene } from '../components/cinematic/TopicsCinematicScene';
+import { JourneyTimelineScene } from '../components/cinematic/JourneyTimelineScene';
+import { ConsistencyScene } from '../components/cinematic/ConsistencyScene';
+import { FinalCtaSection } from '../components/cinematic/FinalCtaSection';
 import { getProblems, getTopics, getSummary } from '../services/repository';
+import { scrollToTarget } from '../hooks/useLenis';
 
 export const HomePage: React.FC = () => {
-  const location = useLocation();
-
-  // Load static repository datasets from service
+  // Load repository datasets from strongly-typed service
   const problems = useMemo(() => getProblems(), []);
   const topics = useMemo(() => getTopics(), []);
   const summary = useMemo(() => getSummary(), []);
 
-  // Handle hash scrolling on navigation/load
   useEffect(() => {
-    if (location.hash) {
-      const targetId = location.hash.replace('#', '');
-      const el = document.getElementById(targetId);
-      if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
-    }
-  }, [location.hash]);
+    // Guarantee ScrollTrigger synchronizes with refreshed coordinate system
+    const timer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 150);
+    return () => clearTimeout(timer);
+  }, []);
 
-  const handleBeginJourney = () => {
-    const el = document.getElementById('problems');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleExplore = () => {
+    scrollToTarget('problems', { offset: -20 });
   };
 
   return (
-    <div className="w-full flex-1 flex flex-col">
-      {/* 1. Cinematic Hero */}
-      <HeroSection onBeginJourney={handleBeginJourney} />
+    <div className="w-full flex-1 flex flex-col relative">
+      {/* Chapters 01 & 02 — Hero Dispersion -> Central BUILD -> SOLVE -> LEARN -> REPEAT Pinned Sequence */}
+      <HeroIdentityScene summary={summary} onExplore={handleExplore} />
 
-      {/* 2. Problems Preview (Curated 6 Recent Problems) */}
-      <ProblemsPreview problems={problems} />
+      {/* Chapter 03 — Macro Number Shrink -> Problem Ticker -> Problems Grouping -> Explorer */}
+      <ProblemsCinematicScene
+        problems={problems}
+        summary={summary}
+        topics={topics}
+      />
 
-      {/* 3. Topics Preview (Core Patterns & Counts) */}
-      <TopicsPreview topics={topics} />
+      {/* Chapter 04 — Assembling Topic Matrix -> Knowledge Map -> Knowledge-to-Time Bridge */}
+      <TopicsCinematicScene topics={topics} />
 
-      {/* 4. Journey Statistics & Activity Strip */}
-      <JourneySection summary={summary} topicCount={topics.length} />
+      {/* Chapter 05 — Scroll-controlled Timeline -> Milestone Activation -> Time-to-Consistency Expansion */}
+      <JourneyTimelineScene summary={summary} topicCount={topics.length} />
 
-      {/* 5. Open Source & GitHub Repository */}
-      <GitHubSection />
+      {/* Chapter 06 — Scroll-scrubbed Counters -> Progressive Heatmap -> Archive Compression */}
+      <ConsistencyScene summary={summary} />
 
-      {/* 6. Minimal Footer */}
-      <HomeFooter />
+      {/* Chapter 07 — DEV.LAB / ARCHIVE Technical Summary + Smooth Lenis Back to Top */}
+      <FinalCtaSection />
     </div>
   );
 };

@@ -14,8 +14,8 @@ export const ProblemSearch: React.FC<ProblemSearchProps> = ({ value, onChange })
       </label>
       <div className="relative flex items-center">
         <Search
-          size={18}
-          className="absolute left-4 text-muted-foreground pointer-events-none"
+          size={16}
+          className="absolute left-4 text-[#6f6f6f] pointer-events-none"
           aria-hidden="true"
         />
         <input
@@ -23,17 +23,17 @@ export const ProblemSearch: React.FC<ProblemSearchProps> = ({ value, onChange })
           type="text"
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          placeholder="Search problems by name, number, or slug..."
-          className="w-full liquid-glass rounded-xl pl-11 pr-10 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 border border-white/10 focus:border-neon-accent/60 focus:outline-none focus:ring-1 focus:ring-neon-accent/60 transition-all duration-200"
+          placeholder="Search problems by name, number, or topic..."
+          className="w-full rounded-xl pl-11 pr-10 py-3 text-xs sm:text-sm text-white placeholder:text-[#6f6f6f] bg-black/60 border border-white/10 focus:border-white/40 focus:outline-none focus:ring-1 focus:ring-white/20 transition-all duration-200 font-mono"
         />
         {value && (
           <button
             type="button"
             onClick={() => onChange('')}
-            className="absolute right-3 p-1 rounded-full text-muted-foreground hover:text-foreground hover:bg-white/10 transition-colors"
+            className="absolute right-3 p-1 rounded-full text-[#9a9a9a] hover:text-white hover:bg-white/10 transition-colors"
             aria-label="Clear search input"
           >
-            <X size={16} />
+            <X size={15} />
           </button>
         )}
       </div>

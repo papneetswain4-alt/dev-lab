@@ -37,6 +37,25 @@
     ]
   },
   {
+    "id": 3,
+    "frontendId": "3",
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "problemName": "0003-longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "Sliding Window",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "folderPath": "problems/0003-longest-substring-without-repeating-characters/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
     "id": 4,
     "frontendId": "4",
     "title": "Median of Two Sorted Arrays",
@@ -56,6 +75,23 @@
     ]
   },
   {
+    "id": 9,
+    "frontendId": "9",
+    "title": "Palindrome Number",
+    "slug": "palindrome-number",
+    "problemName": "0009-palindrome-number",
+    "difficulty": "Easy",
+    "topics": [
+      "Math"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/palindrome-number/",
+    "folderPath": "problems/0009-palindrome-number/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
     "id": 19,
     "frontendId": "19",
     "title": "Remove Nth Node From End of List",
@@ -68,6 +104,25 @@
     ],
     "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
     "folderPath": "problems/0019-remove-nth-node-from-end-of-list/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 20,
+    "frontendId": "20",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "problemName": "0020-valid-parentheses",
+    "difficulty": "Easy",
+    "topics": [
+      "Bracket Sequences",
+      "Stack",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
+    "folderPath": "problems/0020-valid-parentheses/",
     "solutionCount": 1,
     "languages": [
       "Java"
@@ -433,6 +488,44 @@
     ]
   },
   {
+    "id": 225,
+    "frontendId": "225",
+    "title": "Implement Stack using Queues",
+    "slug": "implement-stack-using-queues",
+    "problemName": "0225-implement-stack-using-queues",
+    "difficulty": "Easy",
+    "topics": [
+      "Design",
+      "Queue",
+      "Stack"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/implement-stack-using-queues/",
+    "folderPath": "problems/0225-implement-stack-using-queues/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 232,
+    "frontendId": "232",
+    "title": "Implement Queue using Stacks",
+    "slug": "implement-queue-using-stacks",
+    "problemName": "0232-implement-queue-using-stacks",
+    "difficulty": "Easy",
+    "topics": [
+      "Design",
+      "Queue",
+      "Stack"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/implement-queue-using-stacks/",
+    "folderPath": "problems/0232-implement-queue-using-stacks/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
     "id": 234,
     "frontendId": "234",
     "title": "Palindrome Linked List",
@@ -583,6 +676,28 @@
     ]
   },
   {
+    "id": 1096,
+    "frontendId": "1096",
+    "title": "Brace Expansion II",
+    "slug": "brace-expansion-ii",
+    "problemName": "1096-brace-expansion-ii",
+    "difficulty": "Hard",
+    "topics": [
+      "Backtracking",
+      "Breadth-First Search",
+      "Hash Table",
+      "Sorting",
+      "Stack",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/brace-expansion-ii/",
+    "folderPath": "problems/1096-brace-expansion-ii/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
     "id": 1365,
     "frontendId": "1365",
     "title": "How Many Numbers Are Smaller Than the Current Number",
@@ -597,6 +712,25 @@
     ],
     "leetcodeUrl": "https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/",
     "folderPath": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 1423,
+    "frontendId": "1423",
+    "title": "Maximum Points You Can Obtain from Cards",
+    "slug": "maximum-points-you-can-obtain-from-cards",
+    "problemName": "1423-maximum-points-you-can-obtain-from-cards",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Prefix Sum",
+      "Sliding Window"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+    "folderPath": "problems/1423-maximum-points-you-can-obtain-from-cards/",
     "solutionCount": 1,
     "languages": [
       "Java"
@@ -701,6 +835,25 @@
     ]
   },
   {
+    "id": 1807,
+    "frontendId": "1807",
+    "title": "Evaluate the Bracket Pairs of a String",
+    "slug": "evaluate-the-bracket-pairs-of-a-string",
+    "problemName": "1807-evaluate-the-bracket-pairs-of-a-string",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/",
+    "folderPath": "problems/1807-evaluate-the-bracket-pairs-of-a-string/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
     "id": 1929,
     "frontendId": "1929",
     "title": "Concatenation of Array",
@@ -751,6 +904,24 @@
     ],
     "leetcodeUrl": "https://leetcode.com/problems/reverse-degree-of-a-string/",
     "folderPath": "problems/3498-reverse-degree-of-a-string/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ]
+  },
+  {
+    "id": 3550,
+    "frontendId": "3550",
+    "title": "Smallest Index With Digit Sum Equal to Index",
+    "slug": "smallest-index-with-digit-sum-equal-to-index",
+    "problemName": "3550-smallest-index-with-digit-sum-equal-to-index",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Math"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/",
+    "folderPath": "problems/3550-smallest-index-with-digit-sum-equal-to-index/",
     "solutionCount": 1,
     "languages": [
       "Java"

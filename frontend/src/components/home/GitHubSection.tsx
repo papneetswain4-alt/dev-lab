@@ -1,11 +1,21 @@
 import React from 'react';
 import { ExternalLink, GitBranch, Terminal } from 'lucide-react';
+import { AsciiImageTexture } from '../cinematic/AsciiImageTexture';
 
 export const GitHubSection: React.FC = () => {
   return (
     <section id="github" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 scroll-mt-20">
-      <div className="liquid-glass rounded-3xl p-8 sm:p-14 border border-white/10 relative overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
-        <div className="max-w-2xl">
+      <div className="relative overflow-hidden group liquid-glass rounded-3xl p-8 sm:p-14 border border-white/10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
+        <AsciiImageTexture
+          texture="texture-04"
+          crop="center"
+          fade="radial"
+          dotSpacing={11}
+          opacity={0.28}
+          hoverOpacity={0.48}
+        />
+
+        <div className="relative z-10 max-w-2xl">
           <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
             <span className="font-mono text-xs text-neon-accent tracking-widest uppercase">
               OPEN SOURCE
@@ -40,7 +50,7 @@ export const GitHubSection: React.FC = () => {
         </div>
 
         {/* CTA Button */}
-        <div>
+        <div className="relative z-10">
           <a
             href="https://github.com/papneetswain4-alt/dev-lab"
             target="_blank"

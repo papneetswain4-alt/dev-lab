@@ -77,6 +77,44 @@
       }
     ]
   },
+  "longest-substring-without-repeating-characters": {
+    "id": 3,
+    "frontendId": "3",
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "problemName": "0003-longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "Sliding Window",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "folderPath": "problems/0003-longest-substring-without-repeating-characters/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0003-longest-substring-without-repeating-characters/README.md",
+    "descriptionHtml": "<p>Given a string <code>s</code>, find the length of the <strong>longest</strong> <span data-keyword=\"substring-nonempty\"><strong>substring</strong></span> without duplicate characters.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;abcabcbb&quot;\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The answer is &quot;abc&quot;, with the length of 3. Note that <code>&quot;bca&quot;</code> and <code>&quot;cab&quot;</code> are also correct answers.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;bbbbb&quot;\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> The answer is &quot;b&quot;, with the length of 1.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;pwwkew&quot;\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The answer is &quot;wke&quot;, with the length of 3.\r\nNotice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>0 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> s = &quot;abcabcbb&quot;\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The answer is &quot;abc&quot;, with the length of 3. Note that <code>&quot;bca&quot;</code> and <code>&quot;cab&quot;</code> are also correct answers.",
+      "<strong>Input:</strong> s = &quot;bbbbb&quot;\r\n<strong>Output:</strong> 1\r\n<strong>Explanation:</strong> The answer is &quot;b&quot;, with the length of 1.",
+      "<strong>Input:</strong> s = &quot;pwwkew&quot;\r\n<strong>Output:</strong> 3\r\n<strong>Explanation:</strong> The answer is &quot;wke&quot;, with the length of 3.\r\nNotice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring."
+    ],
+    "constraints": [
+      "<code>0 &lt;= s.length &lt;= 10<sup>5</sup></code>",
+      "<code>s</code> consists of English letters, digits, symbols and spaces."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0003-longest-substring-without-repeating-characters.java",
+        "path": "problems/0003-longest-substring-without-repeating-characters/0003-longest-substring-without-repeating-characters.java",
+        "code": "class Solution {\r\n    public int lengthOfLongestSubstring(String s) {\r\n        \r\n        HashMap<Character, Integer> hash = new HashMap<>();\r\n\r\n        int left = 0;\r\n        int right = 0;\r\n        int maxSubstring = Integer.MIN_VALUE;\r\n        while(right < s.length()){\r\n            char c = s.charAt(right);\r\n            \r\n            if(hash.containsKey(c)){\r\n                int index = hash.get(c);\r\n                if(left <= index){\r\n                    left = index + 1;\r\n                }\r\n            }\r\n            hash.put(c , right);\r\n            maxSubstring = Math.max(maxSubstring , (right - left + 1));\r\n            right++;\r\n        }\r\n        return maxSubstring == Integer.MIN_VALUE ? 0 : maxSubstring ;\r\n    }\r\n}"
+      }
+    ]
+  },
   "median-of-two-sorted-arrays": {
     "id": 4,
     "frontendId": "4",
@@ -118,6 +156,41 @@
       }
     ]
   },
+  "palindrome-number": {
+    "id": 9,
+    "frontendId": "9",
+    "title": "Palindrome Number",
+    "slug": "palindrome-number",
+    "problemName": "0009-palindrome-number",
+    "difficulty": "Easy",
+    "topics": [
+      "Math"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/palindrome-number/",
+    "folderPath": "problems/0009-palindrome-number/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0009-palindrome-number/README.md",
+    "descriptionHtml": "<p>Given an integer <code>x</code>, return <code>true</code> if <code>x</code> is a <span data-keyword=\"palindrome-integer\"><strong>palindrome</strong></span>, and <code>false</code> otherwise.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> x = 121\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> 121 reads as 121 from left to right and from right to left.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> x = -121\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> x = 10\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> Reads 01 from right to left. Therefore it is not a palindrome.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>-2<sup>31</sup>&nbsp;&lt;= x &lt;= 2<sup>31</sup>&nbsp;- 1</code></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<strong>Follow up:</strong> Could you solve it without converting the integer to a string?",
+    "examples": [
+      "<strong>Input:</strong> x = 121\r\n<strong>Output:</strong> true\r\n<strong>Explanation:</strong> 121 reads as 121 from left to right and from right to left.",
+      "<strong>Input:</strong> x = -121\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.",
+      "<strong>Input:</strong> x = 10\r\n<strong>Output:</strong> false\r\n<strong>Explanation:</strong> Reads 01 from right to left. Therefore it is not a palindrome."
+    ],
+    "constraints": [
+      "<code>-2<sup>31</sup>&nbsp;&lt;= x &lt;= 2<sup>31</sup>&nbsp;- 1</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0009-palindrome-number.java",
+        "path": "problems/0009-palindrome-number/0009-palindrome-number.java",
+        "code": "class Solution {\r\n    public boolean isPalindrome(int x) {\r\n        if(x < 0){\r\n            return false;\r\n        }\r\n        int num = x;\r\n        int reversed = 0;\r\n        while(num != 0){\r\n            int lastDigit = num % 10;          \r\n            reversed = reversed * 10 + lastDigit;\r\n            num = num / 10;  \r\n        }\r\n        return reversed == x;\r\n    }\r\n}"
+      }
+    ]
+  },
   "remove-nth-node-from-end-of-list": {
     "id": 19,
     "frontendId": "19",
@@ -154,6 +227,40 @@
         "filename": "0019-remove-nth-node-from-end-of-list.java",
         "path": "problems/0019-remove-nth-node-from-end-of-list/0019-remove-nth-node-from-end-of-list.java",
         "code": "/**\r\n * Definition for singly-linked list.\r\n * public class ListNode {\r\n *     int val;\r\n *     ListNode next;\r\n *     ListNode() {}\r\n *     ListNode(int val) { this.val = val; }\r\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\r\n * }\r\n */\r\nclass Solution {\r\n    public ListNode removeNthFromEnd(ListNode head, int n) {\r\n       ListNode p = head,q = head;\r\n       for(int i = 0 ; i<n ; i++ ){\r\n        q=q.next;\r\n       }\r\n       if (q == null) {\r\n            return head.next;\r\n        }\r\n       while(q.next != null){\r\n        p=p.next;\r\n        q=q.next;\r\n       }\r\n\r\n       p.next = p.next.next ;\r\n       return head;\r\n\r\n\r\n    }\r\n}"
+      }
+    ]
+  },
+  "valid-parentheses": {
+    "id": 20,
+    "frontendId": "20",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "problemName": "0020-valid-parentheses",
+    "difficulty": "Easy",
+    "topics": [
+      "Bracket Sequences",
+      "Stack",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
+    "folderPath": "problems/0020-valid-parentheses/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0020-valid-parentheses/README.md",
+    "descriptionHtml": "<p>Given a string <code>s</code> containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>\r\n\r\n<p>An input string is valid if:</p>\r\n\r\n<ol>\r\n\t<li>Open brackets must be closed by the same type of brackets.</li>\r\n\t<li>Open brackets must be closed in the correct order.</li>\r\n\t<li>Every close bracket has a corresponding open bracket of the same type.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;()&quot;</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\r\n</div>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;()[]{}&quot;</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\r\n</div>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;(]&quot;</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\r\n</div>\r\n\r\n<p><strong class=\"example\">Example 4:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;([])&quot;</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">true</span></p>\r\n</div>\r\n\r\n<p><strong class=\"example\">Example 5:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">s = &quot;([)]&quot;</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">false</span></p>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>\r\n\t<li><code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>.</li>\r\n</ul>",
+    "examples": [],
+    "constraints": [
+      "<code>1 &lt;= s.length &lt;= 10<sup>4</sup></code>",
+      "<code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0020-valid-parentheses.java",
+        "path": "problems/0020-valid-parentheses/0020-valid-parentheses.java",
+        "code": "class Solution {\r\n    public boolean isValid(String s) {\r\n        Stack<Character> stack = new Stack<>();\r\n        for(int i = 0 ; i < s.length() ; i++){\r\n            char c = s.charAt(i);\r\n            if(c == '(' || c == '{' || c == '['){\r\n                stack.push(c);\r\n            }else{\r\n                if(stack.empty()){\r\n                    return false ;\r\n                }\r\n                char topch = stack.peek();\r\n                stack.pop();\r\n                if( c == ')' && topch == '(' || c == ']' && topch == '[' || c == '}' && topch == '{'){\r\n                    continue;\r\n                }else{\r\n                    return false;\r\n                }\r\n            }\r\n        }\r\n        return stack.empty();\r\n        \r\n    }\r\n}"
       }
     ]
   },
@@ -887,6 +994,80 @@
       }
     ]
   },
+  "implement-stack-using-queues": {
+    "id": 225,
+    "frontendId": "225",
+    "title": "Implement Stack using Queues",
+    "slug": "implement-stack-using-queues",
+    "problemName": "0225-implement-stack-using-queues",
+    "difficulty": "Easy",
+    "topics": [
+      "Design",
+      "Queue",
+      "Stack"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/implement-stack-using-queues/",
+    "folderPath": "problems/0225-implement-stack-using-queues/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0225-implement-stack-using-queues/README.md",
+    "descriptionHtml": "<p>Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (<code>push</code>, <code>top</code>, <code>pop</code>, and <code>empty</code>).</p>\r\n\r\n<p>Implement the <code>MyStack</code> class:</p>\r\n\r\n<ul>\r\n\t<li><code>void push(int x)</code> Pushes element x to the top of the stack.</li>\r\n\t<li><code>int pop()</code> Removes the element on the top of the stack and returns it.</li>\r\n\t<li><code>int top()</code> Returns the element on the top of the stack.</li>\r\n\t<li><code>boolean empty()</code> Returns <code>true</code> if the stack is empty, <code>false</code> otherwise.</li>\r\n</ul>\r\n\r\n<p><b>Notes:</b></p>\r\n\r\n<ul>\r\n\t<li>You must use <strong>only</strong> standard operations of a queue, which means that only <code>push to back</code>, <code>peek/pop from front</code>, <code>size</code> and <code>is empty</code> operations are valid.</li>\r\n\t<li>Depending on your language, the queue may not be supported natively. You may simulate a queue using a list or deque (double-ended queue) as long as you use only a queue&#39;s standard operations.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input</strong>\r\n[&quot;MyStack&quot;, &quot;push&quot;, &quot;push&quot;, &quot;top&quot;, &quot;pop&quot;, &quot;empty&quot;]\r\n[[], [1], [2], [], [], []]\r\n<strong>Output</strong>\r\n[null, null, null, 2, 2, false]\r\n\r\n<strong>Explanation</strong>\r\nMyStack myStack = new MyStack();\r\nmyStack.push(1);\r\nmyStack.push(2);\r\nmyStack.top(); // return 2\r\nmyStack.pop(); // return 2\r\nmyStack.empty(); // return False\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= x &lt;= 9</code></li>\r\n\t<li>At most <code>100</code> calls will be made to <code>push</code>, <code>pop</code>, <code>top</code>, and <code>empty</code>.</li>\r\n\t<li>All the calls to <code>pop</code> and <code>top</code> are valid.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow-up:</strong> Can you implement the stack using only one queue?</p>",
+    "examples": [
+      "<strong>Input</strong>\r\n[&quot;MyStack&quot;, &quot;push&quot;, &quot;push&quot;, &quot;top&quot;, &quot;pop&quot;, &quot;empty&quot;]\r\n[[], [1], [2], [], [], []]\r\n<strong>Output</strong>\r\n[null, null, null, 2, 2, false]\r\n\r\n<strong>Explanation</strong>\r\nMyStack myStack = new MyStack();\r\nmyStack.push(1);\r\nmyStack.push(2);\r\nmyStack.top(); // return 2\r\nmyStack.pop(); // return 2\r\nmyStack.empty(); // return False"
+    ],
+    "constraints": [
+      "<code>1 &lt;= x &lt;= 9</code>",
+      "At most <code>100</code> calls will be made to <code>push</code>, <code>pop</code>, <code>top</code>, and <code>empty</code>.",
+      "All the calls to <code>pop</code> and <code>top</code> are valid."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0225-implement-stack-using-queues.java",
+        "path": "problems/0225-implement-stack-using-queues/0225-implement-stack-using-queues.java",
+        "code": "class MyStack {\r\n    public Queue<Integer> queue ;\r\n    public MyStack() {\r\n        queue = new LinkedList<>();\r\n    }\r\n    \r\n    public void push(int x) {\r\n        queue.offer(x);\r\n\r\n        for(int i = 1 ; i < queue.size() ; i++){\r\n            queue.offer(queue.poll());\r\n        }\r\n    }\r\n    \r\n    public int pop() {\r\n        return queue.poll();\r\n    }\r\n    \r\n    public int top() {\r\n        return queue.peek();\r\n    }\r\n    \r\n    public boolean empty() {\r\n        return queue.isEmpty();\r\n    }\r\n}\r\n\r\n/**\r\n * Your MyStack object will be instantiated and called as such:\r\n * MyStack obj = new MyStack();\r\n * obj.push(x);\r\n * int param_2 = obj.pop();\r\n * int param_3 = obj.top();\r\n * boolean param_4 = obj.empty();\r\n */"
+      }
+    ]
+  },
+  "implement-queue-using-stacks": {
+    "id": 232,
+    "frontendId": "232",
+    "title": "Implement Queue using Stacks",
+    "slug": "implement-queue-using-stacks",
+    "problemName": "0232-implement-queue-using-stacks",
+    "difficulty": "Easy",
+    "topics": [
+      "Design",
+      "Queue",
+      "Stack"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/implement-queue-using-stacks/",
+    "folderPath": "problems/0232-implement-queue-using-stacks/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/0232-implement-queue-using-stacks/README.md",
+    "descriptionHtml": "<p>Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (<code>push</code>, <code>peek</code>, <code>pop</code>, and <code>empty</code>).</p>\r\n\r\n<p>Implement the <code>MyQueue</code> class:</p>\r\n\r\n<ul>\r\n\t<li><code>void push(int x)</code> Pushes element x to the back of the queue.</li>\r\n\t<li><code>int pop()</code> Removes the element from the front of the queue and returns it.</li>\r\n\t<li><code>int peek()</code> Returns the element at the front of the queue.</li>\r\n\t<li><code>boolean empty()</code> Returns <code>true</code> if the queue is empty, <code>false</code> otherwise.</li>\r\n</ul>\r\n\r\n<p><strong>Notes:</strong></p>\r\n\r\n<ul>\r\n\t<li>You must use <strong>only</strong> standard operations of a stack, which means only <code>push to top</code>, <code>peek/pop from top</code>, <code>size</code>, and <code>is empty</code> operations are valid.</li>\r\n\t<li>Depending on your language, the stack may not be supported natively. You may simulate a stack using a list or deque (double-ended queue) as long as you use only a stack&#39;s standard operations.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input</strong>\r\n[&quot;MyQueue&quot;, &quot;push&quot;, &quot;push&quot;, &quot;peek&quot;, &quot;pop&quot;, &quot;empty&quot;]\r\n[[], [1], [2], [], [], []]\r\n<strong>Output</strong>\r\n[null, null, null, 1, 1, false]\r\n\r\n<strong>Explanation</strong>\r\nMyQueue myQueue = new MyQueue();\r\nmyQueue.push(1); // queue is: [1]\r\nmyQueue.push(2); // queue is: [1, 2] (leftmost is front of the queue)\r\nmyQueue.peek(); // return 1\r\nmyQueue.pop(); // return 1, queue is [2]\r\nmyQueue.empty(); // return false\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= x &lt;= 9</code></li>\r\n\t<li>At most <code>100</code>&nbsp;calls will be made to <code>push</code>, <code>pop</code>, <code>peek</code>, and <code>empty</code>.</li>\r\n\t<li>All the calls to <code>pop</code> and <code>peek</code> are valid.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Follow-up:</strong> Can you implement the queue such that each operation is <strong><a href=\"https://en.wikipedia.org/wiki/Amortized_analysis\" target=\"_blank\">amortized</a></strong> <code>O(1)</code> time complexity? In other words, performing <code>n</code> operations will take overall <code>O(n)</code> time even if one of those operations may take longer.</p>",
+    "examples": [
+      "<strong>Input</strong>\r\n[&quot;MyQueue&quot;, &quot;push&quot;, &quot;push&quot;, &quot;peek&quot;, &quot;pop&quot;, &quot;empty&quot;]\r\n[[], [1], [2], [], [], []]\r\n<strong>Output</strong>\r\n[null, null, null, 1, 1, false]\r\n\r\n<strong>Explanation</strong>\r\nMyQueue myQueue = new MyQueue();\r\nmyQueue.push(1); // queue is: [1]\r\nmyQueue.push(2); // queue is: [1, 2] (leftmost is front of the queue)\r\nmyQueue.peek(); // return 1\r\nmyQueue.pop(); // return 1, queue is [2]\r\nmyQueue.empty(); // return false"
+    ],
+    "constraints": [
+      "<code>1 &lt;= x &lt;= 9</code>",
+      "At most <code>100</code>&nbsp;calls will be made to <code>push</code>, <code>pop</code>, <code>peek</code>, and <code>empty</code>.",
+      "All the calls to <code>pop</code> and <code>peek</code> are valid."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "0232-implement-queue-using-stacks.java",
+        "path": "problems/0232-implement-queue-using-stacks/0232-implement-queue-using-stacks.java",
+        "code": "class MyQueue {\r\n    Stack<Integer> stack1 = new Stack<>();\r\n    Stack<Integer> stack2 = new Stack<>();\r\n    public MyQueue() {\r\n    }\r\n    \r\n    public void push(int x) {\r\n        stack1.push(x);\r\n    }\r\n\r\n    public int pop() {\r\n        if (stack2.isEmpty()) {\r\n            while (!stack1.isEmpty()) {\r\n                stack2.push(stack1.pop());\r\n            }\r\n        }\r\n        return stack2.pop();\r\n    }\r\n    \r\n    public int peek() {\r\n        if (stack2.isEmpty()) {\r\n            while (!stack1.isEmpty()) {\r\n                stack2.push(stack1.pop());\r\n            }\r\n        }\r\n        return stack2.peek();\r\n    }\r\n    \r\n    public boolean empty() {\r\n        if (stack2.isEmpty()) {\r\n            while (!stack1.isEmpty()) {\r\n                stack2.push(stack1.pop());\r\n            }\r\n        }\r\n        return stack2.empty() && stack1.empty();\r\n    }\r\n}\r\n\r\n/**\r\n * Your MyQueue object will be instantiated and called as such:\r\n * MyQueue obj = new MyQueue();\r\n * obj.push(x);\r\n * int param_2 = obj.pop();\r\n * int param_3 = obj.peek();\r\n * boolean param_4 = obj.empty();\r\n */"
+      }
+    ]
+  },
   "palindrome-linked-list": {
     "id": 234,
     "frontendId": "234",
@@ -1187,6 +1368,47 @@
       }
     ]
   },
+  "brace-expansion-ii": {
+    "id": 1096,
+    "frontendId": "1096",
+    "title": "Brace Expansion II",
+    "slug": "brace-expansion-ii",
+    "problemName": "1096-brace-expansion-ii",
+    "difficulty": "Hard",
+    "topics": [
+      "Backtracking",
+      "Breadth-First Search",
+      "Hash Table",
+      "Sorting",
+      "Stack",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/brace-expansion-ii/",
+    "folderPath": "problems/1096-brace-expansion-ii/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1096-brace-expansion-ii/README.md",
+    "descriptionHtml": "<p>Under the grammar given below, strings can represent a set of lowercase words. Let&nbsp;<code>R(expr)</code>&nbsp;denote the set of words the expression represents.</p>\r\n\r\n<p>The grammar can best be understood through simple examples:</p>\r\n\r\n<ul>\r\n\t<li>Single letters represent a singleton set containing that word.\r\n\t<ul>\r\n\t\t<li><code>R(&quot;a&quot;) = {&quot;a&quot;}</code></li>\r\n\t\t<li><code>R(&quot;w&quot;) = {&quot;w&quot;}</code></li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>When we take a comma-delimited list of two or more expressions, we take the union of possibilities.\r\n\t<ul>\r\n\t\t<li><code>R(&quot;{a,b,c}&quot;) = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;}</code></li>\r\n\t\t<li><code>R(&quot;{{a,b},{b,c}}&quot;) = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;}</code> (notice the final set only contains each word at most once)</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>When we concatenate two expressions, we take the set of possible concatenations between two words where the first word comes from the first expression and the second word comes from the second expression.\r\n\t<ul>\r\n\t\t<li><code>R(&quot;{a,b}{c,d}&quot;) = {&quot;ac&quot;,&quot;ad&quot;,&quot;bc&quot;,&quot;bd&quot;}</code></li>\r\n\t\t<li><code>R(&quot;a{b,c}{d,e}f{g,h}&quot;) = {&quot;abdfg&quot;, &quot;abdfh&quot;, &quot;abefg&quot;, &quot;abefh&quot;, &quot;acdfg&quot;, &quot;acdfh&quot;, &quot;acefg&quot;, &quot;acefh&quot;}</code></li>\r\n\t</ul>\r\n\t</li>\r\n</ul>\r\n\r\n<p>Formally, the three rules for our grammar:</p>\r\n\r\n<ul>\r\n\t<li>For every lowercase letter <code>x</code>, we have <code>R(x) = {x}</code>.</li>\r\n\t<li>For expressions <code>e<sub>1</sub>, e<sub>2</sub>, ... , e<sub>k</sub></code> with <code>k &gt;= 2</code>, we have <code>R({e<sub>1</sub>, e<sub>2</sub>, ...}) = R(e<sub>1</sub>) &cup; R(e<sub>2</sub>) &cup; ...</code></li>\r\n\t<li>For expressions <code>e<sub>1</sub></code> and <code>e<sub>2</sub></code>, we have <code>R(e<sub>1</sub> + e<sub>2</sub>) = {a + b for (a, b) in R(e<sub>1</sub>) &times; R(e<sub>2</sub>)}</code>, where <code>+</code> denotes concatenation, and <code>&times;</code> denotes the cartesian product.</li>\r\n</ul>\r\n\r\n<p>Given an expression representing a set of words under the given grammar, return <em>the sorted list of words that the expression represents</em>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> expression = &quot;{a,b}{c,{d,e}}&quot;\r\n<strong>Output:</strong> [&quot;ac&quot;,&quot;ad&quot;,&quot;ae&quot;,&quot;bc&quot;,&quot;bd&quot;,&quot;be&quot;]\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> expression = &quot;{{a,z},a{b,c},{ab,z}}&quot;\r\n<strong>Output:</strong> [&quot;a&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;z&quot;]\r\n<strong>Explanation:</strong> Each distinct word is written only once in the final answer.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= expression.length &lt;= 60</code></li>\r\n\t<li><code>expression[i]</code> consists of <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;,&#39;</code>or lowercase English letters.</li>\r\n\t<li>The given&nbsp;<code>expression</code>&nbsp;represents a set of words based on the grammar given in the description.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> expression = &quot;{a,b}{c,{d,e}}&quot;\r\n<strong>Output:</strong> [&quot;ac&quot;,&quot;ad&quot;,&quot;ae&quot;,&quot;bc&quot;,&quot;bd&quot;,&quot;be&quot;]",
+      "<strong>Input:</strong> expression = &quot;{{a,z},a{b,c},{ab,z}}&quot;\r\n<strong>Output:</strong> [&quot;a&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;z&quot;]\r\n<strong>Explanation:</strong> Each distinct word is written only once in the final answer."
+    ],
+    "constraints": [
+      "<code>1 &lt;= expression.length &lt;= 60</code>",
+      "<code>expression[i]</code> consists of <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;,&#39;</code>or lowercase English letters.",
+      "The given&nbsp;<code>expression</code>&nbsp;represents a set of words based on the grammar given in the description."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1096-brace-expansion-ii.java",
+        "path": "problems/1096-brace-expansion-ii/1096-brace-expansion-ii.java",
+        "code": "class Solution {\r\n\r\n    int i = 0;\r\n\r\n    public List<String> braceExpansionII(String expression) {\r\n        Set<String> result = parse(expression);\r\n        List<String> answer = new ArrayList<>(result);\r\n\r\n        Collections.sort(answer);\r\n\r\n        return answer;\r\n    }\r\n\r\n\r\n    public Set<String> parse(String expression) {\r\n\r\n        Set<String> result = new HashSet<>();\r\n        Set<String> current = new HashSet<>();\r\n        current.add(\"\");\r\n\r\n        while (i < expression.length()) {\r\n\r\n            char ch = expression.charAt(i);\r\n\r\n            if (Character.isLetter(ch)) {\r\n                Set<String> set = new HashSet<>();\r\n                set.add(String.valueOf(ch));\r\n                current = concatenate(current , set);\r\n                i++; \r\n            } \r\n            else if (ch == '{') {\r\n                i++;\r\n                Set<String> set = parse(expression);\r\n                current = concatenate(current, set);\r\n            } \r\n            else if (ch == ',') {\r\n                result.addAll(current);\r\n                current = new HashSet<>();\r\n                current.add(\"\");\r\n                i++;\r\n            } \r\n            else if (ch == '}'){\r\n                result.addAll(current);\r\n                i++;\r\n                return result;\r\n            }\r\n        }\r\n\r\n        result.addAll(current);\r\n\r\n        return result;\r\n    }\r\n\r\n\r\n    public Set<String> concatenate(Set<String> first , Set<String> second){\r\n\r\n        Set<String> result = new HashSet<>();\r\n        for(String a : first){\r\n            for(String b : second){\r\n                result.add(a+b);\r\n            }\r\n        }\r\n\r\n        return result;\r\n    }\r\n}"
+      }
+    ]
+  },
   "how-many-numbers-are-smaller-than-the-current-number": {
     "id": 1365,
     "frontendId": "1365",
@@ -1223,6 +1445,45 @@
         "filename": "1365-how-many-numbers-are-smaller-than-the-current-number.java",
         "path": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/1365-how-many-numbers-are-smaller-than-the-current-number.java",
         "code": "class Solution {\r\n    public int[] smallerNumbersThanCurrent(int[] nums) {\r\n        int ans[] = new int [nums.length];\r\n        int count = 0;\r\n\r\n        for(int i = 0 ; i < nums.length ; i++){\r\n            count = 0;\r\n            for(int j = 0 ; j < nums.length ; j++){\r\n                if(i != j){\r\n                    if(nums[i] > nums[j]){\r\n                        count++;\r\n                    }\r\n                }\r\n            }\r\n            ans[i] = count; \r\n        }\r\n        return ans ;\r\n    }\r\n}"
+      }
+    ]
+  },
+  "maximum-points-you-can-obtain-from-cards": {
+    "id": 1423,
+    "frontendId": "1423",
+    "title": "Maximum Points You Can Obtain from Cards",
+    "slug": "maximum-points-you-can-obtain-from-cards",
+    "problemName": "1423-maximum-points-you-can-obtain-from-cards",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Prefix Sum",
+      "Sliding Window"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+    "folderPath": "problems/1423-maximum-points-you-can-obtain-from-cards/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1423-maximum-points-you-can-obtain-from-cards/README.md",
+    "descriptionHtml": "<p>There are several cards <strong>arranged in a row</strong>, and each card has an associated number of points. The points are given in the integer array <code>cardPoints</code>.</p>\r\n\r\n<p>In one step, you can take one card from the beginning or from the end of the row. You have to take exactly <code>k</code> cards.</p>\r\n\r\n<p>Your score is the sum of the points of the cards you have taken.</p>\r\n\r\n<p>Given the integer array <code>cardPoints</code> and the integer <code>k</code>, return the <em>maximum score</em> you can obtain.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> cardPoints = [1,2,3,4,5,6,1], k = 3\r\n<strong>Output:</strong> 12\r\n<strong>Explanation:</strong> After the first step, your score will always be 1. However, choosing the rightmost card first will maximize your total score. The optimal strategy is to take the three cards on the right, giving a final score of 1 + 6 + 5 = 12.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> cardPoints = [2,2,2], k = 2\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> Regardless of which two cards you take, your score will always be 4.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> cardPoints = [9,7,7,9,7,7,9], k = 7\r\n<strong>Output:</strong> 55\r\n<strong>Explanation:</strong> You have to take all the cards. Your score is the sum of points of all cards.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= cardPoints.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>1 &lt;= cardPoints[i] &lt;= 10<sup>4</sup></code></li>\r\n\t<li><code>1 &lt;= k &lt;= cardPoints.length</code></li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> cardPoints = [1,2,3,4,5,6,1], k = 3\r\n<strong>Output:</strong> 12\r\n<strong>Explanation:</strong> After the first step, your score will always be 1. However, choosing the rightmost card first will maximize your total score. The optimal strategy is to take the three cards on the right, giving a final score of 1 + 6 + 5 = 12.",
+      "<strong>Input:</strong> cardPoints = [2,2,2], k = 2\r\n<strong>Output:</strong> 4\r\n<strong>Explanation:</strong> Regardless of which two cards you take, your score will always be 4.",
+      "<strong>Input:</strong> cardPoints = [9,7,7,9,7,7,9], k = 7\r\n<strong>Output:</strong> 55\r\n<strong>Explanation:</strong> You have to take all the cards. Your score is the sum of points of all cards."
+    ],
+    "constraints": [
+      "<code>1 &lt;= cardPoints.length &lt;= 10<sup>5</sup></code>",
+      "<code>1 &lt;= cardPoints[i] &lt;= 10<sup>4</sup></code>",
+      "<code>1 &lt;= k &lt;= cardPoints.length</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1423-maximum-points-you-can-obtain-from-cards.java",
+        "path": "problems/1423-maximum-points-you-can-obtain-from-cards/1423-maximum-points-you-can-obtain-from-cards.java",
+        "code": "class Solution {\r\n    public int maxScore(int[] cardPoints, int k) {\r\n        int totalPoint = 0 ;\r\n        for(int point : cardPoints){\r\n            totalPoint += point;\r\n        }\r\n        if(k >= cardPoints.length){\r\n            return totalPoint;\r\n        }\r\n        int windowSize = cardPoints.length - k;\r\n        int currentWindowSum = 0;\r\n        \r\n        for(int i = 0 ; i < windowSize ; i++){\r\n            currentWindowSum += cardPoints[i];\r\n        }\r\n        int minWindowSum = currentWindowSum;\r\n        for(int i = windowSize ; i < cardPoints.length ; i++){\r\n            currentWindowSum += cardPoints[i] - cardPoints[i - windowSize];\r\n            minWindowSum = Math.min(minWindowSum , currentWindowSum);\r\n        }\r\n        return totalPoint - minWindowSum;\r\n    }\r\n}"
       }
     ]
   },
@@ -1424,6 +1685,52 @@
       }
     ]
   },
+  "evaluate-the-bracket-pairs-of-a-string": {
+    "id": 1807,
+    "frontendId": "1807",
+    "title": "Evaluate the Bracket Pairs of a String",
+    "slug": "evaluate-the-bracket-pairs-of-a-string",
+    "problemName": "1807-evaluate-the-bracket-pairs-of-a-string",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "String"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/",
+    "folderPath": "problems/1807-evaluate-the-bracket-pairs-of-a-string/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/1807-evaluate-the-bracket-pairs-of-a-string/README.md",
+    "descriptionHtml": "<p>You are given a string <code>s</code> that contains some bracket pairs, with each pair containing a <strong>non-empty</strong> key.</p>\r\n\r\n<ul>\r\n\t<li>For example, in the string <code>&quot;(name)is(age)yearsold&quot;</code>, there are <strong>two</strong> bracket pairs that contain the keys <code>&quot;name&quot;</code> and <code>&quot;age&quot;</code>.</li>\r\n</ul>\r\n\r\n<p>You know the values of a wide range of keys. This is represented by a 2D string array <code>knowledge</code> where each <code>knowledge[i] = [key<sub>i</sub>, value<sub>i</sub>]</code> indicates that key <code>key<sub>i</sub></code> has a value of <code>value<sub>i</sub></code>.</p>\r\n\r\n<p>You are tasked to evaluate <strong>all</strong> of the bracket pairs. When you evaluate a bracket pair that contains some key <code>key<sub>i</sub></code>, you will:</p>\r\n\r\n<ul>\r\n\t<li>Replace <code>key<sub>i</sub></code> and the bracket pair with the key&#39;s corresponding <code>value<sub>i</sub></code>.</li>\r\n\t<li>If you do not know the value of the key, you will replace <code>key<sub>i</sub></code> and the bracket pair with a question mark <code>&quot;?&quot;</code> (without the quotation marks).</li>\r\n</ul>\r\n\r\n<p>Each key will appear at most once in your <code>knowledge</code>. There will not be any nested brackets in <code>s</code>.</p>\r\n\r\n<p>Return <em>the resulting string after evaluating <strong>all</strong> of the bracket pairs.</em></p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;(name)is(age)yearsold&quot;, knowledge = [[&quot;name&quot;,&quot;bob&quot;],[&quot;age&quot;,&quot;two&quot;]]\r\n<strong>Output:</strong> &quot;bobistwoyearsold&quot;\r\n<strong>Explanation:</strong>\r\nThe key &quot;name&quot; has a value of &quot;bob&quot;, so replace &quot;(name)&quot; with &quot;bob&quot;.\r\nThe key &quot;age&quot; has a value of &quot;two&quot;, so replace &quot;(age)&quot; with &quot;two&quot;.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;hi(name)&quot;, knowledge = [[&quot;a&quot;,&quot;b&quot;]]\r\n<strong>Output:</strong> &quot;hi?&quot;\r\n<strong>Explanation:</strong> As you do not know the value of the key &quot;name&quot;, replace &quot;(name)&quot; with &quot;?&quot;.\r\n</pre>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<pre>\r\n<strong>Input:</strong> s = &quot;(a)(a)(a)aaa&quot;, knowledge = [[&quot;a&quot;,&quot;yes&quot;]]\r\n<strong>Output:</strong> &quot;yesyesyesaaa&quot;\r\n<strong>Explanation:</strong> The same key can appear multiple times.\r\nThe key &quot;a&quot; has a value of &quot;yes&quot;, so replace all occurrences of &quot;(a)&quot; with &quot;yes&quot;.\r\nNotice that the &quot;a&quot;s not in a bracket pair are not evaluated.\r\n</pre>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>0 &lt;= knowledge.length &lt;= 10<sup>5</sup></code></li>\r\n\t<li><code>knowledge[i].length == 2</code></li>\r\n\t<li><code>1 &lt;= key<sub>i</sub>.length, value<sub>i</sub>.length &lt;= 10</code></li>\r\n\t<li><code>s</code> consists of lowercase English letters and round brackets <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code>.</li>\r\n\t<li>Every open bracket <code>&#39;(&#39;</code> in <code>s</code> will have a corresponding close bracket <code>&#39;)&#39;</code>.</li>\r\n\t<li>The key in each bracket pair of <code>s</code> will be non-empty.</li>\r\n\t<li>There will not be any nested bracket pairs in <code>s</code>.</li>\r\n\t<li><code>key<sub>i</sub></code> and <code>value<sub>i</sub></code> consist of lowercase English letters.</li>\r\n\t<li>Each <code>key<sub>i</sub></code> in <code>knowledge</code> is unique.</li>\r\n</ul>",
+    "examples": [
+      "<strong>Input:</strong> s = &quot;(name)is(age)yearsold&quot;, knowledge = [[&quot;name&quot;,&quot;bob&quot;],[&quot;age&quot;,&quot;two&quot;]]\r\n<strong>Output:</strong> &quot;bobistwoyearsold&quot;\r\n<strong>Explanation:</strong>\r\nThe key &quot;name&quot; has a value of &quot;bob&quot;, so replace &quot;(name)&quot; with &quot;bob&quot;.\r\nThe key &quot;age&quot; has a value of &quot;two&quot;, so replace &quot;(age)&quot; with &quot;two&quot;.",
+      "<strong>Input:</strong> s = &quot;hi(name)&quot;, knowledge = [[&quot;a&quot;,&quot;b&quot;]]\r\n<strong>Output:</strong> &quot;hi?&quot;\r\n<strong>Explanation:</strong> As you do not know the value of the key &quot;name&quot;, replace &quot;(name)&quot; with &quot;?&quot;.",
+      "<strong>Input:</strong> s = &quot;(a)(a)(a)aaa&quot;, knowledge = [[&quot;a&quot;,&quot;yes&quot;]]\r\n<strong>Output:</strong> &quot;yesyesyesaaa&quot;\r\n<strong>Explanation:</strong> The same key can appear multiple times.\r\nThe key &quot;a&quot; has a value of &quot;yes&quot;, so replace all occurrences of &quot;(a)&quot; with &quot;yes&quot;.\r\nNotice that the &quot;a&quot;s not in a bracket pair are not evaluated."
+    ],
+    "constraints": [
+      "<code>1 &lt;= s.length &lt;= 10<sup>5</sup></code>",
+      "<code>0 &lt;= knowledge.length &lt;= 10<sup>5</sup></code>",
+      "<code>knowledge[i].length == 2</code>",
+      "<code>1 &lt;= key<sub>i</sub>.length, value<sub>i</sub>.length &lt;= 10</code>",
+      "<code>s</code> consists of lowercase English letters and round brackets <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code>.",
+      "Every open bracket <code>&#39;(&#39;</code> in <code>s</code> will have a corresponding close bracket <code>&#39;)&#39;</code>.",
+      "The key in each bracket pair of <code>s</code> will be non-empty.",
+      "There will not be any nested bracket pairs in <code>s</code>.",
+      "<code>key<sub>i</sub></code> and <code>value<sub>i</sub></code> consist of lowercase English letters.",
+      "Each <code>key<sub>i</sub></code> in <code>knowledge</code> is unique."
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "1807-evaluate-the-bracket-pairs-of-a-string.java",
+        "path": "problems/1807-evaluate-the-bracket-pairs-of-a-string/1807-evaluate-the-bracket-pairs-of-a-string.java",
+        "code": "class Solution {\r\n    public String evaluate(String s, List<List<String>> knowledge) {\r\n\r\n        Map<String, String> map = new HashMap<>();\r\n\r\n\r\n        for (List<String> pair : knowledge) {\r\n            map.put(pair.get(0), pair.get(1));\r\n        }\r\n\r\n        StringBuilder result = new StringBuilder();\r\n\r\n        int i = 0;\r\n\r\n        while (i < s.length()) {\r\n\r\n            if (s.charAt(i) == '(') {\r\n\r\n                int j = i + 1;\r\n\r\n\r\n                while (s.charAt(j) != ')') {\r\n                    j++;\r\n                }\r\n\r\n                String key = s.substring(i + 1, j);\r\n\r\n\r\n                result.append(map.getOrDefault(key, \"?\"));\r\n\r\n                i = j + 1;\r\n\r\n            } else {\r\n                result.append(s.charAt(i));\r\n                i++;\r\n            }\r\n        }\r\n\r\n        return result.toString();\r\n    }\r\n}"
+      }
+    ]
+  },
   "concatenation-of-array": {
     "id": 1929,
     "frontendId": "1929",
@@ -1532,6 +1839,39 @@
         "filename": "3498-reverse-degree-of-a-string.java",
         "path": "problems/3498-reverse-degree-of-a-string/3498-reverse-degree-of-a-string.java",
         "code": "class Solution {\r\n    \r\n    public int reverseDegree(String s) {\r\n        int sum = 0;\r\n        for (int i = 0; i < s.length(); i++) {\r\n            int reversed_Index = 'z' - s.charAt(i) + 1;\r\n            sum += (i + 1)*reversed_Index ;\r\n        }\r\n        return sum;\r\n    }\r\n    \r\n}\r\n"
+      }
+    ]
+  },
+  "smallest-index-with-digit-sum-equal-to-index": {
+    "id": 3550,
+    "frontendId": "3550",
+    "title": "Smallest Index With Digit Sum Equal to Index",
+    "slug": "smallest-index-with-digit-sum-equal-to-index",
+    "problemName": "3550-smallest-index-with-digit-sum-equal-to-index",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Math"
+    ],
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/",
+    "folderPath": "problems/3550-smallest-index-with-digit-sum-equal-to-index/",
+    "solutionCount": 1,
+    "languages": [
+      "Java"
+    ],
+    "readmePath": "problems/3550-smallest-index-with-digit-sum-equal-to-index/README.md",
+    "descriptionHtml": "<p>You are given an integer array <code>nums</code>.</p>\r\n\r\n<p>Return the <strong>smallest</strong> index <code>i</code> such that the sum of the digits of <code>nums[i]</code> is equal to <code>i</code>.</p>\r\n\r\n<p>If no such index exists, return <code>-1</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong class=\"example\">Example 1:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,3,2]</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">2</span></p>\r\n\r\n<p><strong>Explanation:</strong></p>\r\n\r\n<ul>\r\n\t<li>For <code>nums[2] = 2</code>, the sum of digits is 2, which is equal to index <code>i = 2</code>. Thus, the output is 2.</li>\r\n</ul>\r\n</div>\r\n\r\n<p><strong class=\"example\">Example 2:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,10,11]</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\r\n\r\n<p><strong>Explanation:</strong></p>\r\n\r\n<ul>\r\n\t<li>For <code>nums[1] = 10</code>, the sum of digits is <code>1 + 0 = 1</code>, which is equal to index <code>i = 1</code>.</li>\r\n\t<li>For <code>nums[2] = 11</code>, the sum of digits is <code>1 + 1 = 2</code>, which is equal to index <code>i = 2</code>.</li>\r\n\t<li>Since index 1 is the smallest, the output is 1.</li>\r\n</ul>\r\n</div>\r\n\r\n<p><strong class=\"example\">Example 3:</strong></p>\r\n\r\n<div class=\"example-block\">\r\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,2,3]</span></p>\r\n\r\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\r\n\r\n<p><strong>Explanation:</strong></p>\r\n\r\n<ul>\r\n\t<li>Since no index satisfies the condition, the output is -1.</li>\r\n</ul>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n<p><strong>Constraints:</strong></p>\r\n\r\n<ul>\r\n\t<li><code>1 &lt;= nums.length &lt;= 100</code></li>\r\n\t<li><code>0 &lt;= nums[i] &lt;= 1000</code></li>\r\n</ul>",
+    "examples": [],
+    "constraints": [
+      "<code>1 &lt;= nums.length &lt;= 100</code>",
+      "<code>0 &lt;= nums[i] &lt;= 1000</code>"
+    ],
+    "solutions": [
+      {
+        "language": "Java",
+        "filename": "3550-smallest-index-with-digit-sum-equal-to-index.java",
+        "path": "problems/3550-smallest-index-with-digit-sum-equal-to-index/3550-smallest-index-with-digit-sum-equal-to-index.java",
+        "code": "class Solution {\r\n    public int digitSum(int num){\r\n        int sum = 0 ;\r\n        while(num!=0){\r\n            sum += num%10;\r\n            num = num/10;\r\n        }\r\n        return sum;\r\n    }\r\n    public int smallestIndex(int[] nums) {\r\n        int minSum = Integer.MAX_VALUE;\r\n        for(int i = 0 ; i < nums.length ; i++){\r\n            int sum = digitSum(nums[i]);\r\n            if(sum == i){\r\n                minSum = Math.min(minSum , sum);\r\n            }\r\n        }\r\n       \r\n        return minSum == Integer.MAX_VALUE ? -1 : minSum;\r\n    }\r\n}"
       }
     ]
   }
