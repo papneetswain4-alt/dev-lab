@@ -5,17 +5,16 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 51 | 26 | 22 | 3 |
+| 52 | 26 | 23 | 3 |
 
 ## Activity
 
 | Current Streak | Best Streak | Active Days |
 | ---: | ---: | ---: |
-| 6 days | 6 days | 30 |
+| 1 days | 6 days | 31 |
 
 | Date | Problems |
 | --- | ---: |
-| 2026-02-16 | 1 |
 | 2026-04-15 | 4 |
 | 2026-04-16 | 3 |
 | 2026-04-17 | 1 |
@@ -29,29 +28,30 @@ Contains topicwise list of solved problems.
 | 2026-09-26 | 1 |
 | 2026-09-27 | 1 |
 | 2026-09-28 | 1 |
+| 2026-10-01 | 1 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 28 | 55% |
+| Array | 29 | 56% |
 | Hash Table | 14 | 27% |
-| Linked List | 11 | 22% |
-| Two Pointers | 10 | 20% |
-| Math | 8 | 16% |
-| Stack | 8 | 16% |
-| Sorting | 7 | 14% |
-| String | 7 | 14% |
+| Linked List | 11 | 21% |
+| Two Pointers | 10 | 19% |
+| Math | 8 | 15% |
+| Stack | 8 | 15% |
+| Sorting | 7 | 13% |
+| String | 7 | 13% |
+| Binary Search | 6 | 12% |
 | Dynamic Programming | 6 | 12% |
-| Recursion | 6 | 12% |
 
 ## Topics
 
 | Topic | Problems |
 | --- | ---: |
-| [Array](Topics/array/) | 28 |
+| [Array](Topics/array/) | 29 |
 | [Backtracking](Topics/backtracking/) | 1 |
-| [Binary Search](Topics/binary-search/) | 5 |
+| [Binary Search](Topics/binary-search/) | 6 |
 | [binary-tree](Topics/binary-tree/) | 0 |
 | [Bit Manipulation](Topics/bit-manipulation/) | 3 |
 | [Boyer–Moore Majority Vote Algorithm](Topics/boyer-moore-majority-vote-algorithm/) | 1 |
