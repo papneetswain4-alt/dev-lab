@@ -4,7 +4,7 @@
     "slug": "binary-search",
     "name": "Binary Search"
   },
-  "updatedAt": "2026-10-01T07:00:34.917Z",
+  "updatedAt": "2026-10-01T07:21:21.683Z",
   "problems": [
     {
       "frontendId": "4",
@@ -103,6 +103,26 @@
           "path": "problems/0162-find-peak-element/0162-find-peak-element.java",
           "sha": "30926ff9dcfcb19f96a84771f1c8ca7d9c2c43f3",
           "lastSyncedAt": "2026-10-01T06:27:51.052Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "240",
+      "title": "Search a 2D Matrix II",
+      "slug": "search-a-2d-matrix-ii",
+      "problemName": "0240-search-a-2d-matrix-ii",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix-ii/",
+      "folderPath": "problems/0240-search-a-2d-matrix-ii/",
+      "readmePath": "problems/0240-search-a-2d-matrix-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0240-search-a-2d-matrix-ii.java",
+          "path": "problems/0240-search-a-2d-matrix-ii/0240-search-a-2d-matrix-ii.java",
+          "sha": "5dd9acd699429deaab0686a3de3164d3a93ef443",
+          "lastSyncedAt": "2026-10-01T07:21:21.683Z"
         }
       ]
     },
