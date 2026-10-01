@@ -5,7 +5,7 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 55 | 26 | 26 | 3 |
+| 56 | 26 | 27 | 3 |
 
 ## Activity
 
@@ -28,19 +28,19 @@ Contains topicwise list of solved problems.
 | 2026-09-26 | 1 |
 | 2026-09-27 | 1 |
 | 2026-09-28 | 1 |
-| 2026-10-01 | 4 |
+| 2026-10-01 | 5 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 32 | 58% |
+| Array | 33 | 59% |
 | Hash Table | 14 | 25% |
 | Linked List | 11 | 20% |
+| Binary Search | 10 | 18% |
 | Two Pointers | 10 | 18% |
-| Binary Search | 9 | 16% |
-| Math | 8 | 15% |
-| Stack | 8 | 15% |
+| Math | 8 | 14% |
+| Stack | 8 | 14% |
 | Sorting | 7 | 13% |
 | String | 7 | 13% |
 | Dynamic Programming | 6 | 11% |
@@ -49,9 +49,9 @@ Contains topicwise list of solved problems.
 
 | Topic | Problems |
 | --- | ---: |
-| [Array](Topics/array/) | 32 |
+| [Array](Topics/array/) | 33 |
 | [Backtracking](Topics/backtracking/) | 1 |
-| [Binary Search](Topics/binary-search/) | 9 |
+| [Binary Search](Topics/binary-search/) | 10 |
 | [binary-tree](Topics/binary-tree/) | 0 |
 | [Bit Manipulation](Topics/bit-manipulation/) | 3 |
 | [Boyer–Moore Majority Vote Algorithm](Topics/boyer-moore-majority-vote-algorithm/) | 1 |
@@ -63,13 +63,13 @@ Contains topicwise list of solved problems.
 | [Counting Sort](Topics/counting-sort/) | 1 |
 | [Depth-First Search](Topics/depth-first-search/) | 1 |
 | [Design](Topics/design/) | 2 |
-| [Divide and Conquer](Topics/divide-and-conquer/) | 3 |
+| [Divide and Conquer](Topics/divide-and-conquer/) | 4 |
 | [Dynamic Programming](Topics/dynamic-programming/) | 6 |
 | [Floyd's Cycle Finding Algorithm](Topics/floyds-cycle-finding-algorithm/) | 2 |
 | [Hash Table](Topics/hash-table/) | 14 |
 | [Linked List](Topics/linked-list/) | 11 |
 | [Math](Topics/math/) | 8 |
-| [Matrix](Topics/matrix/) | 4 |
+| [Matrix](Topics/matrix/) | 5 |
 | [Pigeonhole Principle](Topics/pigeonhole-principle/) | 1 |
 | [Prefix Sum](Topics/prefix-sum/) | 3 |
 | [Queue](Topics/queue/) | 2 |
