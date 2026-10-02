@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-10-02T07:56:37.371Z",
+  "updatedAt": "2026-10-02T07:56:41.896Z",
   "problems": [
     {
       "frontendId": "1",
@@ -302,7 +302,7 @@
           "filename": "0162-find-peak-element.java",
           "path": "problems/0162-find-peak-element/0162-find-peak-element.java",
           "sha": "30926ff9dcfcb19f96a84771f1c8ca7d9c2c43f3",
-          "lastSyncedAt": "2026-10-01T06:27:51.052Z"
+          "lastSyncedAt": "2026-10-02T07:56:41.896Z"
         }
       ]
     },
