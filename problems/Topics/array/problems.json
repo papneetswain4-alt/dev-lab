@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-10-02T07:58:38.196Z",
+  "updatedAt": "2026-10-02T07:58:54.783Z",
   "problems": [
     {
       "frontendId": "1",
@@ -522,7 +522,7 @@
           "filename": "1441-build-an-array-with-stack-operations.java",
           "path": "problems/1441-build-an-array-with-stack-operations/1441-build-an-array-with-stack-operations.java",
           "sha": "35d0aa2090a1405f1e67e2622e38b7f46e4af10b",
-          "lastSyncedAt": "2026-09-25T14:31:30.116Z"
+          "lastSyncedAt": "2026-10-02T07:58:54.783Z"
         }
       ]
     },
