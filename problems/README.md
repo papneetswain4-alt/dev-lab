@@ -5,7 +5,7 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 61 | 27 | 31 | 3 |
+| 62 | 28 | 31 | 3 |
 
 ## Activity
 
@@ -28,20 +28,20 @@ Contains topicwise list of solved problems.
 | 2026-09-27 | 2 |
 | 2026-09-28 | 1 |
 | 2026-10-01 | 6 |
-| 2026-10-02 | 3 |
+| 2026-10-02 | 4 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 35 | 57% |
-| Hash Table | 14 | 23% |
+| Array | 35 | 56% |
+| Hash Table | 15 | 24% |
 | Binary Search | 11 | 18% |
 | Linked List | 11 | 18% |
 | Two Pointers | 10 | 16% |
+| Math | 9 | 15% |
 | Stack | 9 | 15% |
-| Math | 8 | 13% |
-| String | 8 | 13% |
+| String | 9 | 15% |
 | Dynamic Programming | 7 | 11% |
 | Sorting | 7 | 11% |
 
@@ -66,9 +66,9 @@ Contains topicwise list of solved problems.
 | [Divide and Conquer](Topics/divide-and-conquer/) | 4 |
 | [Dynamic Programming](Topics/dynamic-programming/) | 7 |
 | [Floyd's Cycle Finding Algorithm](Topics/floyds-cycle-finding-algorithm/) | 2 |
-| [Hash Table](Topics/hash-table/) | 14 |
+| [Hash Table](Topics/hash-table/) | 15 |
 | [Linked List](Topics/linked-list/) | 11 |
-| [Math](Topics/math/) | 8 |
+| [Math](Topics/math/) | 9 |
 | [Matrix](Topics/matrix/) | 6 |
 | [Pigeonhole Principle](Topics/pigeonhole-principle/) | 1 |
 | [Prefix Sum](Topics/prefix-sum/) | 3 |
@@ -79,7 +79,7 @@ Contains topicwise list of solved problems.
 | [Sliding Window](Topics/sliding-window/) | 4 |
 | [Sorting](Topics/sorting/) | 7 |
 | [Stack](Topics/stack/) | 9 |
-| [String](Topics/string/) | 8 |
+| [String](Topics/string/) | 9 |
 | [Tree](Topics/tree/) | 2 |
 | [Two Pointers](Topics/two-pointers/) | 10 |
 <!---LeetHub Summary End-->
