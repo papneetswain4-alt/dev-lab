@@ -4,7 +4,7 @@
     "slug": "tree",
     "name": "Tree"
   },
-  "updatedAt": "2026-09-27T17:30:22.617Z",
+  "updatedAt": "2026-10-02T07:57:05.625Z",
   "problems": [
     {
       "frontendId": "94",
@@ -22,7 +22,7 @@
           "filename": "0094-binary-tree-inorder-traversal.java",
           "path": "problems/0094-binary-tree-inorder-traversal/0094-binary-tree-inorder-traversal.java",
           "sha": "ff4be2faccfc998bff61fd59f36e44aeb91af91f",
-          "lastSyncedAt": "2026-09-27T17:30:22.617Z"
+          "lastSyncedAt": "2026-10-02T07:57:05.625Z"
         }
       ]
     }
