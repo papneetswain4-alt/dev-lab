@@ -4,8 +4,28 @@
     "slug": "dynamic-programming",
     "name": "Dynamic Programming"
   },
-  "updatedAt": "2026-09-25T14:34:46.733Z",
+  "updatedAt": "2026-10-02T07:50:23.886Z",
   "problems": [
+    {
+      "frontendId": "22",
+      "title": "Generate Parentheses",
+      "slug": "generate-parentheses",
+      "problemName": "0022-generate-parentheses",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/",
+      "folderPath": "problems/0022-generate-parentheses/",
+      "readmePath": "problems/0022-generate-parentheses/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0022-generate-parentheses.java",
+          "path": "problems/0022-generate-parentheses/0022-generate-parentheses.java",
+          "sha": "18ba57c0e38e5703a28c34b2b21b8d3f3b662662",
+          "lastSyncedAt": "2026-10-02T07:50:23.886Z"
+        }
+      ]
+    },
     {
       "frontendId": "53",
       "title": "Maximum Subarray",
