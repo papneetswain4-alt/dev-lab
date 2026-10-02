@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-09-25T14:34:39.418Z",
+  "updatedAt": "2026-10-02T07:57:36.151Z",
   "problems": [
     {
       "frontendId": "2",
@@ -42,7 +42,7 @@
           "filename": "0009-palindrome-number.java",
           "path": "problems/0009-palindrome-number/0009-palindrome-number.java",
           "sha": "ea9e48d8bb8058a615310c1e77ff4b202b213053",
-          "lastSyncedAt": "2026-09-25T14:30:02.327Z"
+          "lastSyncedAt": "2026-10-02T07:57:36.151Z"
         }
       ]
     },
