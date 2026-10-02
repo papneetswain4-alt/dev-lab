@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-10-02T07:56:27.311Z",
+  "updatedAt": "2026-10-02T07:56:31.942Z",
   "problems": [
     {
       "frontendId": "1",
@@ -202,7 +202,7 @@
           "filename": "0081-search-in-rotated-sorted-array-ii.java",
           "path": "problems/0081-search-in-rotated-sorted-array-ii/0081-search-in-rotated-sorted-array-ii.java",
           "sha": "0fb8f72eade24b61f92f7ef12b3468f1bb0bbbb9",
-          "lastSyncedAt": "2026-10-01T06:52:52.251Z"
+          "lastSyncedAt": "2026-10-02T07:56:31.942Z"
         }
       ]
     },
