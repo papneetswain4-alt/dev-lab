@@ -4,7 +4,7 @@
     "slug": "matrix",
     "name": "Matrix"
   },
-  "updatedAt": "2026-10-01T07:22:41.740Z",
+  "updatedAt": "2026-10-02T07:56:11.918Z",
   "problems": [
     {
       "frontendId": "48",
@@ -83,6 +83,26 @@
           "path": "problems/0240-search-a-2d-matrix-ii/0240-search-a-2d-matrix-ii.java",
           "sha": "5dd9acd699429deaab0686a3de3164d3a93ef443",
           "lastSyncedAt": "2026-10-01T07:22:41.740Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1901",
+      "title": "Find a Peak Element II",
+      "slug": "find-a-peak-element-ii",
+      "problemName": "1901-find-a-peak-element-ii",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-a-peak-element-ii/",
+      "folderPath": "problems/1901-find-a-peak-element-ii/",
+      "readmePath": "problems/1901-find-a-peak-element-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1901-find-a-peak-element-ii.java",
+          "path": "problems/1901-find-a-peak-element-ii/1901-find-a-peak-element-ii.java",
+          "sha": "8524d27ebe78fdc4bd11a85ee54b9d26366948ca",
+          "lastSyncedAt": "2026-10-02T07:56:11.918Z"
         }
       ]
     },
