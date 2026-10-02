@@ -5,7 +5,7 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 59 | 27 | 29 | 3 |
+| 61 | 27 | 31 | 3 |
 
 ## Activity
 
@@ -28,35 +28,35 @@ Contains topicwise list of solved problems.
 | 2026-09-27 | 2 |
 | 2026-09-28 | 1 |
 | 2026-10-01 | 6 |
-| 2026-10-02 | 1 |
+| 2026-10-02 | 3 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 34 | 58% |
-| Hash Table | 14 | 24% |
-| Binary Search | 11 | 19% |
-| Linked List | 11 | 19% |
-| Two Pointers | 10 | 17% |
+| Array | 35 | 57% |
+| Hash Table | 14 | 23% |
+| Binary Search | 11 | 18% |
+| Linked List | 11 | 18% |
+| Two Pointers | 10 | 16% |
 | Stack | 9 | 15% |
-| Math | 8 | 14% |
-| String | 8 | 14% |
-| Dynamic Programming | 7 | 12% |
-| Sorting | 7 | 12% |
+| Math | 8 | 13% |
+| String | 8 | 13% |
+| Dynamic Programming | 7 | 11% |
+| Sorting | 7 | 11% |
 
 ## Topics
 
 | Topic | Problems |
 | --- | ---: |
-| [Array](Topics/array/) | 34 |
-| [Backtracking](Topics/backtracking/) | 2 |
+| [Array](Topics/array/) | 35 |
+| [Backtracking](Topics/backtracking/) | 3 |
 | [Binary Search](Topics/binary-search/) | 11 |
-| [Binary Tree](Topics/binary-tree/) | 1 |
-| [Bit Manipulation](Topics/bit-manipulation/) | 3 |
+| [Binary Tree](Topics/binary-tree/) | 2 |
+| [Bit Manipulation](Topics/bit-manipulation/) | 4 |
 | [Boyer–Moore Majority Vote Algorithm](Topics/boyer-moore-majority-vote-algorithm/) | 1 |
 | [Bracket Sequences](Topics/bracket-sequences/) | 4 |
-| [Breadth-First Search](Topics/breadth-first-search/) | 1 |
+| [Breadth-First Search](Topics/breadth-first-search/) | 2 |
 | [Bubble Sort](Topics/bubble-sort/) | 1 |
 | [Combinatorics](Topics/combinatorics/) | 2 |
 | [Counting](Topics/counting/) | 1 |
@@ -80,6 +80,6 @@ Contains topicwise list of solved problems.
 | [Sorting](Topics/sorting/) | 7 |
 | [Stack](Topics/stack/) | 9 |
 | [String](Topics/string/) | 8 |
-| [Tree](Topics/tree/) | 1 |
+| [Tree](Topics/tree/) | 2 |
 | [Two Pointers](Topics/two-pointers/) | 10 |
 <!---LeetHub Summary End-->
