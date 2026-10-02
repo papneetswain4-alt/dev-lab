@@ -4,8 +4,28 @@
     "slug": "bit-manipulation",
     "name": "Bit Manipulation"
   },
-  "updatedAt": "2026-10-02T08:01:52.143Z",
+  "updatedAt": "2026-10-02T10:29:13.677Z",
   "problems": [
+    {
+      "frontendId": "78",
+      "title": "Subsets",
+      "slug": "subsets",
+      "problemName": "0078-subsets",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/subsets/",
+      "folderPath": "problems/0078-subsets/",
+      "readmePath": "problems/0078-subsets/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0078-subsets.java",
+          "path": "problems/0078-subsets/0078-subsets.java",
+          "sha": "f42fa4da570faa4d1fe260c6192b3ca8c4cbb74a",
+          "lastSyncedAt": "2026-10-02T10:29:13.677Z"
+        }
+      ]
+    },
     {
       "frontendId": "287",
       "title": "Find the Duplicate Number",
