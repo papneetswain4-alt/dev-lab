@@ -4,8 +4,28 @@
     "slug": "breadth-first-search",
     "name": "Breadth-First Search"
   },
-  "updatedAt": "2026-10-02T07:57:23.913Z",
+  "updatedAt": "2026-10-02T10:56:54.077Z",
   "problems": [
+    {
+      "frontendId": "102",
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "problemName": "0102-binary-tree-level-order-traversal",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+      "folderPath": "problems/0102-binary-tree-level-order-traversal/",
+      "readmePath": "problems/0102-binary-tree-level-order-traversal/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0102-binary-tree-level-order-traversal.java",
+          "path": "problems/0102-binary-tree-level-order-traversal/0102-binary-tree-level-order-traversal.java",
+          "sha": "1b492a4ced18bacea24fe7a62146d2fde284d156",
+          "lastSyncedAt": "2026-10-02T10:56:54.077Z"
+        }
+      ]
+    },
     {
       "frontendId": "1096",
       "title": "Brace Expansion II",
