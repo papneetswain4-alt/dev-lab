@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-10-02T07:56:31.942Z",
+  "updatedAt": "2026-10-02T07:56:37.371Z",
   "problems": [
     {
       "frontendId": "1",
@@ -282,7 +282,7 @@
           "filename": "0153-find-minimum-in-rotated-sorted-array.java",
           "path": "problems/0153-find-minimum-in-rotated-sorted-array/0153-find-minimum-in-rotated-sorted-array.java",
           "sha": "a2e0e2509d8a31beddc70ffefc13154cde42c015",
-          "lastSyncedAt": "2026-10-01T06:39:26.976Z"
+          "lastSyncedAt": "2026-10-02T07:56:37.371Z"
         }
       ]
     },
