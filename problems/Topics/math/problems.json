@@ -4,7 +4,7 @@
     "slug": "math",
     "name": "Math"
   },
-  "updatedAt": "2026-10-02T08:00:38.142Z",
+  "updatedAt": "2026-10-02T08:01:20.914Z",
   "problems": [
     {
       "frontendId": "2",
@@ -102,7 +102,7 @@
           "filename": "0062-unique-paths.java",
           "path": "problems/0062-unique-paths/0062-unique-paths.java",
           "sha": "989f711c7d145eaa404c16e046a85ad2291e1dc4",
-          "lastSyncedAt": "2026-09-25T14:33:50.775Z"
+          "lastSyncedAt": "2026-10-02T08:01:20.914Z"
         }
       ]
     },
