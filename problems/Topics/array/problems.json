@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-10-02T08:00:09.727Z",
+  "updatedAt": "2026-10-02T08:00:15.483Z",
   "problems": [
     {
       "frontendId": "1",
@@ -482,7 +482,7 @@
           "filename": "1365-how-many-numbers-are-smaller-than-the-current-number.java",
           "path": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/1365-how-many-numbers-are-smaller-than-the-current-number.java",
           "sha": "e0f52ce2b081599c88d82bfa6527f34a1796b188",
-          "lastSyncedAt": "2026-09-25T14:32:50.989Z"
+          "lastSyncedAt": "2026-10-02T08:00:15.483Z"
         }
       ]
     },
