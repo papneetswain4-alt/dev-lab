@@ -4,7 +4,7 @@
     "slug": "array",
     "name": "Array"
   },
-  "updatedAt": "2026-10-01T07:22:41.740Z",
+  "updatedAt": "2026-10-02T07:56:11.918Z",
   "problems": [
     {
       "frontendId": "1",
@@ -603,6 +603,26 @@
           "path": "problems/1807-evaluate-the-bracket-pairs-of-a-string/1807-evaluate-the-bracket-pairs-of-a-string.java",
           "sha": "b578ff554856b1d563343afa94fd76a6b3e14a76",
           "lastSyncedAt": "2026-09-26T18:11:55.589Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "1901",
+      "title": "Find a Peak Element II",
+      "slug": "find-a-peak-element-ii",
+      "problemName": "1901-find-a-peak-element-ii",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-a-peak-element-ii/",
+      "folderPath": "problems/1901-find-a-peak-element-ii/",
+      "readmePath": "problems/1901-find-a-peak-element-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "1901-find-a-peak-element-ii.java",
+          "path": "problems/1901-find-a-peak-element-ii/1901-find-a-peak-element-ii.java",
+          "sha": "8524d27ebe78fdc4bd11a85ee54b9d26366948ca",
+          "lastSyncedAt": "2026-10-02T07:56:11.918Z"
         }
       ]
     },
