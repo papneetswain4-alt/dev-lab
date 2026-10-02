@@ -4,7 +4,7 @@
     "slug": "stack",
     "name": "Stack"
   },
-  "updatedAt": "2026-10-02T07:57:05.625Z",
+  "updatedAt": "2026-10-02T07:57:23.913Z",
   "problems": [
     {
       "frontendId": "20",
@@ -122,7 +122,7 @@
           "filename": "1096-brace-expansion-ii.java",
           "path": "problems/1096-brace-expansion-ii/1096-brace-expansion-ii.java",
           "sha": "9cc0f34b0acf6e5e9d37000ab6327678fca9414f",
-          "lastSyncedAt": "2026-09-25T17:10:26.005Z"
+          "lastSyncedAt": "2026-10-02T07:57:23.913Z"
         }
       ]
     },
