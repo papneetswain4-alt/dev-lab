@@ -5,7 +5,7 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 63 | 28 | 31 | 4 |
+| 64 | 29 | 31 | 4 |
 
 ## Activity
 
@@ -28,28 +28,28 @@ Contains topicwise list of solved problems.
 | 2026-09-28 | 1 |
 | 2026-10-01 | 6 |
 | 2026-10-02 | 4 |
-| 2026-10-03 | 1 |
+| 2026-10-03 | 2 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 35 | 56% |
-| Hash Table | 15 | 24% |
+| Array | 36 | 56% |
+| Hash Table | 15 | 23% |
 | Binary Search | 11 | 17% |
 | Linked List | 11 | 17% |
+| Math | 10 | 16% |
 | Stack | 10 | 16% |
 | String | 10 | 16% |
 | Two Pointers | 10 | 16% |
-| Math | 9 | 14% |
 | Dynamic Programming | 8 | 13% |
-| Sorting | 7 | 11% |
+| Sorting | 8 | 13% |
 
 ## Topics
 
 | Topic | Problems |
 | --- | ---: |
-| [Array](Topics/array/) | 35 |
+| [Array](Topics/array/) | 36 |
 | [Backtracking](Topics/backtracking/) | 3 |
 | [Binary Search](Topics/binary-search/) | 11 |
 | [Binary Tree](Topics/binary-tree/) | 2 |
@@ -68,7 +68,7 @@ Contains topicwise list of solved problems.
 | [Floyd's Cycle Finding Algorithm](Topics/floyds-cycle-finding-algorithm/) | 2 |
 | [Hash Table](Topics/hash-table/) | 15 |
 | [Linked List](Topics/linked-list/) | 11 |
-| [Math](Topics/math/) | 9 |
+| [Math](Topics/math/) | 10 |
 | [Matrix](Topics/matrix/) | 6 |
 | [Pigeonhole Principle](Topics/pigeonhole-principle/) | 1 |
 | [Prefix Sum](Topics/prefix-sum/) | 3 |
@@ -77,7 +77,7 @@ Contains topicwise list of solved problems.
 | [Recursion](Topics/recursion/) | 6 |
 | [Simulation](Topics/simulation/) | 3 |
 | [Sliding Window](Topics/sliding-window/) | 4 |
-| [Sorting](Topics/sorting/) | 7 |
+| [Sorting](Topics/sorting/) | 8 |
 | [Stack](Topics/stack/) | 10 |
 | [String](Topics/string/) | 10 |
 | [Tree](Topics/tree/) | 2 |
