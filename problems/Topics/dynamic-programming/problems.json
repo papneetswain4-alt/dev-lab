@@ -4,7 +4,7 @@
     "slug": "dynamic-programming",
     "name": "Dynamic Programming"
   },
-  "updatedAt": "2026-10-03T07:35:56.040Z",
+  "updatedAt": "2026-10-04T14:24:05.499Z",
   "problems": [
     {
       "frontendId": "22",
@@ -123,6 +123,26 @@
           "path": "problems/0121-best-time-to-buy-and-sell-stock/0121-best-time-to-buy-and-sell-stock.java",
           "sha": "6314563c1b38d85461f61a4dd0114cef4ab78311",
           "lastSyncedAt": "2026-10-02T08:02:19.280Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "678",
+      "title": "Valid Parenthesis String",
+      "slug": "valid-parenthesis-string",
+      "problemName": "0678-valid-parenthesis-string",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-parenthesis-string/",
+      "folderPath": "problems/0678-valid-parenthesis-string/",
+      "readmePath": "problems/0678-valid-parenthesis-string/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0678-valid-parenthesis-string.java",
+          "path": "problems/0678-valid-parenthesis-string/0678-valid-parenthesis-string.java",
+          "sha": "187fb510af9f50d48bf046a310ff9305c9b64f8b",
+          "lastSyncedAt": "2026-10-04T14:24:05.499Z"
         }
       ]
     },
