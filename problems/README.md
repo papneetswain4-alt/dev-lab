@@ -5,17 +5,16 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 65 | 29 | 32 | 4 |
+| 66 | 29 | 33 | 4 |
 
 ## Activity
 
 | Current Streak | Best Streak | Active Days |
 | ---: | ---: | ---: |
-| 1 days | 6 days | 34 |
+| 2 days | 6 days | 35 |
 
 | Date | Problems |
 | --- | ---: |
-| 2026-07-04 | 1 |
 | 2026-09-16 | 1 |
 | 2026-09-17 | 1 |
 | 2026-09-18 | 1 |
@@ -29,6 +28,7 @@ Contains topicwise list of solved problems.
 | 2026-10-02 | 4 |
 | 2026-10-03 | 2 |
 | 2026-10-05 | 1 |
+| 2026-10-06 | 1 |
 
 ## Top Tags
 
@@ -36,10 +36,10 @@ Contains topicwise list of solved problems.
 | --- | ---: | ---: |
 | Array | 36 | 55% |
 | Hash Table | 15 | 23% |
+| Stack | 12 | 18% |
+| String | 12 | 18% |
 | Binary Search | 11 | 17% |
 | Linked List | 11 | 17% |
-| Stack | 11 | 17% |
-| String | 11 | 17% |
 | Math | 10 | 15% |
 | Two Pointers | 10 | 15% |
 | Dynamic Programming | 8 | 12% |
@@ -55,7 +55,7 @@ Contains topicwise list of solved problems.
 | [Binary Tree](Topics/binary-tree/) | 2 |
 | [Bit Manipulation](Topics/bit-manipulation/) | 4 |
 | [Boyer–Moore Majority Vote Algorithm](Topics/boyer-moore-majority-vote-algorithm/) | 1 |
-| [Bracket Sequences](Topics/bracket-sequences/) | 6 |
+| [Bracket Sequences](Topics/bracket-sequences/) | 7 |
 | [Breadth-First Search](Topics/breadth-first-search/) | 2 |
 | [Bubble Sort](Topics/bubble-sort/) | 1 |
 | [Combinatorics](Topics/combinatorics/) | 2 |
@@ -66,6 +66,7 @@ Contains topicwise list of solved problems.
 | [Divide and Conquer](Topics/divide-and-conquer/) | 4 |
 | [Dynamic Programming](Topics/dynamic-programming/) | 9 |
 | [Floyd's Cycle Finding Algorithm](Topics/floyds-cycle-finding-algorithm/) | 2 |
+| [Greedy](Topics/greedy/) | 1 |
 | [Hash Table](Topics/hash-table/) | 15 |
 | [Linked List](Topics/linked-list/) | 11 |
 | [Math](Topics/math/) | 10 |
@@ -78,8 +79,8 @@ Contains topicwise list of solved problems.
 | [Simulation](Topics/simulation/) | 3 |
 | [Sliding Window](Topics/sliding-window/) | 4 |
 | [Sorting](Topics/sorting/) | 8 |
-| [Stack](Topics/stack/) | 12 |
-| [String](Topics/string/) | 12 |
+| [Stack](Topics/stack/) | 13 |
+| [String](Topics/string/) | 13 |
 | [Tree](Topics/tree/) | 2 |
 | [Two Pointers](Topics/two-pointers/) | 10 |
 <!---LeetHub Summary End-->
