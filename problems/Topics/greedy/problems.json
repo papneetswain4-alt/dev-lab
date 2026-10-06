@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "topic": {
+    "slug": "greedy",
+    "name": "Greedy"
+  },
+  "updatedAt": "2026-10-06T17:58:24.554Z",
+  "problems": [
+    {
+      "frontendId": "921",
+      "title": "Minimum Add to Make Parentheses Valid",
+      "slug": "minimum-add-to-make-parentheses-valid",
+      "problemName": "0921-minimum-add-to-make-parentheses-valid",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+      "folderPath": "problems/0921-minimum-add-to-make-parentheses-valid/",
+      "readmePath": "problems/0921-minimum-add-to-make-parentheses-valid/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0921-minimum-add-to-make-parentheses-valid.java",
+          "path": "problems/0921-minimum-add-to-make-parentheses-valid/0921-minimum-add-to-make-parentheses-valid.java",
+          "sha": "0a161cc77737d4cd364a78859675a17e217d797b",
+          "lastSyncedAt": "2026-10-06T17:58:24.554Z"
+        }
+      ]
+    }
+  ]
+}
