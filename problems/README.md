@@ -5,17 +5,16 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 66 | 29 | 33 | 4 |
+| 67 | 29 | 34 | 4 |
 
 ## Activity
 
 | Current Streak | Best Streak | Active Days |
 | ---: | ---: | ---: |
-| 2 days | 6 days | 35 |
+| 1 days | 6 days | 36 |
 
 | Date | Problems |
 | --- | ---: |
-| 2026-09-16 | 1 |
 | 2026-09-17 | 1 |
 | 2026-09-18 | 1 |
 | 2026-09-23 | 2 |
@@ -29,29 +28,30 @@ Contains topicwise list of solved problems.
 | 2026-10-03 | 2 |
 | 2026-10-05 | 1 |
 | 2026-10-06 | 1 |
+| 2026-10-10 | 1 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 36 | 55% |
-| Hash Table | 15 | 23% |
+| Array | 37 | 55% |
+| Hash Table | 15 | 22% |
+| Binary Search | 12 | 18% |
 | Stack | 12 | 18% |
 | String | 12 | 18% |
-| Binary Search | 11 | 17% |
-| Linked List | 11 | 17% |
+| Linked List | 11 | 16% |
 | Math | 10 | 15% |
 | Two Pointers | 10 | 15% |
+| Sorting | 9 | 13% |
 | Dynamic Programming | 8 | 12% |
-| Sorting | 8 | 12% |
 
 ## Topics
 
 | Topic | Problems |
 | --- | ---: |
-| [Array](Topics/array/) | 36 |
+| [Array](Topics/array/) | 37 |
 | [Backtracking](Topics/backtracking/) | 3 |
-| [Binary Search](Topics/binary-search/) | 11 |
+| [Binary Search](Topics/binary-search/) | 12 |
 | [Binary Tree](Topics/binary-tree/) | 2 |
 | [Bit Manipulation](Topics/bit-manipulation/) | 4 |
 | [Boyer–Moore Majority Vote Algorithm](Topics/boyer-moore-majority-vote-algorithm/) | 1 |
@@ -66,8 +66,9 @@ Contains topicwise list of solved problems.
 | [Divide and Conquer](Topics/divide-and-conquer/) | 4 |
 | [Dynamic Programming](Topics/dynamic-programming/) | 9 |
 | [Floyd's Cycle Finding Algorithm](Topics/floyds-cycle-finding-algorithm/) | 2 |
-| [Greedy](Topics/greedy/) | 1 |
+| [Greedy](Topics/greedy/) | 2 |
 | [Hash Table](Topics/hash-table/) | 15 |
+| [Heap (Priority Queue)](Topics/heap-priority-queue/) | 1 |
 | [Linked List](Topics/linked-list/) | 11 |
 | [Math](Topics/math/) | 10 |
 | [Matrix](Topics/matrix/) | 6 |
@@ -78,7 +79,7 @@ Contains topicwise list of solved problems.
 | [Recursion](Topics/recursion/) | 6 |
 | [Simulation](Topics/simulation/) | 3 |
 | [Sliding Window](Topics/sliding-window/) | 4 |
-| [Sorting](Topics/sorting/) | 8 |
+| [Sorting](Topics/sorting/) | 9 |
 | [Stack](Topics/stack/) | 13 |
 | [String](Topics/string/) | 13 |
 | [Tree](Topics/tree/) | 2 |
