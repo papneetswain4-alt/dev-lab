@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "sorting",
-    "name": "Sorting"
+    "name": "Sorting",
+    "tagId": "61049"
   },
-  "updatedAt": "2026-10-03T08:39:55.418Z",
+  "updatedAt": "2026-10-10T12:27:57.283Z",
   "problems": [
     {
       "frontendId": "56",
@@ -163,6 +164,26 @@
           "path": "problems/1365-how-many-numbers-are-smaller-than-the-current-number/1365-how-many-numbers-are-smaller-than-the-current-number.java",
           "sha": "e0f52ce2b081599c88d82bfa6527f34a1796b188",
           "lastSyncedAt": "2026-10-02T08:00:15.483Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "2333",
+      "title": "Minimum Sum of Squared Difference",
+      "slug": "minimum-sum-of-squared-difference",
+      "problemName": "2333-minimum-sum-of-squared-difference",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
+      "folderPath": "problems/2333-minimum-sum-of-squared-difference/",
+      "readmePath": "problems/2333-minimum-sum-of-squared-difference/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "2333-minimum-sum-of-squared-difference.java",
+          "path": "problems/2333-minimum-sum-of-squared-difference/2333-minimum-sum-of-squared-difference.java",
+          "sha": "ba20ef177ec1601de4f3430d2f86f89cbcf42355",
+          "lastSyncedAt": "2026-10-10T12:27:57.283Z"
         }
       ]
     }
