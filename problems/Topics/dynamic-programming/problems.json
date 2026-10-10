@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "dynamic-programming",
-    "name": "Dynamic Programming"
+    "name": "Dynamic Programming",
+    "tagId": "13"
   },
-  "updatedAt": "2026-10-04T14:24:05.499Z",
+  "updatedAt": "2026-10-10T12:54:01.552Z",
   "problems": [
     {
       "frontendId": "22",
@@ -63,6 +64,26 @@
           "path": "problems/0053-maximum-subarray/0053-maximum-subarray.java",
           "sha": "0f3b1d420c4deee76ebb003870f1ec527568a090",
           "lastSyncedAt": "2026-10-02T08:01:08.617Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "55",
+      "title": "Jump Game",
+      "slug": "jump-game",
+      "problemName": "0055-jump-game",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/jump-game/",
+      "folderPath": "problems/0055-jump-game/",
+      "readmePath": "problems/0055-jump-game/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0055-jump-game.java",
+          "path": "problems/0055-jump-game/0055-jump-game.java",
+          "sha": "1adbb34c7880e26f5b6dc89cab802f02daa96f49",
+          "lastSyncedAt": "2026-10-10T12:54:01.552Z"
         }
       ]
     },
