@@ -5,17 +5,16 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 67 | 29 | 34 | 4 |
+| 69 | 30 | 35 | 4 |
 
 ## Activity
 
 | Current Streak | Best Streak | Active Days |
 | ---: | ---: | ---: |
-| 1 days | 6 days | 36 |
+| 2 days | 6 days | 37 |
 
 | Date | Problems |
 | --- | ---: |
-| 2026-09-17 | 1 |
 | 2026-09-18 | 1 |
 | 2026-09-23 | 2 |
 | 2026-09-24 | 6 |
@@ -28,28 +27,29 @@ Contains topicwise list of solved problems.
 | 2026-10-03 | 2 |
 | 2026-10-05 | 1 |
 | 2026-10-06 | 1 |
-| 2026-10-10 | 1 |
+| 2026-10-10 | 2 |
+| 2026-10-11 | 1 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 37 | 55% |
+| Array | 39 | 57% |
 | Hash Table | 15 | 22% |
-| Binary Search | 12 | 18% |
-| Stack | 12 | 18% |
-| String | 12 | 18% |
+| Binary Search | 12 | 17% |
+| Stack | 12 | 17% |
+| String | 12 | 17% |
 | Linked List | 11 | 16% |
-| Math | 10 | 15% |
-| Two Pointers | 10 | 15% |
+| Math | 10 | 14% |
+| Two Pointers | 10 | 14% |
+| Dynamic Programming | 9 | 13% |
 | Sorting | 9 | 13% |
-| Dynamic Programming | 8 | 12% |
 
 ## Topics
 
 | Topic | Problems |
 | --- | ---: |
-| [Array](Topics/array/) | 37 |
+| [Array](Topics/array/) | 39 |
 | [Backtracking](Topics/backtracking/) | 3 |
 | [Binary Search](Topics/binary-search/) | 12 |
 | [Binary Tree](Topics/binary-tree/) | 2 |
@@ -64,9 +64,10 @@ Contains topicwise list of solved problems.
 | [Depth-First Search](Topics/depth-first-search/) | 1 |
 | [Design](Topics/design/) | 2 |
 | [Divide and Conquer](Topics/divide-and-conquer/) | 4 |
-| [Dynamic Programming](Topics/dynamic-programming/) | 9 |
+| [Dynamic Programming](Topics/dynamic-programming/) | 10 |
+| [Enumeration](Topics/enumeration/) | 1 |
 | [Floyd's Cycle Finding Algorithm](Topics/floyds-cycle-finding-algorithm/) | 2 |
-| [Greedy](Topics/greedy/) | 2 |
+| [Greedy](Topics/greedy/) | 3 |
 | [Hash Table](Topics/hash-table/) | 15 |
 | [Heap (Priority Queue)](Topics/heap-priority-queue/) | 1 |
 | [Linked List](Topics/linked-list/) | 11 |
