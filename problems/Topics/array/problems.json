@@ -5,7 +5,7 @@
     "name": "Array",
     "tagId": "5"
   },
-  "updatedAt": "2026-10-11T16:44:44.615Z",
+  "updatedAt": "2026-10-12T14:02:06.242Z",
   "problems": [
     {
       "frontendId": "1",
@@ -44,6 +44,26 @@
           "path": "problems/0004-median-of-two-sorted-arrays/0004-median-of-two-sorted-arrays.java",
           "sha": "391f63cd01fbc1b8f0be1d93ff4103b9f33ea0c7",
           "lastSyncedAt": "2026-10-02T07:58:38.196Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "14",
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "problemName": "0014-longest-common-prefix",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-common-prefix/",
+      "folderPath": "problems/0014-longest-common-prefix/",
+      "readmePath": "problems/0014-longest-common-prefix/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0014-longest-common-prefix.java",
+          "path": "problems/0014-longest-common-prefix/0014-longest-common-prefix.java",
+          "sha": "6da351a0354b75074bff68ad57508de9b680724f",
+          "lastSyncedAt": "2026-10-12T14:02:06.242Z"
         }
       ]
     },
