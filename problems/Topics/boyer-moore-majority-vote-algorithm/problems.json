@@ -2,9 +2,10 @@
   "version": 1,
   "topic": {
     "slug": "boyer-moore-majority-vote-algorithm",
-    "name": "Boyer–Moore Majority Vote Algorithm"
+    "name": "Boyer–Moore Majority Vote Algorithm",
+    "tagId": "122032"
   },
-  "updatedAt": "2026-10-02T08:01:27.262Z",
+  "updatedAt": "2026-10-12T14:32:14.798Z",
   "problems": [
     {
       "frontendId": "169",
@@ -23,6 +24,26 @@
           "path": "problems/0169-majority-element/0169-majority-element.java",
           "sha": "95018988571176e67416ef239845fd5bd361d1db",
           "lastSyncedAt": "2026-10-02T08:01:27.262Z"
+        }
+      ]
+    },
+    {
+      "frontendId": "229",
+      "title": "Majority Element II",
+      "slug": "majority-element-ii",
+      "problemName": "0229-majority-element-ii",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/majority-element-ii/",
+      "folderPath": "problems/0229-majority-element-ii/",
+      "readmePath": "problems/0229-majority-element-ii/README.md",
+      "solutions": [
+        {
+          "language": "Java",
+          "extension": ".java",
+          "filename": "0229-majority-element-ii.java",
+          "path": "problems/0229-majority-element-ii/0229-majority-element-ii.java",
+          "sha": "c0c9f7d278dc394be5d14a972ee55a7843de8ccb",
+          "lastSyncedAt": "2026-10-12T14:32:14.798Z"
         }
       ]
     }
