@@ -5,17 +5,16 @@ Contains topicwise list of solved problems.
 
 | Total Solved | Easy | Medium | Hard |
 | ---: | ---: | ---: | ---: |
-| 69 | 30 | 35 | 4 |
+| 71 | 31 | 36 | 4 |
 
 ## Activity
 
 | Current Streak | Best Streak | Active Days |
 | ---: | ---: | ---: |
-| 2 days | 6 days | 37 |
+| 3 days | 6 days | 38 |
 
 | Date | Problems |
 | --- | ---: |
-| 2026-09-18 | 1 |
 | 2026-09-23 | 2 |
 | 2026-09-24 | 6 |
 | 2026-09-25 | 2 |
@@ -29,37 +28,38 @@ Contains topicwise list of solved problems.
 | 2026-10-06 | 1 |
 | 2026-10-10 | 2 |
 | 2026-10-11 | 1 |
+| 2026-10-12 | 2 |
 
 ## Top Tags
 
 | Tag | Problems | Coverage |
 | --- | ---: | ---: |
-| Array | 39 | 57% |
-| Hash Table | 15 | 22% |
+| Array | 41 | 58% |
+| Hash Table | 16 | 23% |
+| String | 13 | 18% |
 | Binary Search | 12 | 17% |
 | Stack | 12 | 17% |
-| String | 12 | 17% |
-| Linked List | 11 | 16% |
+| Linked List | 11 | 15% |
 | Math | 10 | 14% |
+| Sorting | 10 | 14% |
 | Two Pointers | 10 | 14% |
 | Dynamic Programming | 9 | 13% |
-| Sorting | 9 | 13% |
 
 ## Topics
 
 | Topic | Problems |
 | --- | ---: |
-| [Array](Topics/array/) | 39 |
+| [Array](Topics/array/) | 41 |
 | [Backtracking](Topics/backtracking/) | 3 |
 | [Binary Search](Topics/binary-search/) | 12 |
 | [Binary Tree](Topics/binary-tree/) | 2 |
 | [Bit Manipulation](Topics/bit-manipulation/) | 4 |
-| [Boyer–Moore Majority Vote Algorithm](Topics/boyer-moore-majority-vote-algorithm/) | 1 |
+| [Boyer–Moore Majority Vote Algorithm](Topics/boyer-moore-majority-vote-algorithm/) | 2 |
 | [Bracket Sequences](Topics/bracket-sequences/) | 7 |
 | [Breadth-First Search](Topics/breadth-first-search/) | 2 |
 | [Bubble Sort](Topics/bubble-sort/) | 1 |
 | [Combinatorics](Topics/combinatorics/) | 2 |
-| [Counting](Topics/counting/) | 1 |
+| [Counting](Topics/counting/) | 2 |
 | [Counting Sort](Topics/counting-sort/) | 1 |
 | [Depth-First Search](Topics/depth-first-search/) | 1 |
 | [Design](Topics/design/) | 2 |
@@ -68,7 +68,7 @@ Contains topicwise list of solved problems.
 | [Enumeration](Topics/enumeration/) | 1 |
 | [Floyd's Cycle Finding Algorithm](Topics/floyds-cycle-finding-algorithm/) | 2 |
 | [Greedy](Topics/greedy/) | 3 |
-| [Hash Table](Topics/hash-table/) | 15 |
+| [Hash Table](Topics/hash-table/) | 16 |
 | [Heap (Priority Queue)](Topics/heap-priority-queue/) | 1 |
 | [Linked List](Topics/linked-list/) | 11 |
 | [Math](Topics/math/) | 10 |
@@ -80,9 +80,10 @@ Contains topicwise list of solved problems.
 | [Recursion](Topics/recursion/) | 6 |
 | [Simulation](Topics/simulation/) | 3 |
 | [Sliding Window](Topics/sliding-window/) | 4 |
-| [Sorting](Topics/sorting/) | 9 |
+| [Sorting](Topics/sorting/) | 10 |
 | [Stack](Topics/stack/) | 13 |
-| [String](Topics/string/) | 13 |
+| [String](Topics/string/) | 14 |
 | [Tree](Topics/tree/) | 2 |
+| [Trie](Topics/trie/) | 1 |
 | [Two Pointers](Topics/two-pointers/) | 10 |
 <!---LeetHub Summary End-->
